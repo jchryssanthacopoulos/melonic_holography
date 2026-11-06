@@ -1,0 +1,308 @@
+# command: python3 scripts/check_robin_identities.py --dps 30
+# date: 2026-11-06; python 3.12.4, mpmath 1.3.0
+
+== Thong (2026) ==
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=4, h=2.7: residual=0.0
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=4, h=(1.3 + 0.8j): residual=1.98e-31
+[PASS] kc(2)=1, q=4: residual=9.86e-32
+[PASS] Robin root at h=2 is omega=3/2, q=4: residual=1.97e-31
+[PASS] (E.3) DGJS coupling = 4^-nu (q-1), q=4: residual=1.97e-31
+[PASS] (C.3, A.6 text) c_boundary = -2 nu 4^-nu (q-1), q=4: residual=0.0
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=6, h=2.7: residual=2.37e-29
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=6, h=(1.3 + 0.8j): residual=3.55e-31
+[PASS] kc(2)=1, q=6: residual=2.96e-31
+[PASS] Robin root at h=2 is omega=3/2, q=6: residual=1.97e-31
+[PASS] (E.3) DGJS coupling = 4^-nu (q-1), q=6: residual=0.0
+[PASS] (C.3, A.6 text) c_boundary = -2 nu 4^-nu (q-1), q=6: residual=7.89e-31
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=10, h=2.7: residual=1.58e-30
+[PASS] (C.1 text) kc(h) R_-(h-1/2) = 4^-nu (q-1), q=10, h=(1.3 + 0.8j): residual=8.08e-31
+[PASS] kc(2)=1, q=10: residual=1.97e-31
+[PASS] Robin root at h=2 is omega=3/2, q=10: residual=1.58e-30
+[PASS] (E.3) DGJS coupling = 4^-nu (q-1), q=10: residual=3.94e-31
+[PASS] (C.3, A.6 text) c_boundary = -2 nu 4^-nu (q-1), q=10: residual=7.89e-31
+     q=4 spectrum from R_-(omega)=kappa, h = omega + 1/2:
+       h = 3.77353561864
+[PASS] q=4 root near 3.51: residual=0.0
+       h = 5.67945898921
+[PASS] q=4 root near 5.51: residual=0.0
+       h = 7.63197075904
+[PASS] q=4 root near 7.51: residual=0.0
+[PASS] (3.4) d=1 odd Neumann kernel, nu=0.3, p=0.7: residual=9.31e-21
+[PASS] (3.4) d=1 odd Neumann kernel, nu=0.3, p=2.1: residual=9.98e-21
+[PASS] (3.4) d=1 odd Neumann kernel, nu=0.8, p=0.7: residual=3.89e-13
+[PASS] (3.4) d=1 odd Neumann kernel, nu=0.8, p=2.1: residual=1.81e-13
+[PASS] (3.4) d=2 J=0 Neumann kernel (AR), p=0.7: residual=5.61e-15
+[PASS] (3.4) d=2 J=0 Neumann kernel (AR), p=1.6: residual=2.7e-15
+[PASS] (C.6) J_h(eta), h=2.4: residual=3.94e-31
+[PASS] (C.6) J_h(eta), h=3.1: residual=7.89e-31
+     AR g_c = 1.02236136077 (paper: 1.02236136)
+[PASS] (4.7) AR g_c: residual=7.72e-10
+[PASS] (A.5),(A.6),(D.1) AR c_boundary = 1/(2 pi): residual=7.4e-32
+     SYK kappa > R_-(0) for q=4,6,10: stability criterion of app. B holds
+
+== N=2 draft ==
+[PASS] (5) m_psi^2 = nu^2-1/4, q=3: residual=7.4e-32
+[PASS] (5) m_b^2 = delta^2-1/4, q=3: residual=2.47e-32
+[PASS] (15) kA(1)=1, q=3: residual=1.97e-31
+[PASS] (15) kS(1)=1, q=3: residual=5.92e-31
+[PASS] (15) kA(0)=-(q-1), q=3: residual=3.94e-31
+[PASS] (13) R_nu R_delta, q=3, p=0, h=2.3: residual=3.94e-31
+[PASS] (9),(16) trace of k-hat, q=3, p=0, h=2.3: residual=7.89e-31
+[PASS] (9),(16) det of k-hat, q=3, p=0, h=2.3: residual=1.26e-28
+[PASS] (22) k = sigma L/R_F, q=3, p=0, H=2.3: residual=6.31e-30
+[PASS] (sec.4) R_F top-scalar form, q=3, p=0, H=2.3: residual=4.93e-32
+[PASS] (13) R_nu R_delta, q=3, p=0, h=(1.7 + 0.6j): residual=2.79e-31
+[PASS] (9),(16) trace of k-hat, q=3, p=0, h=(1.7 + 0.6j): residual=1.23e-31
+[PASS] (9),(16) det of k-hat, q=3, p=0, h=(1.7 + 0.6j): residual=1.1e-31
+[PASS] (22) k = sigma L/R_F, q=3, p=0, H=(1.7 + 0.6j): residual=1.99e-31
+[PASS] (sec.4) R_F top-scalar form, q=3, p=0, H=(1.7 + 0.6j): residual=1.34e-30
+[PASS] (13) R_nu R_delta, q=3, p=1, h=2.3: residual=1.18e-30
+[PASS] (9),(16) trace of k-hat, q=3, p=1, h=2.3: residual=3.82e-31
+[PASS] (9),(16) det of k-hat, q=3, p=1, h=2.3: residual=2.66e-30
+[PASS] (22) k = sigma L/R_F, q=3, p=1, H=2.3: residual=3.01e-30
+[PASS] (sec.4) R_F top-scalar form, q=3, p=1, H=2.3: residual=3.16e-30
+[PASS] (13) R_nu R_delta, q=3, p=1, h=(1.7 + 0.6j): residual=2.79e-31
+[PASS] (9),(16) trace of k-hat, q=3, p=1, h=(1.7 + 0.6j): residual=2.16e-31
+[PASS] (9),(16) det of k-hat, q=3, p=1, h=(1.7 + 0.6j): residual=4.41e-31
+[PASS] (22) k = sigma L/R_F, q=3, p=1, H=(1.7 + 0.6j): residual=2.79e-31
+[PASS] (sec.4) R_F top-scalar form, q=3, p=1, H=(1.7 + 0.6j): residual=3.94e-31
+[PASS] (24) phi = F_H - F_(H+1), q=3, H=0.9: residual=0.0
+[PASS] (24) phi = F_H - F_(H+1), q=3, H=2.2: residual=3.08e-33
+[PASS] (29) seed identity, q=3, z=0.2: residual=0.0
+[PASS] (29) seed identity, q=3, z=0.6: residual=0.0
+[PASS] (12) r_psi = chain integral, q=3: residual=2.37e-30
+[PASS] (12) r_psi/c_psi = l_psi, q=3: residual=3.16e-30
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=0.9, z=0.4: residual=4.93e-32
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=2.2, z=0.7: residual=1.23e-32
+[PASS] (31) b1, q=3: residual=3.94e-31
+[PASS] (31) b2, q=3: residual=7.89e-31
+[PASS] (sec.6) kA'(0), q=3: residual=4.02e-29
+[PASS] (5) m_psi^2 = nu^2-1/4, q=5: residual=9.86e-32
+[PASS] (5) m_b^2 = delta^2-1/4, q=5: residual=0.0
+[PASS] (15) kA(1)=1, q=5: residual=6.9e-31
+[PASS] (15) kS(1)=1, q=5: residual=0.0
+[PASS] (15) kA(0)=-(q-1), q=5: residual=0.0
+[PASS] (13) R_nu R_delta, q=5, p=0, h=2.3: residual=5.52e-30
+[PASS] (9),(16) trace of k-hat, q=5, p=0, h=2.3: residual=8.28e-30
+[PASS] (9),(16) det of k-hat, q=5, p=0, h=2.3: residual=1.1e-29
+[PASS] (22) k = sigma L/R_F, q=5, p=0, H=2.3: residual=3.16e-30
+[PASS] (sec.4) R_F top-scalar form, q=5, p=0, H=2.3: residual=1.97e-31
+[PASS] (13) R_nu R_delta, q=5, p=0, h=(1.7 + 0.6j): residual=1.54e-30
+[PASS] (9),(16) trace of k-hat, q=5, p=0, h=(1.7 + 0.6j): residual=4.43e-31
+[PASS] (9),(16) det of k-hat, q=5, p=0, h=(1.7 + 0.6j): residual=3.56e-31
+[PASS] (22) k = sigma L/R_F, q=5, p=0, H=(1.7 + 0.6j): residual=3.49e-31
+[PASS] (sec.4) R_F top-scalar form, q=5, p=0, H=(1.7 + 0.6j): residual=1.67e-30
+[PASS] (13) R_nu R_delta, q=5, p=1, h=2.3: residual=6.31e-30
+[PASS] (9),(16) trace of k-hat, q=5, p=1, h=2.3: residual=1.06e-30
+[PASS] (9),(16) det of k-hat, q=5, p=1, h=2.3: residual=9.86e-31
+[PASS] (22) k = sigma L/R_F, q=5, p=1, H=2.3: residual=1.68e-30
+[PASS] (sec.4) R_F top-scalar form, q=5, p=1, H=2.3: residual=3.16e-30
+[PASS] (13) R_nu R_delta, q=5, p=1, h=(1.7 + 0.6j): residual=1.76e-30
+[PASS] (9),(16) trace of k-hat, q=5, p=1, h=(1.7 + 0.6j): residual=4.13e-31
+[PASS] (9),(16) det of k-hat, q=5, p=1, h=(1.7 + 0.6j): residual=7.98e-31
+[PASS] (22) k = sigma L/R_F, q=5, p=1, H=(1.7 + 0.6j): residual=5.75e-31
+[PASS] (sec.4) R_F top-scalar form, q=5, p=1, H=(1.7 + 0.6j): residual=8.82e-31
+[PASS] (24) phi = F_H - F_(H+1), q=5, H=0.9: residual=0.0
+[PASS] (24) phi = F_H - F_(H+1), q=5, H=2.2: residual=3.08e-33
+[PASS] (29) seed identity, q=5, z=0.2: residual=0.0
+[PASS] (29) seed identity, q=5, z=0.6: residual=0.0
+[PASS] (12) r_psi = chain integral, q=5: residual=3.94e-31
+[PASS] (12) r_psi/c_psi = l_psi, q=5: residual=4.73e-30
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=0.9, z=0.4: residual=4.93e-32
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=2.2, z=0.7: residual=1.23e-32
+[PASS] (31) b1, q=5: residual=5.92e-31
+[PASS] (31) b2, q=5: residual=2.37e-30
+[PASS] (sec.6) kA'(0), q=5: residual=2.08e-28
+[PASS] (5) m_psi^2 = nu^2-1/4, q=7: residual=4.93e-32
+[PASS] (5) m_b^2 = delta^2-1/4, q=7: residual=0.0
+[PASS] (15) kA(1)=1, q=7: residual=0.0
+[PASS] (15) kS(1)=1, q=7: residual=7.89e-31
+[PASS] (15) kA(0)=-(q-1), q=7: residual=0.0
+[PASS] (13) R_nu R_delta, q=7, p=0, h=2.3: residual=7.1e-30
+[PASS] (9),(16) trace of k-hat, q=7, p=0, h=2.3: residual=5.92e-31
+[PASS] (9),(16) det of k-hat, q=7, p=0, h=2.3: residual=1.1e-29
+[PASS] (22) k = sigma L/R_F, q=7, p=0, H=2.3: residual=4.34e-30
+[PASS] (sec.4) R_F top-scalar form, q=7, p=0, H=2.3: residual=1.18e-30
+[PASS] (13) R_nu R_delta, q=7, p=0, h=(1.7 + 0.6j): residual=8.82e-31
+[PASS] (9),(16) trace of k-hat, q=7, p=0, h=(1.7 + 0.6j): residual=1.33e-31
+[PASS] (9),(16) det of k-hat, q=7, p=0, h=(1.7 + 0.6j): residual=2.97e-31
+[PASS] (22) k = sigma L/R_F, q=7, p=0, H=(1.7 + 0.6j): residual=1.56e-31
+[PASS] (sec.4) R_F top-scalar form, q=7, p=0, H=(1.7 + 0.6j): residual=3.94e-30
+[PASS] (13) R_nu R_delta, q=7, p=1, h=2.3: residual=2.37e-30
+[PASS] (9),(16) trace of k-hat, q=7, p=1, h=2.3: residual=6.66e-31
+[PASS] (9),(16) det of k-hat, q=7, p=1, h=2.3: residual=4.93e-32
+[PASS] (22) k = sigma L/R_F, q=7, p=1, H=2.3: residual=2.47e-31
+[PASS] (sec.4) R_F top-scalar form, q=7, p=1, H=2.3: residual=1.58e-30
+[PASS] (13) R_nu R_delta, q=7, p=1, h=(1.7 + 0.6j): residual=1.18e-30
+[PASS] (9),(16) trace of k-hat, q=7, p=1, h=(1.7 + 0.6j): residual=3.12e-31
+[PASS] (9),(16) det of k-hat, q=7, p=1, h=(1.7 + 0.6j): residual=9.04e-31
+[PASS] (22) k = sigma L/R_F, q=7, p=1, H=(1.7 + 0.6j): residual=2.2e-31
+[PASS] (sec.4) R_F top-scalar form, q=7, p=1, H=(1.7 + 0.6j): residual=7.89e-31
+[PASS] (24) phi = F_H - F_(H+1), q=7, H=0.9: residual=0.0
+[PASS] (24) phi = F_H - F_(H+1), q=7, H=2.2: residual=3.08e-33
+[PASS] (29) seed identity, q=7, z=0.2: residual=0.0
+[PASS] (29) seed identity, q=7, z=0.6: residual=0.0
+[PASS] (12) r_psi = chain integral, q=7: residual=0.0
+[PASS] (12) r_psi/c_psi = l_psi, q=7: residual=3.16e-30
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=0.9, z=0.4: residual=4.93e-32
+[PASS] (25) A exp(-(H-1/2)t) = F_H/2, q-independent, H=2.2, z=0.7: residual=1.23e-32
+[PASS] (31) b1, q=7: residual=7.89e-31
+[PASS] (31) b2, q=7: residual=3.94e-31
+[PASS] (sec.6) kA'(0), q=7: residual=6.0e-28
+[PASS] (sec.3) H_S, q=3: residual=1.68e-11
+[PASS] (sec.3) H_A, q=3: residual=3.82e-12
+[PASS] (33) coefficient 1, q=3: residual=2.1e-13
+[PASS] (33) coefficient 2, q=3: residual=3.01e-13
+[PASS] (25) T2 exp(-Ht) = phi_H, H=0.8, z=0.4: residual=0.0
+[PASS] (25) T2 exp(-Ht) = phi_H, H=2.3, z=0.6: residual=0.0
+[PASS] (34) direct convolution vs table, q=3, z=0.2: residual=2.72e-19
+[PASS] d/dg of (27) at g=0 vs table, q=3, z=0.2: residual=2.74e-19
+[PASS] (27) at g=0 reproduces z^delta, q=3, z=0.2: residual=9.86e-32
+[PASS] (34) direct convolution vs table, q=3, z=0.6: residual=8.16e-20
+[PASS] d/dg of (27) at g=0 vs table, q=3, z=0.6: residual=8.16e-20
+[PASS] (27) at g=0 reproduces z^delta, q=3, z=0.6: residual=2.96e-31
+[PASS] (34) direct convolution vs table, q=5, z=0.4: residual=1.91e-19
+[PASS] d/dg of (27) at g=0 vs table, q=5, z=0.4: residual=1.91e-19
+[PASS] (27) at g=0 reproduces z^delta, q=5, z=0.4: residual=9.86e-32
+
+== Reduced seed: mode sum and the a + J < 0 sector ==
+[PASS] (3.4) seed mode sum, q=3, J=0, a+J=-0.1667, tau=0.9: residual=1.97e-31
+[PASS] (3.4) seed mode sum, q=3, J=0, a+J=-0.1667, tau=2.1: residual=3.94e-31
+[PASS] w(-|a+J|) = -w(|a+J|), q=3, J=0: residual=0.0
+     q=3 J=0: continued seed has -1.42635 exp(+0.1667|tau|); stationary covariance has 1.42635 exp(-0.1667|tau|)
+[PASS] (3.4) seed mode sum, q=3, J=1, a+J=0.8333, tau=0.9: residual=7.4e-32
+[PASS] (3.4) seed mode sum, q=3, J=1, a+J=0.8333, tau=2.1: residual=1.23e-32
+[PASS] (3.4) seed mode sum, q=5, J=0, a+J=-0.3, tau=0.9: residual=9.86e-32
+[PASS] (3.4) seed mode sum, q=5, J=0, a+J=-0.3, tau=2.1: residual=0.0
+[PASS] w(-|a+J|) = -w(|a+J|), q=5, J=0: residual=0.0
+     q=5 J=0: continued seed has -0.531746 exp(+0.3|tau|); stationary covariance has 0.531746 exp(-0.3|tau|)
+[PASS] (3.4) seed mode sum, q=5, J=1, a+J=0.7, tau=0.9: residual=2.47e-32
+[PASS] (3.4) seed mode sum, q=5, J=1, a+J=0.7, tau=2.1: residual=2.47e-32
+
+== N=2 auxiliary-mode diagnostic ==
+q=3: a_psi+J = -0.16667 (p=0), 0.83333 (p=1); kS(1/2)=4.59057, g*=0.21783783; kA(1/2)=-0.329588 (negative: no p=1 crossing at g>0)
+   g=0.25 p=0: positive omega roots: 0.0245512 [h-branch], 1.71873 [(h-1)-branch], 1.94601 [h-branch], 3.74726 [(h-1)-branch]
+   g=0.25 p=1: positive omega roots: 0.718728 [h-branch], 1.02455 [(h-1)-branch], 2.74726 [h-branch], 2.94601 [(h-1)-branch]
+   g=0.21784 p=0: positive omega roots: 1.73218 [(h-1)-branch], 1.9307 [h-branch], 3.75753 [(h-1)-branch], 3.91223 [h-branch]
+   g=0.21784 p=1: positive omega roots: 0.732181 [h-branch], 1.0 [(h-1)-branch], 2.75753 [h-branch], 2.9307 [(h-1)-branch]
+   g=0.75 p=0: positive omega roots: 0.368226 [h-branch], 1.55542 [(h-1)-branch], 2.19875 [h-branch], 3.61527 [(h-1)-branch]
+   g=0.75 p=1: positive omega roots: 0.555419 [h-branch], 1.36823 [(h-1)-branch], 2.61527 [h-branch], 3.19875 [(h-1)-branch]
+   g=1.0 p=0: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 2.32114 [h-branch], 3.5659 [(h-1)-branch]
+   g=1.0 p=1: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 2.5659 [h-branch], 3.32114 [(h-1)-branch]
+   weight q=3 p=0 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['0.0', '0.59218']
+   weight q=3 p=0 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['-6.163e-33', '0.20476']
+   weight q=3 p=0 g=1.0 omega=2.32114 [h-branch]: eigenvalues of -Res G = ['-1.2326e-32', '0.94732']
+   weight q=3 p=0 g=1.0 omega=3.5659 [(h-1)-branch]: eigenvalues of -Res G = ['-3.0815e-33', '0.42767']
+   weight q=3 p=0 g=0.9 omega=0.450756 [h-branch]: eigenvalues of -Res G = ['4.9304e-32', '0.66881']
+   weight q=3 p=0 g=0.9 omega=1.52051 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.22875']
+   weight q=3 p=0 g=0.9 omega=2.2734 [h-branch]: eigenvalues of -Res G = ['1.2326e-32', '0.97063']
+   weight q=3 p=0 g=0.9 omega=3.58453 [(h-1)-branch]: eigenvalues of -Res G = ['6.163e-33', '0.46374']
+   weight q=3 p=0 g=0.5 omega=0.207795 [h-branch]: eigenvalues of -Res G = ['-4.9304e-32', '1.3846']
+   weight q=3 p=0 g=0.5 omega=1.62693 [(h-1)-branch]: eigenvalues of -Res G = ['-2.4652e-32', '0.3637']
+   weight q=3 p=0 g=0.5 omega=2.0706 [h-branch]: eigenvalues of -Res G = ['-2.4652e-32', '0.95483']
+   weight q=3 p=0 g=0.5 omega=3.67506 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '0.64609']
+   weight q=3 p=0 g=0.25 omega=0.0245512 [h-branch]: eigenvalues of -Res G = ['0.0', '10.572']
+   weight q=3 p=0 g=0.25 omega=1.71873 [(h-1)-branch]: eigenvalues of -Res G = ['2.4652e-32', '0.48508']
+   weight q=3 p=0 g=0.25 omega=1.94601 [h-branch]: eigenvalues of -Res G = ['-1.2326e-32', '0.85627']
+   weight q=3 p=0 g=0.25 omega=3.74726 [(h-1)-branch]: eigenvalues of -Res G = ['1.2326e-32', '0.79261']
+   weight q=3 p=1 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['-2.4652e-32', '0.24571']
+   weight q=3 p=1 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['-3.6978e-32', '0.49348']
+   weight q=3 p=1 g=1.0 omega=2.5659 [h-branch]: eigenvalues of -Res G = ['-9.2445e-33', '0.39186']
+   weight q=3 p=1 g=1.0 omega=3.32114 [(h-1)-branch]: eigenvalues of -Res G = ['6.163e-33', '1.0375']
+   weight q=3 p=1 g=0.9 omega=0.520506 [h-branch]: eigenvalues of -Res G = ['2.4652e-32', '0.26896']
+   weight q=3 p=1 g=0.9 omega=1.45076 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.52685']
+   weight q=3 p=1 g=0.9 omega=2.58453 [h-branch]: eigenvalues of -Res G = ['-9.2445e-33', '0.42503']
+   weight q=3 p=1 g=0.9 omega=3.2734 [(h-1)-branch]: eigenvalues of -Res G = ['-6.163e-33', '1.0637']
+   weight q=3 p=1 g=0.5 omega=0.62693 [h-branch]: eigenvalues of -Res G = ['-4.9304e-32', '0.39347']
+   weight q=3 p=1 g=0.5 omega=1.2078 [(h-1)-branch]: eigenvalues of -Res G = ['-7.3956e-32', '0.6227']
+   weight q=3 p=1 g=0.5 omega=2.67506 [h-branch]: eigenvalues of -Res G = ['-1.2326e-32', '0.59298']
+   weight q=3 p=1 g=0.5 omega=3.0706 [(h-1)-branch]: eigenvalues of -Res G = ['-6.163e-33', '1.0488']
+   weight q=3 p=1 g=0.25 omega=0.718728 [h-branch]: eigenvalues of -Res G = ['2.4652e-32', '0.49938']
+   weight q=3 p=1 g=0.25 omega=1.02455 [(h-1)-branch]: eigenvalues of -Res G = ['4.9304e-32', '0.6217']
+   weight q=3 p=1 g=0.25 omega=2.74726 [h-branch]: eigenvalues of -Res G = ['0.0', '0.72825']
+   weight q=3 p=1 g=0.25 omega=2.94601 [(h-1)-branch]: eigenvalues of -Res G = ['1.2326e-32', '0.94147']
+q=5: a_psi+J = -0.3 (p=0), 0.7 (p=1); kS(1/2)=2.87947, g*=0.34728561; kA(1/2)=-0.747558 (negative: no p=1 crossing at g>0)
+   g=0.25 p=0: positive omega roots: 0.0844623 [(h-1)-branch], 1.62687 [(h-1)-branch], 1.76596 [h-branch], 3.65696 [(h-1)-branch]
+   g=0.25 p=1: positive omega roots: 0.626867 [h-branch], 0.915538 [(h-1)-branch], 2.65696 [h-branch], 2.76596 [(h-1)-branch]
+   g=0.34729 p=0: positive omega roots: 1.60372 [(h-1)-branch], 1.79575 [h-branch], 3.64224 [(h-1)-branch], 3.76246 [h-branch]
+   g=0.34729 p=1: positive omega roots: 0.603722 [h-branch], 1.0 [(h-1)-branch], 2.64224 [h-branch], 2.79575 [(h-1)-branch]
+   g=0.75 p=0: positive omega roots: 0.328151 [h-branch], 1.53132 [(h-1)-branch], 1.94596 [h-branch], 3.59103 [(h-1)-branch]
+   g=0.75 p=1: positive omega roots: 0.531318 [h-branch], 1.32815 [(h-1)-branch], 2.59103 [h-branch], 2.94596 [(h-1)-branch]
+   g=1.0 p=0: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 2.05953 [h-branch], 3.56561 [(h-1)-branch]
+   g=1.0 p=1: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 2.56561 [h-branch], 3.05953 [(h-1)-branch]
+   weight q=5 p=0 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['-7.3956e-32', '1.188']
+   weight q=5 p=0 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['-4.6222e-33', '0.13888']
+   weight q=5 p=0 g=1.0 omega=2.05953 [h-branch]: eigenvalues of -Res G = ['1.2326e-32', '1.5767']
+   weight q=5 p=0 g=1.0 omega=3.56561 [(h-1)-branch]: eigenvalues of -Res G = ['7.7037e-34', '0.33661']
+   weight q=5 p=0 g=0.9 omega=0.434832 [h-branch]: eigenvalues of -Res G = ['0.0', '1.2888']
+   weight q=5 p=0 g=0.9 omega=1.51157 [(h-1)-branch]: eigenvalues of -Res G = ['-6.163e-33', '0.15513']
+   weight q=5 p=0 g=0.9 omega=2.01254 [h-branch]: eigenvalues of -Res G = ['1.2326e-32', '1.492']
+   weight q=5 p=0 g=0.9 omega=3.57528 [(h-1)-branch]: eigenvalues of -Res G = ['7.7037e-34', '0.36016']
+   weight q=5 p=0 g=0.5 omega=0.129914 [h-branch]: eigenvalues of -Res G = ['0.0', '2.6211']
+   weight q=5 p=0 g=0.5 omega=1.57231 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '0.25197']
+   weight q=5 p=0 g=0.5 omega=1.84756 [h-branch]: eigenvalues of -Res G = ['1.2326e-32', '1.1009']
+   weight q=5 p=0 g=0.5 omega=3.6211 [(h-1)-branch]: eigenvalues of -Res G = ['-1.5407e-33', '0.47946']
+   weight q=5 p=0 g=0.25 omega=0.0844623 [(h-1)-branch]: eigenvalues of -Res G = ['-2.9582e-31', '2.5208']
+   weight q=5 p=0 g=0.25 omega=1.62687 [(h-1)-branch]: eigenvalues of -Res G = ['1.8489e-32', '0.352']
+   weight q=5 p=0 g=0.25 omega=1.76596 [h-branch]: eigenvalues of -Res G = ['6.163e-33', '0.8721']
+   weight q=5 p=0 g=0.25 omega=3.65696 [(h-1)-branch]: eigenvalues of -Res G = ['-1.5407e-33', '0.58025']
+   weight q=5 p=1 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['-6.163e-33', '0.20832']
+   weight q=5 p=1 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['-7.3956e-32', '0.79201']
+   weight q=5 p=1 g=1.0 omega=2.56561 [h-branch]: eigenvalues of -Res G = ['0.0', '0.36181']
+   weight q=5 p=1 g=1.0 omega=3.05953 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '1.4408']
+   weight q=5 p=1 g=0.9 omega=0.511567 [h-branch]: eigenvalues of -Res G = ['-3.6978e-32', '0.2305']
+   weight q=5 p=1 g=0.9 omega=1.43483 [(h-1)-branch]: eigenvalues of -Res G = ['-1.2326e-32', '0.80786']
+   weight q=5 p=1 g=0.9 omega=2.57528 [h-branch]: eigenvalues of -Res G = ['2.3111e-33', '0.38703']
+   weight q=5 p=1 g=0.9 omega=3.01254 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '1.3605']
+   weight q=5 p=1 g=0.5 omega=0.572306 [h-branch]: eigenvalues of -Res G = ['-3.6978e-32', '0.35839']
+   weight q=5 p=1 g=0.5 omega=1.12991 [(h-1)-branch]: eigenvalues of -Res G = ['2.4652e-32', '0.74179']
+   weight q=5 p=1 g=0.5 omega=2.6211 [h-branch]: eigenvalues of -Res G = ['3.0815e-33', '0.51458']
+   weight q=5 p=1 g=0.5 omega=2.84756 [(h-1)-branch]: eigenvalues of -Res G = ['-3.0815e-33', '0.99542']
+   weight q=5 p=1 g=0.25 omega=0.626867 [h-branch]: eigenvalues of -Res G = ['-1.2326e-32', '0.48473']
+   weight q=5 p=1 g=0.25 omega=0.915538 [(h-1)-branch]: eigenvalues of -Res G = ['4.9304e-32', '0.60701']
+   weight q=5 p=1 g=0.25 omega=2.65696 [h-branch]: eigenvalues of -Res G = ['6.163e-33', '0.62215']
+   weight q=5 p=1 g=0.25 omega=2.76596 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.78474']
+q=7: a_psi+J = -0.35714 (p=0), 0.64286 (p=1); kS(1/2)=2.53261, g*=0.39484963; kA(1/2)=-0.999908 (negative: no p=1 crossing at g>0)
+   g=0.25 p=0: positive omega roots: 0.131777 [(h-1)-branch], 1.5893 [(h-1)-branch], 1.68861 [h-branch], 3.6147 [(h-1)-branch]
+   g=0.25 p=1: positive omega roots: 0.589295 [h-branch], 0.868223 [(h-1)-branch], 2.6147 [h-branch], 2.68861 [(h-1)-branch]
+   g=0.39485 p=0: positive omega roots: 1.56537 [(h-1)-branch], 1.72069 [h-branch], 3.60054 [(h-1)-branch], 3.68838 [h-branch]
+   g=0.39485 p=1: positive omega roots: 0.565367 [h-branch], 1.0 [(h-1)-branch], 2.60054 [h-branch], 2.72069 [(h-1)-branch]
+   g=0.75 p=0: positive omega roots: 0.308419 [h-branch], 1.52181 [(h-1)-branch], 1.82134 [h-branch], 3.5712 [(h-1)-branch]
+   g=0.75 p=1: positive omega roots: 0.521809 [h-branch], 1.30842 [(h-1)-branch], 2.5712 [h-branch], 2.82134 [(h-1)-branch]
+   g=1.0 p=0: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 1.91414 [h-branch], 3.5542 [(h-1)-branch]
+   g=1.0 p=1: positive omega roots: 0.5 [h-branch], 1.5 [(h-1)-branch], 2.5542 [h-branch], 2.91414 [(h-1)-branch]
+   weight q=7 p=0 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['-2.4652e-32', '1.943']
+   weight q=7 p=0 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '0.11852']
+   weight q=7 p=0 g=1.0 omega=1.91414 [h-branch]: eigenvalues of -Res G = ['9.2445e-33', '1.8775']
+   weight q=7 p=0 g=1.0 omega=3.5542 [(h-1)-branch]: eigenvalues of -Res G = ['7.7037e-34', '0.30563']
+   weight q=7 p=0 g=0.9 omega=0.42661 [h-branch]: eigenvalues of -Res G = ['-9.8608e-32', '2.0671']
+   weight q=7 p=0 g=0.9 omega=1.50805 [(h-1)-branch]: eigenvalues of -Res G = ['-1.5407e-33', '0.13222']
+   weight q=7 p=0 g=0.9 omega=1.87472 [h-branch]: eigenvalues of -Res G = ['0.0', '1.7136']
+   weight q=7 p=0 g=0.9 omega=3.56069 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.3254']
+   weight q=7 p=0 g=0.5 omega=0.0943318 [h-branch]: eigenvalues of -Res G = ['3.9443e-31', '4.5021']
+   weight q=7 p=0 g=0.5 omega=1.55052 [(h-1)-branch]: eigenvalues of -Res G = ['4.6222e-33', '0.21535']
+   weight q=7 p=0 g=0.5 omega=1.74701 [h-branch]: eigenvalues of -Res G = ['1.8489e-32', '1.1383']
+   weight q=7 p=0 g=0.5 omega=3.59112 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.42494']
+   weight q=7 p=0 g=0.25 omega=0.131777 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '1.535']
+   weight q=7 p=0 g=0.25 omega=1.5893 [(h-1)-branch]: eigenvalues of -Res G = ['1.0785e-32', '0.30509']
+   weight q=7 p=0 g=0.25 omega=1.68861 [h-branch]: eigenvalues of -Res G = ['9.2445e-33', '0.87234']
+   weight q=7 p=0 g=0.25 omega=3.6147 [(h-1)-branch]: eigenvalues of -Res G = ['-7.7037e-34', '0.50913']
+   weight q=7 p=1 g=1.0 omega=0.5 [h-branch]: eigenvalues of -Res G = ['-6.163e-33', '0.20915']
+   weight q=7 p=1 g=1.0 omega=1.5 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '1.1011']
+   weight q=7 p=1 g=1.0 omega=2.5542 [h-branch]: eigenvalues of -Res G = ['7.7037e-34', '0.35325']
+   weight q=7 p=1 g=1.0 omega=2.91414 [(h-1)-branch]: eigenvalues of -Res G = ['3.0815e-33', '1.5579']
+   weight q=7 p=1 g=0.9 omega=0.508048 [h-branch]: eigenvalues of -Res G = ['0.0', '0.23171']
+   weight q=7 p=1 g=0.9 omega=1.42661 [(h-1)-branch]: eigenvalues of -Res G = ['-4.9304e-32', '1.0885']
+   weight q=7 p=1 g=0.9 omega=2.56069 [h-branch]: eigenvalues of -Res G = ['-7.7037e-34', '0.37597']
+   weight q=7 p=1 g=0.9 omega=2.87472 [(h-1)-branch]: eigenvalues of -Res G = ['1.5407e-32', '1.417']
+   weight q=7 p=1 g=0.5 omega=0.550516 [h-branch]: eigenvalues of -Res G = ['1.2326e-32', '0.36473']
+   weight q=7 p=1 g=0.5 omega=1.09433 [(h-1)-branch]: eigenvalues of -Res G = ['3.6978e-32', '0.84979']
+   weight q=7 p=1 g=0.5 omega=2.59112 [h-branch]: eigenvalues of -Res G = ['1.5407e-33', '0.49024']
+   weight q=7 p=1 g=0.5 omega=2.74701 [(h-1)-branch]: eigenvalues of -Res G = ['-1.0785e-32', '0.93009']
+   weight q=7 p=1 g=0.25 omega=0.589295 [h-branch]: eigenvalues of -Res G = ['1.8489e-32', '0.50268']
+   weight q=7 p=1 g=0.25 omega=0.868223 [(h-1)-branch]: eigenvalues of -Res G = ['0.0', '0.60318']
+   weight q=7 p=1 g=0.25 omega=2.6147 [h-branch]: eigenvalues of -Res G = ['-7.7037e-34', '0.5867']
+   weight q=7 p=1 g=0.25 omega=2.68861 [(h-1)-branch]: eigenvalues of -Res G = ['-1.5407e-33', '0.70848']
+
+164/164 checks passed
+# exit status: 0; wall time: 12 s
