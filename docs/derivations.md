@@ -6,13 +6,13 @@ This is the project's working record of what is derived and how far it is verifi
 
 - **Paper claim**: stated in a primary paper, not independently verified unless noted.
 - **Draft claim**: stated in `research/pdf/n2_susy_generalization_note.pdf` (AI-generated, unreviewed).
-- **Checked**: the formula was tested by hand or by a script in `scripts/` (records: `results/data/robin_identity_checks/`, `results/data/literature_checks/`). Unless it is compared against a source paper, this shows the formula is right as mathematics, not that it describes N=2 SYK.
+- **Checked**: the formula was tested by hand or by a script in `scripts/` (records: `results/data/robin_identity_checks/`, `results/data/literature_checks/`, `results/data/paper/`). Unless it is compared against a source paper, this shows the formula is right as mathematics, not that it describes N=2 SYK.
 - **Derived here**: derived in this project, with the argument shown. Not externally reviewed.
 - **Open**: not established.
 
 Equation tags: **[T]** is Thong 2026 arXiv v1; **[N2]** is the draft; **[PSV]**, **[B18]**, **[B17]**, **[FGMS]**, **[MS]** (v1 numbering), **[GR]**, **[CGS]**, **[IW]**, **[MSW]**, **[GKST]** are as in `literature/notes/`.
 
-**Where things stand (2026-11-06).** The draft's physical input agrees with its sources (Sec. 5). B1 now has a derivation (Sec. 6). The $A$-branch tension C2 is resolved (Sec. 7). D2 and D1 have new answers (Secs. 8, 9). The largest remaining gaps are in Sec. 4.
+**Where things stand (2026-11-06).** The draft's physical input agrees with its sources (Sec. 5). B1 now has a derivation (Sec. 6). The $A$-branch tension C2 is resolved (Sec. 7). D2 and D1 have new answers (Secs. 8, 9). The direct Dirac reduction and the breaking pattern of bulk supersymmetry are in Sec. 10. The largest remaining gaps are in Sec. 4. The polished write-up is `research/pdf/n2_dirac_ladders.pdf`, with sources in `research/tex/n2_dirac_ladders/`. It was audited on 2026-11-06: see Sec. 11 and `research/notes/n2_dirac_ladders_audit.md`. The super-centre integral (B2) was done on 2026-11-07: see Sec. 12.
 
 ## 1. Notation
 
@@ -184,7 +184,7 @@ At $q=3$, the two higher values in each row are $H\mp\tfrac12$ for the printed $
 **Conclusion (provisional).** At physical $g=1$ the auxiliary system looks like a healthy self-adjoint problem, with every mode above threshold. That is stronger than the draft claimed. The limitations:
 
 - The root scan stops at $\omega<4$ and tests finitely many $(q,g)$.
-- **Mostly settled, see Sec. 5.4:** the reduced $g=1$ ladder, computed directly from [PSV]'s four-point function with [T](C.8), has exactly the stationary covariance's modes and weights, at least in the 11 entry and for $\omega<4$. No continuity in $g$ through $g_*$ is needed, since [PSV]'s contour at $\Re h=\tfrac12$ defines the $g=1$ answer directly.
+- **Mostly settled, see Sec. 5.4:** the reduced $g=1$ ladder, computed directly from [PSV]'s four-point function with [T](C.8), has exactly the stationary covariance's modes and weights, in all four entries (Sec. 11) and for $\omega<4$. No continuity in $g$ through $g_*$ is needed, since [PSV]'s contour at $\Re h=\tfrac12$ defines the $g=1$ answer directly.
 
 ### 3.6 A possible tension: A-branch modes at $H=1$ (Resolved; see Sec. 7)
 
@@ -204,7 +204,7 @@ Numerically, all four modes have nonzero positive residue in $\mathsf G_{1,p}$ (
 Thong's construction has steps the draft takes as given.
 
 1. **Cylinder from a Casimir. Now derived,** Sec. 6: the eigenvalue is $H^2$ because $d_s=0$, with no odd relative coordinate.
-2. **Centre reduction of families. Done for ordinary centre integrals of the component blocks,** in both parities, Sec. 7. **Open:** the super-centre integral of a superblock, for which the draft's $\mathcal T_2$ would presumably be the inverse. The draft calls $\mathcal T_2$ "a prescribed reconstruction, not an inverse on arbitrary center-integrated data".
+2. **Centre reduction of families. Done for ordinary centre integrals of the component blocks,** in both parities, Sec. 7, **and for the super-centre integral of a superblock,** Sec. 12, where the reconstruction built on the draft's $\mathcal T_2$ is the inverse. The draft calls $\mathcal T_2$ "a prescribed reconstruction, not an inverse on arbitrary center-integrated data".
 3. **Independence and term-by-term reduction** of families ([T] App. A, C.2). Open. The new step-function families (Sec. 7) need including.
 4. **Convergence.** The fermion rail is IR divergent and the boson rail UV divergent; the draft uses "a common homogeneous-distribution continuation". Thong requires the prescription to allow centre shifts and interchange of integrals ([T] App. A). Mixed $\psi$–$b$ compositions need this checked.
 5. **Fixed-rail coupling. Now has a proposal,** Sec. 8: the natural N=2 generalization of [GR] gives a line with uniform $k\to gk$.
@@ -231,13 +231,13 @@ $k_c$ in `check_robin_identities.py`, written from memory, also agrees with [MS]
 
 **Both are confirmed.** They are algebraic inconsistencies that we can demonstrate from the paper itself, not an official erratum.
 
-1. **Sign of (4.48), (4.49).** Literal $k^A(1)=-1$, while the text states $k=1$ at $h=1$. And her own (4.51) with (B.8) gives the opposite sign to (4.48): with $(2\Delta-2)\Gamma(2\Delta-2)=\Gamma(2\Delta-1)$ and $1/\Gamma(2\Delta-1)=-\Gamma(2-2\Delta)\sin(2\pi\Delta)/\pi$,
+1. **Sign of (4.48), (4.49).** Literal $k^A(1)=-1$, while the text states $k=1$ at $h=1$. And (4.51) of the same paper, with (B.8), gives the opposite sign to (4.48): with $(2\Delta-2)\Gamma(2\Delta-2)=\Gamma(2\Delta-1)$ and $1/\Gamma(2\Delta-1)=-\Gamma(2-2\Delta)\sin(2\pi\Delta)/\pi$,
 $$\frac{2\Delta+h-1}{2\Delta-2}k^A_{N=0}=+\frac1{\pi^2}\Gamma(-2\Delta)\Gamma(2-2\Delta)\Gamma(2\Delta-h)\Gamma(2\Delta+h)\sin2\pi\Delta\,(\sin2\pi\Delta-\sin\pi h).$$
 2. **Sign in (4.39).** From (4.38), (B.4), (B.5) and $\sec\pi(h+1)=-\sec\pi h$:
 $$\xi_h=h[(1+\sec\pi h)(F_h-F_{h+1})+(1-\sec\pi h)(F_{1-h}-F_{-h})]=h[(1+\sec\pi h)\varphi_h-(1-\sec\pi h)\varphi_{-h}].$$
 (B.4), (B.5) themselves agree with direct integration of (4.26).
 
-**New, not in the draft:** a factor of 2 in (4.90)–(4.92), (4.106), and three problems in App. A (the ordering in (A.9), $Q/2$ in the generators, and $Q=0$). See `literature/notes/bulycheva_2018.md`.
+**New, not in the draft:** a factor of 2 in (4.90)–(4.92), (4.106); a factor in (4.98), (4.99), inherited from the signs of (4.39) and (4.48); and problems in App. A (the ordering in (A.9), $Q/2$ in the generators, (A.11), (A.12), and $Q=0$). See `literature/notes/bulycheva_2018.md`.
 
 **Normalization of $b$.** [B18](3.9) has $Jb^q=\tan(\pi\Delta)/(4\pi)$, [PSV](2.10) has $1/(2\pi)$. This is not an error. [PSV] has $b_b=\delta b_\psi$, i.e. $G_b=-\partial G_\psi$, whereas [B18]'s $\langle12\rangle$ implies $G_b=-2\partial G_\psi$, i.e. $b_b=2\delta b_\psi$. The Schwinger–Dyson equation fixes $2\pi\cot(\pi\delta/2)(b_b/\delta b_\psi)Jb_\psi^q=1$, which reproduces each.
 
@@ -268,7 +268,7 @@ The even sector is the same with $k_0^{\psi,a}$, $k_S(h)$, $k_A(h-1)$, and overa
 **Also**, the block coefficients themselves reproduce [N2](28), including the partner structure $\varphi_H=F_H-F_{H+1}$, at $g=0.7,1$ (part 9):
 $$\text{coefficient of }F_H:\ -c_\alpha(H),\qquad\text{coefficient of }F_{H+1}:\ +c_\alpha(H).$$
 
-**What this establishes.** [N2](12), (26), (28) describe the N=2 four-point function of the literature, so the auxiliary system's boundary propagator is the centre-integrated ladder. **Not covered:** entries 12, 21, 22; the $\omega\ge4$ tail; the summed reduction. The even-sector reduction also rests on the prescription of Sec. 7.1.
+**What this establishes.** [N2](12), (26), (28) describe the N=2 four-point function of the literature, so the auxiliary system's boundary propagator is the centre-integrated ladder. *(Extended in the audit, Sec. 11: entries 12, 21, 22 also agree, at every root with $\omega<4$, for $q=3,5$ and $g=0.9,1$.)* **Not covered:** the $\omega\ge4$ tail; the summed reduction. The even-sector reduction also rests on the prescription of Sec. 7.1.
 
 ## 6. The relative cylinder from the super-Casimir (Derived here; checked)
 
@@ -315,7 +315,7 @@ which is [N2](22), (23): **a single Dirac response, with an algebraic boundary c
 
 **Checks.** $H\to-H$ exchanges $A$ and $S$ ([B18](4.50)), on the cylinder $\tau\to-\tau$. The reduced norm is right: $d\chi/[\chi(1-\chi)]\to d\chi/\chi$ at small $\chi$, matching $d\tau$ on the cylinder.
 
-**Not established.** That the super-centre integral exists with the right convergence (B2, B3).
+**Not established at the time.** That the super-centre integral exists with the right convergence (B2, B3). *(Done 2026-11-07, Sec. 12: it converges at large $|Y|$ for $H>-\tfrac12$, with a finite part at the collisions. B3 is still open.)*
 
 ## 7. Exceptional modes and the resolution of C2 (Derived here; checked)
 
@@ -334,10 +334,11 @@ $$(\mathsf PB^a_h)(\tau)=\mathcal I_a(h)e^{-\omega|\tau|},\qquad\mathcal I_a(h)=
 
 ### 7.2 The exceptional families are step functions
 
-$\Phi^s_h$ has poles at odd $h$ and $\Phi^a_h$ at even $h$, **and only on $\chi>1$**. From [PSV](3.6), (3.7), with $x=(\chi-2)/\chi$:
+$\Phi^s_h$ has poles at odd $h$ and $\Phi^a_h$ at even $h$. *(Corrected 2026-11-06, in the audit. This used to say "and only on $\chi>1$", which is false: $\mathrm{Res}_{h=1}\Phi^s_h=-2$ at $\chi=0.2,0.5,1.6$. The results below are unaffected, but the mechanism was misstated.)* From [PSV](3.6), (3.7), with $x=(\chi-2)/\chi$:
 $$\mathop{\rm Res}_{h=1}\Phi^s_h=-2P_0(x),\quad\mathop{\rm Res}_{h=3}\Phi^s_h=-2P_2(x),\quad\mathop{\rm Res}_{h=2}\Phi^a_h=+2P_1(x),\quad\mathop{\rm Res}_{h=4}\Phi^a_h=+2P_3(x),$$
-checked (part 8). Meanwhile the measure factors $2\mu(h)$ and $2\mu_a(h)=(2h-1)/[\pi\tan(\pi(h-1)/2)]$ have zeros there, as noted for $\Psi_h$ in [MS] below (3.87). So the product is finite:
-$$2\mu(h)\Phi^s_h\to\theta(\chi>1)\quad(h\to1),\qquad2\mu_a(h)\Phi^a_h\to-3P_1(x)\theta(\chi>1)\quad(h\to2).$$
+checked (part 8). Meanwhile the measure factors $2\mu(h)$ and $2\mu_a(h)=(2h-1)/[\pi\tan(\pi(h-1)/2)]$ have zeros there, as noted for $\Psi_h$ in [MS] below (3.87). The two regions differ in how the contour is closed. On $\chi>1$ one closes with $\Phi_h$ itself, so the product is finite. On $0<\chi<1$ one first uses $h\to1-h$ to replace $\Phi_h$ by the block $\propto\chi^h{}_2F_1(h,h;2h;\chi)$, as in [MS], and that has no pole at these $h$, so the zero of the measure removes the term. So
+$$2\mu(h)\Phi^s_h\to\theta(\chi>1)\quad(h\to1),\qquad2\mu_a(h)\Phi^a_h\to-3P_1(x)\theta(\chi>1)\quad(h\to2)$$
+in the piecewise representation. Numerically (audit part L, $q=3$, $p=1$, $g=0.9999$), the family contributes $1.8\times10^{-6}$ at $\chi=0.5$ and $-0.26532$ at $\chi=1.6$, against $-\mathrm{Res}[k_0/D]=-0.26532$.
 
 **Lemma.** With $\chi=1/(u^2-s^2)$, $s=\sinh(\tau/2)$,
 $$\mathsf P[\theta(\chi>1)P_n(x)]=\frac{2}{2n+1}e^{-(n+\frac12)|\tau|}.$$
@@ -357,7 +358,7 @@ So at $h=1$ the interval width is the whole story: $2(c-s)=2e^{-|\tau|/2}$. Comb
 | $S$ | 0 | 1 | $\to\infty$ | 0 | finite, nonzero |
 
 - **The $S$ rows are Thong's $h=2$ mechanism** [T](C.10)–(C.12): an enhanced mode that the centre integral kills, leaving a finite remainder.
-- **The $A$ rows are its mirror, and were the tension.** At $g=1$ the block expansion on $0<\chi<1$ has no $A$ contribution, so the draft's $c_A\propto\cot(\pi H/2)\to0$ is correct. **But the four-point function does contain the mode.** Its contribution is a finite step function, supported only on $\chi>1$:
+- **The $A$ rows are its mirror, and were the tension.** At $g=1$ the block expansion on $0<\chi<1$ has no $A$ contribution, so the draft's $c_A\propto\cot(\pi H/2)\to0$ is correct. **But the decomposition into families does contain the mode.** Its term is a finite step function, supported only on $\chi>1$:
 $$F_{p=1}\supset-\mathop{\rm Res}_{h=1}\left[\frac{k_0^{\psi,s}}{D^a}\right]\theta(\chi>1).$$
 The draft's reconstruction lives on $0<z<1$, i.e. $\chi<0$, which can't see it. That is exactly the loophole in its phrase "in this particular seed and ordering".
 
@@ -365,7 +366,7 @@ So **[T](3.13) isn't violated**, and the draft's two statements are compatible. 
 
 **Physics ([FGMS] Sec. VI, stated there as an expectation).** The $S$ multiplet "should lead to the superschwarzian", and the $A$ multiplet "should correspond to operators in the IR theory", from the extra symmetry (6.6) with $f\ne h$. Our result fits this: no divergence and a finite contribution. It adds its explicit form in the four-point function, which they leave open.
 
-**Caveat.** At $g=1$ exactly, $\mathcal I=\infty$ and the coefficient is 0. So the family must be defined as the limit $g\to1^-$, or directly as the step function. The physical interpretation of a contribution in only one ordering has not been examined.
+**Caveat.** At $g=1$ exactly, $\mathcal I=\infty$ and the coefficient is 0. So the family must be defined as the limit $g\to1^-$, or directly as the step function. This is a term in a decomposition. It doesn't imply that the full correlator jumps at $\chi=1$, where the sum over the other families is itself singular. The physical interpretation of such a term has not been examined.
 
 ## 8. A supersymmetric line for $g$ (Derived here at leading large $N$)
 
@@ -388,7 +389,7 @@ which is **exactly the draft's formal $g$** in [N2](10), with fixed rails.
 **Consequences (open).**
 
 - **The $H=1$ multiplets lift for $g<1$**, as $k_\alpha(1)=1\neq1/g$. That's consistent with a nonlocal theory with no local stress tensor, and it's the N=2 version of [GR]'s $h_0$.
-- **$g_*$ may be physical.** On this line, the lowest $p=0$ operator would reach $h=\tfrac12$ at $g_*<1$. Near $g_*$ the poles at $h$ and $1-h$ would pinch the contour at $\Re h=\tfrac12$, which fits the $1/\omega$ growth of the residue in Sec. 3.3. In [GR] the analogous $h$ stays above $\tfrac12$. So the N=2 line may split into two segments. **This is a place where $\mathcal N=2$ differs from $\mathcal N=0$, and it needs its own study.**
+- **$g_*$ is not a transition of the four-point function on $0<z<1$.** *(Corrected 2026-11-06. An earlier version of this item suggested a contour pinch and a line splitting into two segments. That was wrong for the superblock expansion.)* $F_g(z)$ is smooth across $g_*$: poles sit at $\pm H$ with $H\ge\delta>0$, so they never pinch, and contour and root sum agree at $g=0.15<g_*$ for $q=3$ (`scripts/check_reconstruction.py`). What fails at $g_*$ is the ordinary centre integral of a component block, which needs $\Re h>\tfrac12$, and the invariance of the Fock vacuum under the surviving charges (Sec. 10.5).
 - The seed's pole at $h=\delta<\tfrac12$ says the UV is a generalized free field that is non-normalizable in that channel, as in [B18](4.103).
 - **Not checked:** the component reduction of $S_0$, reflection positivity, or anything at order $1/N$.
 
@@ -397,3 +398,96 @@ which is **exactly the draft's formal $g$** in [N2](10), with fixed rails.
 **Complex SYK at zero charge.** $k^S(h)\mathcal R_0(h-\tfrac12)=4^{-\nu}$ for $\nu=1-2/q$, tested at $q=4,6,8,12$ and complex $h$ (part 10), against $k^A\mathcal R_1=(q-1)4^{-\nu}$ ([T]). So a **single scalar with a parity-dependent Robin coefficient**, $\kappa_{\rm even}=g4^{-\nu}$, $\kappa_{\rm odd}=g(q-1)4^{-\nu}$. It has $h=1$ for the $U(1)$ charge, and $a+J=2/q-\tfrac12<0$ for $q>4$. So it's the simplest system with the $a+J<0$ problem and an $h=1$ mode, with no mixing. Thong's "beyond the single scalar" (p. 6) isn't needed at zero charge, though the parity dependence couples the two endpoints. The seed normalization and block reduction in this channel haven't been carried out; Sec. 7 should apply.
 
 **N=1 has an odd relative coordinate** (Sec. 6, `literature/notes/murugan_stanford_witten_2017.md`). So it isn't a sub-case of the N=2 structure, and tests something different.
+
+## 10. The Dirac reduction and the breaking of bulk supersymmetry (Derived here; checked)
+
+Scripts: `check_dirac_reduction.py`, `check_bulk_susy_algebra.py`, `check_bulk_susy_modes.py`, `check_ward_and_vacuum.py`, `check_reconstruction.py`. Independent pass: `audit_n2_paper.py`. Logs: `results/data/paper/`. Full presentation: `research/pdf/n2_dirac_ladders.pdf`.
+
+### 10.1 Direct reduction (Secs. 3, 4 of the paper)
+
+The charged kernel [PSV](2.12) reduces with an ordinary centre integral, and [B18](4.42) on functions of $\langle12\rangle$ gives the same kernel (by hand):
+$$F_0^{(0)}=\rho(x-y),\quad K^{(0)}=\rho(x+y)\mathcal V(y),\quad\rho(t)=\rho_0\,\mathrm{sgn}(t)|t|^{-2\delta},\quad\mathcal V=v\,\mathrm{sgn}(y)|y|^{-2\mu}.$$
+On $e^{H\tau}Y_p(n)$ the eigenvalue is $c[A(H)+\sigma_pB(H)]$, which is $k_A(H)$ for $p=1$ and $k_S(H)$ for $p=0$, with no free constant. $A,B$ are the cross- and same-boundary correlators of a dimension-$\delta$ fermion, and $1/\mathcal R_{F,p}=-\mathfrak c[\sigma_pA+B]$, $\mathfrak c=\Gamma(\delta+\tfrac12)/(\sqrt\pi\Gamma(\delta))$, $c=-L_q\mathfrak c$. So [N2](22) is derived. The result is
+$$v(|x||y|)^\delta F_g^{(0)}=-L_q\,\mathfrak G_{F,g},\qquad\mathfrak G_{F,g}=(\mathfrak G_F^{-1}-gL_q\mathsf R)^{-1},\qquad(\mathsf Rh)(\tau,n)=n\,h(\tau,-n).$$
+
+### 10.2 Why a matrix (Sec. 5)
+
+$\mathsf G_{g,p}(\omega)\mathsf M_p=\mathsf P_-\sigma_pL_qG^F_{g,p}(\omega+\tfrac12)+\mathsf P_+\sigma_{1-p}L_qG^F_{g,1-p}(\omega-\tfrac12)$ at every complex $\omega$. So the neutral correlator is the Dirac correlator with kinematic projectors.
+
+### 10.3 Superfields (Sec. 5.3)
+
+$\mathcal B_-=2\delta B_b+\mu A_\psi$, $\mathcal B_+=-2\nu B_\psi-\mu A_b$. Then $\Phi_-=(A_\psi,\tilde a_F,\mathcal B_-)$, $\Phi_+=(A_b,\tilde b_F,\mathcal B_+)$ are the $d=2$ analogue, on the cylinder, of Amsel–Marolf's boundary superfields, and [N2](11), (23) are together $\Phi_+=c\,\Phi_-$. The entry $2\mu$ of $\mathsf M_p$ is a Weyl shift.
+
+Here $\tilde a_F=e^{\tau/2}a_F$, $\tilde{\bar a}_F=-e^{-\tau/2}\bar a_F$, with the sign fixed by closure (10.4). With $\int d^2\theta\,\theta\bar\theta=1$, and $S_E$ the Euclidean free action with the boundary terms that make its on-shell variation linear in $\delta A_\psi,\delta B_b,\delta a_F,\delta\bar a_F$,
+$$\delta S_E=\int d\tau\,d^2\theta\,\Phi_+\delta\Phi_-=\int d\tau\,[j_0\cdot\delta X+b_F\delta\bar a_F-\bar b_F\delta a_F],$$
+$$S_{\rm bdy}=-\frac c2\int d\tau\,d^2\theta\,\Phi_-^2=\int d\tau\,\Big[-\frac g2X^T\mathsf M_pX+c\,\bar a_Fa_F\Big].$$
+So $\delta(S_E+S_{\rm bdy})=\int d^2\theta(\Phi_+-c\Phi_-)\delta\Phi_-$, and one superpotential gives both boundary conditions, with the same $c$ and sign, although they were found separately from the ladders. *(Derived in the audit. It replaces "fermion part inferred", and a sign error in the earlier form of this line.)* Fermion part: $\sqrt{-g}\bar\Psi\gamma^\theta\delta\Psi\to\bar b_F\delta a_F-\bar a_F\delta b_F$, tested as a conserved bilinear; the boundary term $\int dt\,\bar a_Fb_F$ and the continuation $S_E=-\int d\tau\,\mathcal L$ are by hand.
+
+### 10.4 The breaking pattern (Sec. 6)
+
+The free theory is invariant under $\delta\Psi=-M(\beta)\epsilon$, $M=(\gamma\partial+\mu)\Phi_b+\beta\gamma_3(\gamma\partial-\mu)\Phi_\psi$, for any $\beta$. Closure needs $\beta=\pm i$, two embeddings of $su(1,1|1)$. With Killing spinors $\epsilon_A\sim e^{-it/2}$, $\epsilon_B\sim e^{+it/2}$: $(A,\bar A),(B,\bar B)\to\partial_t$, $(A,\bar B)\to E_+$, $(B,\bar A)\to E_-$.
+
+**At $g\neq0$, in the embedding $\beta=+i$: $su(1,1|1)\to u(1|1)=\{q_A,\bar q_A;L_0,J_0\}$, dimension $4|4\to2|2$.** The charges $q_B,\bar q_B$ and $E_\pm$ are broken. On boundary data $q_A:\delta\tilde a=\partial_\tau A+\mathcal B$, with normalization exactly 1; $\{q_A,\bar q_A\}=2\partial_\tau$ on twisted fields, which is $-2H_{\rm tw}$ on $e^{-H_{\rm tw}\tau}$, with $H_{\rm tw}=L_0-\tfrac12J_0$ and $J_0=+1$ on $\Psi$. On the fermion, $\{q(\epsilon_Y),\bar q(\bar\epsilon_X)\}\Psi=-2\mathcal L_\xi\Psi+\alpha\Psi$ with $\alpha=+1,-1,0$ for $AA$, $BB$, cross (audit part D). The boundary data are ordinary superfields of flat $\mathcal N=2$ quantum mechanics. In $\beta=-i$ the same holds with $A\leftrightarrow B$.
+
+**Correction to an intermediate idea.** While working this out I expected the four charges $q_A^{(+)},\bar q_A^{(+)},q_B^{(-)},\bar q_B^{(-)}$ to close on $su(2|1)$. They don't: $\{q_A^{(+)},\bar q_B^{(-)}\}$ maps the bottom line to the top line with coefficient exactly $-4\omega$, which is mode-dependent. Their algebra is not classified. So every Killing spinor gives an odd symmetry of the boundary condition, in one embedding or the other, and "half" refers to what remains of any one $su(1,1|1)$.
+
+**Relation to the CFT.** $\delta\tilde a_F=\partial_\tau A_\psi+\mathcal B_-$ is $f_b+\partial_xf_\psi$, so $\delta\tilde a_F=0$ is the zero-supermomentum relation. That matches kernels only: both $G_{-1/2}$ and $\bar G_{-1/2}$ have this kernel. The map from CFT charges to bulk charges isn't worked out; the factor $\sigma_p$ in [N2](12) complicates it.
+
+### 10.5 BPS threshold (Sec. 7)
+
+KG norm of the image $=2\omega\|\psi\|^2$, pointwise from the orthogonal rotation. So the Fock vacuum is invariant under $q_A,\bar q_A$ only for $H\ge\tfrac12$, saturated at $g_*$. Vacuum energy per multiplet: $0$ for $H\ge\tfrac12$, $\tfrac12-H$ otherwise.
+
+*(Corrected 2026-11-06, in the audit. This used to say that the stationary vacuum "breaks supersymmetry spontaneously" below $g_*$, and that the bound was a unitarity condition. Both overstate it.)* For $\omega<0$ the image has negative norm, so its coefficient in the field is a creation operator, and $\bar Q=\sqrt{2|\omega|}\,af$, giving
+$$\tfrac12\{Q,\bar Q\}=|\omega|(N_a-N_f+1)=L_0-\tfrac12J_0,\qquad L_0=E_{\rm vac}+|\omega|N_a+HN_f,\quad J_0=N_f,$$
+which holds exactly when $E_{\rm vac}=\tfrac12-H$. So the Fock vacuum, the lowest state of $L_0$, isn't invariant. But the state with $N_a=0$, $N_f=1$ is: $L_0=\tfrac12$, $J_0=1$, $L_0-\tfrac12J_0=0$. It is a BPS state, the lowest of the twisted Hamiltonian. The norm is positive at every $g$ in the stationary quantization. Whether to call this spontaneous breaking depends on which Hamiltonian defines the vacuum. No Fock state is invariant under the charges of both embeddings. The operator content of $Q$ is read off from the norm and frequency, and only the matrices are tested (audit part O). The role of the BPS state in the CFT is open.
+
+The Dirac problem has no such difficulty: weight $\delta>0$, $w_n=1/\mathcal R'_{F,p}(\Omega_n)>0$ at all tested roots of both signs.
+
+### 10.6 Not established
+
+Whether a massive Type II condition ([CGS]) exists. A direct two-rung integral. The reduction of the summed series beyond $g=0$.
+
+## 11. Audit of the paper (2026-11-06)
+
+The paper was audited after it was written. The report is `research/notes/n2_dirac_ladders_audit.md`, the script is `scripts/audit_n2_paper.py`, and the log is `results/data/paper/audit_n2_paper.log`. The pre-audit PDF is kept as `research/pdf/n2_dirac_ladders_preaudit.pdf`.
+
+**What changed in this document:** the mechanism in 7.2; the wording of 7.3; the signs and superpotential in 10.3, 10.4; the vacuum statement in 10.5. **What it newly establishes:** the neutral kernel on $(f,-\partial f)$ is exactly $K^{(0)}$ in position space; closure on the fermion; all four entries of [N2](12) at all roots with $\omega<4$ for $q=3,5$, $g=0.9,1$, given the normalization in `literature/notes/peng_spradlin_volovich_2017.md`; and the fermion part of the superpotential.
+
+## 12. The super-centre integral (Derived here; checked, 2026-11-07)
+
+Addresses B2 and C3. Script: `scripts/check_super_centre.py`, log `results/data/paper/check_super_centre.log` (182/182). Paper: Sec. 8.3.
+
+**Setup.** The chiral–antichiral four-point function is $F=G(\langle12\rangle)G(\langle34\rangle)\mathcal F(z)$, $z=\langle12\rangle\langle34\rangle/(\langle14\rangle\langle32\rangle)$, which is [B18]'s $\chi$, with $\chi_{\rm PSV}=z/(z-1)$. There is no nilpotent invariant: chirality leaves $4|4$ coordinates, and $su(1,1|1)$ acts with rank $3|4$ (the even block is $sl(2)$ on four times, and the odd block is four independent shifts).
+
+**The orbit.** Move the pair (12) by $\theta\to\theta+\bar\eta$, $\bar\theta\to\bar\theta+\eta$, $\tau\to\tau+Y-\eta\theta-\bar\eta\bar\theta$, the flow of $\eta G_{-1/2}+\bar\eta\bar G_{-1/2}$ of Sec. 6 followed by a translation. From vanishing odd coordinates, $\langle12\rangle=x$, $\langle34\rangle=y$, $\langle14\rangle=Y+s+\eta\bar\eta$, $\langle32\rangle=s-Y+\eta\bar\eta$, with $s=(x+y)/2$. So $z=z_0-2sz_0^2\eta\bar\eta/(xy)$, $z_0=xy/(s^2-Y^2)$, and with $\int d^2\eta\,\eta\bar\eta=1$,
+$$\mathsf P_sF\equiv\int dY\,d^2\eta\,F=-G(x)G(y)\frac{x+y}{xy}\int dY\,z_0^2\,\mathcal F'(z_0).$$
+It converges at large $|Y|$ for $H>-\tfrac12$, against $H>\tfrac12$ for the ordinary centre integral. At the collisions $\langle14\rangle=0$, $\langle32\rangle=0$ we take the finite part, which equals continuation in the exponents. This is a prescription.
+
+**Relation to the ordinary centre integral.** With $x=e^\tau n$, $y=e^{\tau'}n'$, $t=\tau-\tau'$, $\chi=z/(z-1)$: $z^2\partial_z\mathcal F=-\chi^2\partial_\chi\mathcal F$ and $\partial_t\chi=\pm\tfrac12\sinh t\,\chi^2$. So
+$$\frac{(|x||y|)^\delta}{b_\psi^2}\mathsf P_sF=\begin{cases}2n\,\partial_t\mathsf P_+\mathcal F/\sinh\frac t2,&n'=n,\\-2n\,\partial_t\mathsf P_-\mathcal F/\cosh\frac t2,&n'=-n,\end{cases}$$
+with $\mathsf P_+$ the integral of [T](C.8) and $\mathsf P_-$ the same with $\chi=1/(\cosh^2\frac t2-u^2)$.
+
+**One superblock, the N=2 analogue of [T](C.8).** A superfamily is a bottom component ($h=H$, parity $p$) plus a top component ($h=H+1$, parity $1-p$), each continued outside $0<z<1$ as in Sec. 7: [T](C.4) for $p=1$, and with $\Phi^a$ for $p=0$. The $A$ branch has $p=1$ and the $S$ branch $p=0$. For $H>-\tfrac12$,
+$$\Phi^A_H\mapsto-4\pi\tan\tfrac{\pi H}2\,[\theta(t)n'+\theta(-t)n]\,e^{-H|t|},\qquad\Phi^S_H\mapsto4\pi\cot\tfrac{\pi H}2\,[\theta(t)n+\theta(-t)n']\,e^{-H|t|}.$$
+So there is **one exponential per superblock**, at $\Omega=H$, and it is one-sided in $t$, as a first-order propagator requires. The ordinary centre integral gives two, $e^{-(H\mp\frac12)|t|}$. The mechanism is that $\partial_t$ turns $e^{-(H-\frac12)|t|}/(H-\tfrac12)\mp e^{-(H+\frac12)|t|}/(H+\tfrac12)$ into $e^{-H|t|}$ times $\sinh\frac t2$ or $\sgn t\cosh\frac t2$. In components, this needs the bottom and top weights of one Dirac pole in the ratio $(H+\tfrac12):-(H-\tfrac12)$, which the Ward identity (10.2) gives: $\mathsf G_{g,p,11}(\omega)=-[G^F_{g,p}(\omega+\tfrac12)+G^F_{g,1-p}(\omega-\tfrac12)]/2\omega$ (checked to $10^{-20}$).
+
+**The four-point function.** With the coefficients [N2](28), the tangents and cotangents cancel:
+$$(|x||y|)^\delta\int dY\,d^2\eta\,F_g=8\pi\mathcal N_\delta L_q\,b_\psi^2\,(\mathfrak G_{F,g}\Pi)(\tau-\tau';n,n'),\qquad(\Pi h)(\tau,n)=h(\tau,-n).$$
+In [PSV]'s normalization, $8\pi\mathcal N_\delta L_qb_\psi^2=2\ell_\psi$. In terms of the literature's data alone, a root contributes $-4\,\mathrm{Res}[(2h-1)k_0^{\psi,s}/D_1]$ ($A$) or $4\,\mathrm{Res}[(2h-1)k_0^{\psi,a}/D_0]$ ($S$). These have no trigonometric factor and are finite at the exceptional roots.
+
+**Checked.**
+- The Grassmann expansion along the orbit, from the generators, and the counting.
+- The seed. In closed form, $-2\delta[B(\tfrac12,-\delta)+B(\tfrac12+\delta,-\delta)]\,n\,\{\cosh^{-2\delta}\tfrac t2,\ \mathrm{sgn}\,t\,|\sinh\tfrac t2|^{-2\delta}\}$, continued from $-\tfrac12<a<0$ where the integral converges. It equals $8\pi\mathcal N_\delta L_q\mathfrak c\,\mathfrak S(t;n,-n')$ at $q=3,5,7$, including the even part, whose ordinary centre integral diverges.
+- Each superfamily, by quadrature, at $H=0.3,0.4,0.45,1.3,1.7,2.4$, $t=0.7,-0.9$, in both sectors.
+- The [PSV] weights against the Dirac weights $\mp4\pi\mathcal N_\delta L_qw_n$ at every root with $H<3.6$: $q=3$ at $g=0.15,0.5,0.9,1$, and $q=5$ at $g=0.3,0.7,1$. This includes the exceptional roots and the roots below $g_*$.
+
+**The inverse.** $r_g(H)\,\mathcal I_s(H)=-4\pi\mathcal N_\delta\,k_\alpha/(1-gk_\alpha)$, with $\mathcal I_s$ the prefactors above. So the reconstruction [N2](27) inverts $\mathsf P_s$, and $\mathcal T_2$ inverts it family by family up to $\mathcal I_s(H)$.
+
+**What this settles.** B2: one exponential per superblock, nonzero except at the exceptional roots, where the coefficient compensates, and distinct for each root. C3: one Dirac field reproduces the full neutral four-point function through the super-centre integral, at Thong's level (four-point data, leading $1/N$). The reduction has no boundary at $g_*$.
+
+**Not established.**
+- That the reduction commutes with the infinite sum over families, as [T] App. C.2 argues for $\mathcal N=0$.
+- A superspace characterization of the continued superfamilies, perhaps through [B18](4.40).
+- Any justification of the finite part beyond continuation.
+- Values of $q$ other than $3,5,7$.
+

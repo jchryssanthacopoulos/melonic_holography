@@ -1,0 +1,587 @@
+
+A. Foundations
+  [INFO] rho=0.667 p=1 zeta=0.01: (reg-lead)/zeta^(5/2-rho): -0.7819528076
+  [INFO] rho=0.667 p=1 zeta=0.005: (reg-lead)/zeta^(5/2-rho): -0.7817353737
+  [PASS] reg -> A z^(1/2-rho) + B z^(1/2+rho), rho=0.667: (1.689269642 + 0.0j) vs (1.689288167 + 0.0j)
+  [PASS] reg solves the ODE: (-8.470329473e-22 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] rho=0.333 p=0 zeta=0.01: (reg-lead)/zeta^(5/2-rho): 0.03706361153
+  [INFO] rho=0.333 p=0 zeta=0.005: (reg-lead)/zeta^(5/2-rho): 0.04014958523
+  [PASS] reg -> A z^(1/2-rho) + B z^(1/2+rho), rho=0.333: (-0.04485722174 + 0.0j) vs (-0.04485736415 + 0.0j)
+  [PASS] reg solves the ODE: (-8.470329473e-22 + 0.0j) vs (0.0 + 0.0j)
+ Chain integral in its convergent range (delta in (1/2, 1)), then continuation is analytic
+  [PASS] delta=0.6: (8.498496479 + 0.0j) vs (8.498496479 + 0.0j)
+  [PASS] delta=0.8: (1.631398139 + 0.0j) vs (1.631398139 + 0.0j)
+
+B. The reduced kernel by direct integration in y
+  [PASS] q=3 H=0.133 p=1 x=1.0: (-1.28762649 + 0.0j) vs (-1.28762649 + 0.0j)
+  [PASS] q=3 H=0.133 p=1 x=-1.0: (1.28762649 + 0.0j) vs (1.28762649 + 0.0j)
+  [PASS] q=3 H=0.133 p=0 x=1.0: (-3.568217354 + 0.0j) vs (-3.568217354 + 0.0j)
+  [PASS] q=3 H=0.133 p=0 x=-1.0: (-3.568217354 + 0.0j) vs (-3.568217354 + 0.0j)
+  [PASS] q=3 H=-0.183 p=1 x=1.0: (-4.846874241 + 0.0j) vs (-4.846874241 + 0.0j)
+  [PASS] q=3 H=-0.183 p=1 x=-1.0: (4.846874241 + 0.0j) vs (4.846874241 + 0.0j)
+  [PASS] q=3 H=-0.183 p=0 x=1.0: (-1.104245113 + 0.0j) vs (-1.104245113 + 0.0j)
+  [PASS] q=3 H=-0.183 p=0 x=-1.0: (-1.104245113 + 0.0j) vs (-1.104245113 + 0.0j)
+  [PASS] q=5 H=0.08 p=1 x=1.0: (-2.769563664 + 0.0j) vs (-2.769563664 + 0.0j)
+  [PASS] q=5 H=0.08 p=1 x=-1.0: (2.769563664 + 0.0j) vs (2.769563664 + 0.0j)
+  [PASS] q=5 H=0.08 p=0 x=1.0: (-6.831916299 + 0.0j) vs (-6.831916299 + 0.0j)
+  [PASS] q=5 H=0.08 p=0 x=-1.0: (-6.831916299 + 0.0j) vs (-6.831916299 + 0.0j)
+  [PASS] q=5 H=-0.11 p=1 x=1.0: (-9.179746404 + 0.0j) vs (-9.179746404 + 0.0j)
+  [PASS] q=5 H=-0.11 p=1 x=-1.0: (9.179746404 + 0.0j) vs (9.179746404 + 0.0j)
+  [PASS] q=5 H=-0.11 p=0 x=1.0: (-2.46749506 + 0.0j) vs (-2.46749506 + 0.0j)
+  [PASS] q=5 H=-0.11 p=0 x=-1.0: (-2.46749506 + 0.0j) vs (-2.46749506 + 0.0j)
+
+C. Dirac correlators: free spectral sum against the closed forms in position space
+  [PASS] q=3 t=0.9: same-boundary = c sgn t /|2 sinh t/2|^(2 delta): (0.2493864286 + 6.233580888e-33j) vs (0.2493864286 + 0.0j)
+  [PASS] q=3 t=0.9: cross-boundary = c /(2 cosh t/2)^(2 delta): (0.1402851875 + 5.648668195e-32j) vs (0.1402851875 + 0.0j)
+  [PASS] q=3 t=-0.9: same-boundary = c sgn t /|2 sinh t/2|^(2 delta): (-0.2493864286 + 1.995145914e-30j) vs (-0.2493864286 + 0.0j)
+  [PASS] q=3 t=-0.9: cross-boundary = c /(2 cosh t/2)^(2 delta): (0.1402851875 + 2.245096221e-30j) vs (0.1402851875 + 0.0j)
+  [PASS] q=5 t=0.9: same-boundary = c sgn t /|2 sinh t/2|^(2 delta): (0.16417418 + 3.827320865e-30j) vs (0.16417418 + 0.0j)
+  [PASS] q=5 t=0.9: cross-boundary = c /(2 cosh t/2)^(2 delta): (0.1162487405 + 3.886912667e-30j) vs (0.1162487405 + 0.0j)
+  [PASS] q=5 t=-0.9: same-boundary = c sgn t /|2 sinh t/2|^(2 delta): (-0.16417418 - 2.887650839e-31j) vs (-0.16417418 + 0.0j)
+  [PASS] q=5 t=-0.9: cross-boundary = c /(2 cosh t/2)^(2 delta): (0.1162487405 + 1.040705836e-30j) vs (0.1162487405 + 0.0j)
+
+D. Closure on the fermion, never tested in the paper
+ q=3
+  [INFO]    (Y,X)=(A,A) sizes: |out|, |L_xi Psi|, |chi|: 2.6287, 1.8486, 1.0686
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    (Y,X)=(B,B) sizes: |out|, |L_xi Psi|, |chi|: 4.7658, 1.8486, 1.0686
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [INFO]    (Y,X)=(A,B) sizes: |out|, |L_xi Psi|, |chi|: 4.9417, 2.4709, 1.0686
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.89799958e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,B): comp 1, alpha: (1.924959107e-20 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    (Y,X)=(B,A) sizes: |out|, |L_xi Psi|, |chi|: 2.732, 1.366, 1.0686
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,A): comp 1, alpha: (-9.624795536e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(A),q(A)} = 0: (8.486923092e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(B),q(B)} = 0: (7.531507939e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(A),q(B)} = 0: (4.870439447e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.89799958e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,B): comp 1, alpha: (1.924959107e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,A): comp 1, alpha: (-9.624795536e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(A),q(A)} = 0: (8.486923092e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(B),q(B)} = 0: (7.531507939e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(A),q(B)} = 0: (4.870439447e-21 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] W=1.73 p=1: mixed {q(A,+i), q(B,-i)} size (nonzero means a new bosonic map): 7.394462472
+  [INFO]    (Y,X)=(A,A) sizes: |out|, |L_xi Psi|, |chi|: 0.3039, 0.84264, 1.3814
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    (Y,X)=(B,B) sizes: |out|, |L_xi Psi|, |chi|: 3.0667, 0.84264, 1.3814
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [INFO]    (Y,X)=(A,B) sizes: |out|, |L_xi Psi|, |chi|: 2.9942, 1.4971, 1.3814
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.388422444e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,B): comp 1, alpha: (9.481856258e-21 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    (Y,X)=(B,A) sizes: |out|, |L_xi Psi|, |chi|: 0.77604, 0.38802, 1.3814
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.388422444e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,A): comp 1, alpha: (-3.792742503e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(A),q(A)} = 0: (3.175145496e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(B),q(B)} = 0: (2.686259604e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(A),q(B)} = 0: (6.564505341e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.388422444e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,B): comp 1, alpha: (9.481856258e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.388422444e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,A): comp 1, alpha: (-3.792742503e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(A),q(A)} = 0: (3.175145496e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(B),q(B)} = 0: (2.686259604e-20 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(A),q(B)} = 0: (6.564505341e-21 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] W=0.61 p=0: mixed {q(A,+i), q(B,-i)} size (nonzero means a new bosonic map): 3.370554114
+ Closure on Phi_psi, on a generic pair of scalars, uniform embedding
+  [PASS] x=1.0 y=0.37 beta=(0.0 + 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (1.148646777 + 0.0j) vs (1.148646777 + 0.0j)
+  [PASS] x=1.0 y=0.37 beta=(0.0 - 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (1.148646777 + 0.0j) vs (1.148646777 + 0.0j)
+  [PASS] x=0.2 y=-1.1 beta=(0.0 + 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (0.2297293554 + 0.0j) vs (0.2297293554 + 0.0j)
+  [PASS] x=0.2 y=-1.1 beta=(0.0 - 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (0.2297293554 + 0.0j) vs (0.2297293554 + 0.0j)
+ q=5
+  [INFO]    (Y,X)=(A,A) sizes: |out|, |L_xi Psi|, |chi|: 3.0198, 2.1237, 1.2276
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    (Y,X)=(B,B) sizes: |out|, |L_xi Psi|, |chi|: 5.4749, 2.1237, 1.2276
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [INFO]    (Y,X)=(A,B) sizes: |out|, |L_xi Psi|, |chi|: 5.5424, 2.7712, 1.2276
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(A,B): comp 1, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    (Y,X)=(B,A) sizes: |out|, |L_xi Psi|, |chi|: 2.7449, 1.3725, 1.2276
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-2.571591797e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i (Y,X)=(B,A): comp 1, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(A),q(A)} = 0: (2.505308776e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(B),q(B)} = 0: (8.495890112e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=+i: {q(A),q(B)} = 0: (4.023406499e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(A,B): comp 1, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-2.571591797e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i (Y,X)=(B,A): comp 1, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(A),q(A)} = 0: (2.505308776e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(B),q(B)} = 0: (8.495890112e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=1.73 p=1 beta=-i: {q(A),q(B)} = 0: (4.023406499e-21 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] W=1.73 p=1: mixed {q(A,+i), q(B,-i)} size (nonzero means a new bosonic map): 8.494662761
+  [INFO]    (Y,X)=(A,A) sizes: |out|, |L_xi Psi|, |chi|: 0.30532, 0.84658, 1.3878
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    (Y,X)=(B,B) sizes: |out|, |L_xi Psi|, |chi|: 3.081, 0.84658, 1.3878
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [INFO]    (Y,X)=(A,B) sizes: |out|, |L_xi Psi|, |chi|: 3.3224, 1.6612, 1.3878
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(A,B): comp 1, alpha: (9.085126474e-22 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    (Y,X)=(B,A) sizes: |out|, |L_xi Psi|, |chi|: 1.1553, 0.57765, 1.3878
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-5.578704981e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i (Y,X)=(B,A): comp 1, alpha: (-3.63405059e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(A),q(A)} = 0: (1.6400705e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(B),q(B)} = 0: (9.312391081e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=+i: {q(A),q(B)} = 0: (5.082197684e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,A): comp 1, alpha: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,B): comp 1, alpha: (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,B): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(A,B): comp 1, alpha: (9.085126474e-22 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,A): {q,qbar} Psi = -2 L_xi Psi + alpha Psi, comp 0, alpha: (-5.578704981e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i (Y,X)=(B,A): comp 1, alpha: (-3.63405059e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(A),q(A)} = 0: (1.6400705e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(B),q(B)} = 0: (9.312391081e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] W=0.61 p=0 beta=-i: {q(A),q(B)} = 0: (5.082197684e-21 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] W=0.61 p=0: mixed {q(A,+i), q(B,-i)} size (nonzero means a new bosonic map): 3.386302898
+ Closure on Phi_psi, on a generic pair of scalars, uniform embedding
+  [PASS] x=1.0 y=0.37 beta=(0.0 + 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (1.172062355 + 0.0j) vs (1.172062355 + 0.0j)
+  [PASS] x=1.0 y=0.37 beta=(0.0 - 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (1.172062355 + 0.0j) vs (1.172062355 + 0.0j)
+  [PASS] x=0.2 y=-1.1 beta=(0.0 + 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (0.234412471 + 0.0j) vs (0.234412471 + 0.0j)
+  [PASS] x=0.2 y=-1.1 beta=(0.0 - 1.0j): {q_A,qbar_B} Phi_psi = E_+ Phi_psi: (0.234412471 + 0.0j) vs (0.234412471 + 0.0j)
+
+E. Boundary form of qbar_A: delta abar = s A - B, on modes s = -w
+  [PASS] w=1.63 p=1: image is conjugate of a Dirac mode: (1.539662154 + 0.0j) vs (1.539662154 + 0.0j)
+  [INFO] w=1.63 p=1: normalization: (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: image is conjugate of a Dirac mode: (-1.836553952 + 0.0j) vs (-1.836553952 + 0.0j)
+  [PASS] w=1.63 p=1: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: image is conjugate of a Dirac mode: (0.139434317 + 0.0j) vs (0.139434317 + 0.0j)
+  [INFO] w=2.37 p=0: normalization: (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: image is conjugate of a Dirac mode: (0.1243775559 + 0.0j) vs (0.1243775559 + 0.0j)
+  [PASS] w=2.37 p=0: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: image is conjugate of a Dirac mode: (1.554843126 + 0.0j) vs (1.554843126 + 0.0j)
+  [INFO] w=1.63 p=1: normalization: (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: image is conjugate of a Dirac mode: (-1.721466955 + 0.0j) vs (-1.721466955 + 0.0j)
+  [PASS] w=1.63 p=1: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=1.63 p=1: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: image is conjugate of a Dirac mode: (0.2362456193 + 0.0j) vs (0.2362456193 + 0.0j)
+  [INFO] w=2.37 p=0: normalization: (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: image is conjugate of a Dirac mode: (0.2013942547 + 0.0j) vs (0.2013942547 + 0.0j)
+  [PASS] w=2.37 p=0: abar = N (s A_psi - B_minus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+  [PASS] w=2.37 p=0: bbar = N (s A_b - B_plus): (-1.0 + 0.0j) vs (-1.0 + 0.0j)
+
+E2. Fermion -> boson: delta A and delta B on a regular Dirac mode at generic frequency
+ A mode with free frequency carries generic boundary data, so this is the generic statement.
+  [PASS] q=3 W=2.13 p=1: q_A and qbar_A give the same radial scalars: (0.382407861 + 0.0j) vs (0.382407861 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: same, Phi_b: (-0.5287712021 + 0.0j) vs (-0.5287712021 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: image solves KG, Phi_b: (-0.007084340807 + 0.0j) vs (-0.007084340807 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: image solves KG, Phi_psi: (0.6407467157 + 0.0j) vs (0.6407467157 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: delta A_psi = a_F: (0.3710797271 + 0.0j) vs (0.3710797271 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: delta A_b = b_F: (0.9558355558 + 0.0j) vs (0.9558355558 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (-0.6048599551 + 0.0j) vs (-0.6048599551 + 0.0j)
+  [PASS] q=3 W=2.13 p=1: delta B_+ = -w b_F: (-1.558011956 + 0.0j) vs (-1.558011956 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: q_A and qbar_A give the same radial scalars: (0.5782084987 + 0.0j) vs (0.5782084987 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: same, Phi_b: (0.880054011 + 0.0j) vs (0.880054011 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: image solves KG, Phi_b: (0.8255395335 + 0.0j) vs (0.8255395335 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: image solves KG, Phi_psi: (-0.5585490734 + 0.0j) vs (-0.5585490734 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: delta A_psi = a_F: (-0.7020454647 + 0.0j) vs (-0.7020454647 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: delta A_b = b_F: (-1.23379577 + 0.0j) vs (-1.23379577 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (1.663847751 + 0.0j) vs (1.663847751 + 0.0j)
+  [PASS] q=3 W=2.87 p=0: delta B_+ = -w b_F: (2.924095975 + 0.0j) vs (2.924095975 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: q_A and qbar_A give the same radial scalars: (0.4113879261 + 0.0j) vs (0.4113879261 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: same, Phi_b: (-7.953865897 + 0.0j) vs (-7.953865897 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: image solves KG, Phi_b: (-7.250994925 + 0.0j) vs (-7.250994925 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: image solves KG, Phi_psi: (0.9543624134 + 0.0j) vs (0.9543624134 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: delta A_psi = a_F: (1.266944001 + 0.0j) vs (1.266944001 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: delta A_b = b_F: (-7.317957972 + 0.0j) vs (-7.317957972 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (-0.3674137602 + 0.0j) vs (-0.3674137602 + 0.0j)
+  [PASS] q=3 W=0.79 p=1: delta B_+ = -w b_F: (2.122207812 + 0.0j) vs (2.122207812 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: q_A and qbar_A give the same radial scalars: (0.3846815871 + 0.0j) vs (0.3846815871 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: same, Phi_b: (-0.5775184731 + 0.0j) vs (-0.5775184731 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: image solves KG, Phi_b: (0.008906455153 + 0.0j) vs (0.008906455153 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: image solves KG, Phi_psi: (0.6697964861 + 0.0j) vs (0.6697964861 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: delta A_psi = a_F: (0.3927674319 + 0.0j) vs (0.3927674319 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: delta A_b = b_F: (1.846796343 + 0.0j) vs (1.846796343 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (-0.640210914 + 0.0j) vs (-0.640210914 + 0.0j)
+  [PASS] q=5 W=2.13 p=1: delta B_+ = -w b_F: (-3.010278039 + 0.0j) vs (-3.010278039 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: q_A and qbar_A give the same radial scalars: (0.5926910607 + 0.0j) vs (0.5926910607 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: same, Phi_b: (0.9242313398 + 0.0j) vs (0.9242313398 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: image solves KG, Phi_b: (0.849169444 + 0.0j) vs (0.849169444 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: image solves KG, Phi_psi: (-0.5228688964 + 0.0j) vs (-0.5228688964 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: delta A_psi = a_F: (-0.6159191951 + 0.0j) vs (-0.6159191951 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: delta A_b = b_F: (-2.64109631 + 0.0j) vs (-2.64109631 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (1.459728492 + 0.0j) vs (1.459728492 + 0.0j)
+  [PASS] q=5 W=2.87 p=0: delta B_+ = -w b_F: (6.259398254 + 0.0j) vs (6.259398254 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: q_A and qbar_A give the same radial scalars: (0.4137628673 + 0.0j) vs (0.4137628673 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: same, Phi_b: (97.48707719 + 0.0j) vs (97.48707719 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: image solves KG, Phi_b: (85.94093195 + 0.0j) vs (85.94093195 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: image solves KG, Phi_psi: (0.9910047287 + 0.0j) vs (0.9910047287 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: delta A_psi = a_F: (1.151951729 + 0.0j) vs (1.151951729 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: delta A_b = b_F: (101.6375037 + 0.0j) vs (101.6375037 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: delta B_- = -w a_F, i.e. d_tau a (qbar) or -d_tau abar (q): (-0.3340660013 + 0.0j) vs (-0.3340660013 + 0.0j)
+  [PASS] q=5 W=0.79 p=1: delta B_+ = -w b_F: (-29.47487608 + 0.0j) vs (-29.47487608 + 0.0j)
+ The graded form of (6.10) on (A, B, a, ahat), with d_tau -> s, closes only for ahat = -abar
+  [PASS] q^2 = 0: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] qbar^2 = 0: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] {q, qbar} = 2 d_tau on all four fields: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [INFO] with the wrong sign, |{q,qbar} - 2 s| (nonzero): 4.233855175
+
+F. E_+ on bulk modes, and the mismatch in Prop. 6.1
+  [PASS] rho=0.667 p=1: E_+ f solves KG at w+1, parity flipped: (0.6906067565 + 0.0j) vs (0.6906067565 + 0.0j)
+  [PASS] A' = kappa (w + Delta_-) A: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    kappa: 1.0
+  [PASS] rho=0.333 p=0: E_+ f solves KG at w+1, parity flipped: (1.124398043 + 0.0j) vs (1.124398043 + 0.0j)
+  [PASS] A' = kappa (w + Delta_-) A: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    kappa: 1.0
+  [PASS] rho=0.667 p=0: E_+ f solves KG at w+1, parity flipped: (0.8252219663 + 0.0j) vs (0.8252219663 + 0.0j)
+  [PASS] A' = kappa (w + Delta_-) A: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    kappa: 1.0
+ Mismatch: a BC mode, transformed, against -2 g w (M_p)_21 (X0)_1
+  [PASS] p=1: second component of j0' - g M_(1-p) X': (3.891103588 + 0.0j) vs (3.891103588 + 0.0j)
+  [PASS] p=0: second component of j0' - g M_(1-p) X': (-3.219905995 + 0.0j) vs (-3.219905995 + 0.0j)
+
+G. Bulycheva's Xi^AS from the integral (4.24), against (4.39)
+  [PASS] h=0.3 chi=0.25: (4.24) = corrected (4.39), minus sign: (1.552302318 + 0.0j) vs (1.552302318 + 0.0j)
+  [INFO]    printed (4.39), plus sign, would give: 4.972658014
+  [PASS] h=0.3 chi=0.6: (4.24) = corrected (4.39), minus sign: (2.926035427 + 0.0j) vs (2.926035427 + 0.0j)
+  [INFO]    printed (4.39), plus sign, would give: 5.793314036
+  [PASS] h=0.7 chi=0.25: (4.24) = corrected (4.39), minus sign: (-23.93369881 + 0.0j) vs (-23.93369881 + 0.0j)
+  [INFO]    printed (4.39), plus sign, would give: 23.18665458
+  [PASS] h=0.7 chi=0.6: (4.24) = corrected (4.39), minus sign: (-4.876130486 + 0.0j) vs (-4.876130486 + 0.0j)
+  [INFO]    printed (4.39), plus sign, would give: 3.349157961
+
+H. Generators with Q != 0 against (A.10)-(A.12), and N=1
+    Q/2 -> Q: C f(tau) vs (D^2 - Q^2/4) f: residual 0
+    Q/2 -> Q: C (theta f) coefficient ratio 0.0073696145  (A.11) gives 0.078798186
+    Q/2 -> Q: C (thetabar f) coefficient ratio 0.0073696145  (A.12) gives -0.064058957
+    printed Q/2: C f(tau) vs (D^2 - Q^2/4) f: residual 0
+    printed Q/2: C (theta f) coefficient ratio 0.078798186  (A.11) gives 0.078798186
+    printed Q/2: C (thetabar f) coefficient ratio -0.064058957  (A.12) gives -0.064058957
+ N=1: the MSW generators on f(t12 - theta1 theta2)
+  [PASS] h=7/5: C f = h (h - 1/2) f, residual 0
+    total G_(-1/2) on f: size 0, total L_(-1): 0
+  [PASS] h=9/4: C f = h (h - 1/2) f, residual 0
+    total G_(-1/2) on f: size 0, total L_(-1): 0
+
+I. Are the poles of Phi^s, Phi^a confined to chi > 1?
+  [INFO] Res_(h=1) Phi^s at chi=0.5: (-2.0 - 2.275074851e-27j)
+  [INFO] Res_(h=1) Phi^s at chi=0.2: (-2.0 - 2.19618876e-27j)
+  [INFO] Res_(h=1) Phi^s at chi=1.6: (-2.0 - 2.170945211e-27j)
+    So the eigenfunction has the pole on ALL chi > 0; only the F_1 representation on 0<chi<1 has none.
+
+L. The family at g -> 1, on each side of chi = 1 (p=1, q=3)
+  [INFO] g=0.99, H=1.0019599: F contribution at chi=0.5 / at chi=1.6 / -Res[k0/D]: (0.000181156 + 4.48435e-33j) / (-0.26756072 - 6.623225e-30j) / (-0.26689356 - 6.6067101e-30j)
+  [INFO] g=0.999, H=1.0001951: F contribution at chi=0.5 / at chi=1.6 / -Res[k0/D]: (1.79499e-5 - 6.25929e-34j) / (-0.26552457 + 9.259092e-30j) / (-0.26545855 + 9.2567897e-30j)
+  [INFO] g=0.9999, H=1.0000195: F contribution at chi=0.5 / at chi=1.6 / -Res[k0/D]: (1.79334e-6 - 6.29857e-35j) / (-0.26532202 + 9.3186511e-30j) / (-0.26531543 + 9.3184194e-30j)
+    The last two columns should agree as g -> 1, and the first should vanish.
+
+J. The odd seed: a direct centre integral of [PSV](4.9) against the residue formula
+  [PASS] q=3 tau=0.6: P[F_0, odd] = -2 sum Res k0^(psi,s) e^(-w tau): (-1.327620141 + 0.0j) vs (-1.327620141 - 9.790837429e-29j)
+  [PASS] q=3 tau=1.4: P[F_0, odd] = -2 sum Res k0^(psi,s) e^(-w tau): (-0.6468557002 + 0.0j) vs (-0.6468557002 - 4.774134839e-29j)
+  [PASS] q=5 tau=0.6: P[F_0, odd] = -2 sum Res k0^(psi,s) e^(-w tau): (-1.380433661 + 0.0j) vs (-1.380433661 + 6.162186073e-30j)
+  [PASS] q=5 tau=1.4: P[F_0, odd] = -2 sum Res k0^(psi,s) e^(-w tau): (-0.7682877381 + 0.0j) vs (-0.7682877381 + 4.516387173e-30j)
+
+K. All four entries of [N2](12), from [PSV](4.26), (4.35)
+  [PASS] q=3 g=0.9 p=1 h=1.02051 entry 11: (-0.2293736935 - 1.811962489e-28j) vs (-0.2293736935 + 1.893956144e-28j)
+  [PASS] q=3 g=0.9 p=1 h=1.02051 entry 21: (0.2364290472 + 1.783048194e-28j) vs (0.2364290472 - 2.004957237e-28j)
+  [PASS] q=3 g=0.9 p=1 h=1.02051 entry 12: (0.2364290472 + 1.833380486e-28j) vs (0.2364290472 - 2.004957237e-28j)
+  [PASS] q=3 g=0.9 p=1 h=1.02051 entry 22: (-0.2437014181 - 1.934045068e-28j) vs (-0.2437014181 + 2.046582646e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=1 h=3.08453 entry 11: (-0.04146195898 - 2.409524587e-30j) vs (-0.04146195898 - 1.994550884e-30j)
+  [PASS] q=3 g=0.9 p=1 h=3.08453 entry 21: (0.1711051423 + 6.746668843e-30j) vs (0.1711051423 + 6.937568293e-30j)
+  [PASS] q=3 g=0.9 p=1 h=3.08453 entry 12: (0.1711051423 + 1.413587758e-29j) vs (0.1711051423 + 6.937568293e-30j)
+  [PASS] q=3 g=0.9 p=1 h=3.08453 entry 22: (-0.7061164126 - 3.839175841e-29j) vs (-0.7061164126 - 2.783699277e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=1 h=1.95076 entry 11: (-0.1967453602 - 7.710478677e-30j) vs (-0.1967453602 - 7.457885914e-30j)
+  [PASS] q=3 g=0.9 p=1 h=1.95076 entry 21: (-0.3789580546 - 2.891429504e-29j) vs (-0.3789580546 - 1.803767756e-29j)
+  [PASS] q=3 g=0.9 p=1 h=1.95076 entry 12: (-0.3789580546 - 2.870011508e-29j) vs (-0.3789580546 - 1.803767756e-29j)
+  [PASS] q=3 g=0.9 p=1 h=1.95076 entry 22: (-0.7299242382 - 3.341207427e-29j) vs (-0.7299242382 + 2.081270488e-30j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=1 h=3.7734 entry 11: (-0.08235990467 - 4.296985513e-30j) vs (-0.08235990467 - 2.298069497e-30j)
+  [PASS] q=3 g=0.9 p=1 h=3.7734 entry 21: (-0.3838049741 - 2.072191145e-29j) vs (-0.3838049741 - 1.214074451e-29j)
+  [PASS] q=3 g=0.9 p=1 h=3.7734 entry 12: (-0.3838049741 - 8.56719853e-30j) vs (-0.3838049741 - 1.214074451e-29j)
+  [PASS] q=3 g=0.9 p=1 h=3.7734 entry 22: (-1.788567613 - 1.362184566e-28j) vs (-1.788567613 - 9.157590146e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=0 h=0.950756 entry 11: (0.6332235708 + 3.469715405e-29j) vs (0.6332235708 + 4.093165293e-29j)
+  [PASS] q=3 g=0.9 p=0 h=0.950756 entry 21: (-0.5864502874 - 1.445714752e-29j) vs (-0.5864502874 - 2.566900268e-29j)
+  [PASS] q=3 g=0.9 p=0 h=0.950756 entry 12: (-0.5864502874 - 2.056127647e-29j) vs (-0.5864502874 - 2.566900268e-29j)
+  [PASS] q=3 g=0.9 p=0 h=0.950756 entry 22: (0.5431319291 + 2.409524587e-29j) vs (0.5431319291 + 2.879090841e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=0 h=2.7734 entry 11: (0.1185875932 + 3.413493164e-30j) vs (0.1185875932 + 1.214074451e-30j)
+  [PASS] q=3 g=0.9 p=0 h=2.7734 entry 21: (-0.4340418486 + 9.638098347e-31j) vs (-0.4340418486 - 3.121905732e-30j)
+  [PASS] q=3 g=0.9 p=0 h=2.7734 entry 12: (-0.4340418486 + 7.710478677e-30j) vs (-0.4340418486 - 3.121905732e-30j)
+  [PASS] q=3 g=0.9 p=0 h=2.7734 entry 22: (1.588634369 - 3.341207427e-29j) vs (1.588634369 + 7.215071024e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=0 h=2.02051 entry 11: (0.07852018004 + 0.0j) vs (0.07852018004 - 1.66501639e-29j)
+  [PASS] q=3 g=0.9 p=0 h=2.02051 entry 21: (0.1594555788 + 3.855239339e-30j) vs (0.1594555788 - 3.607535512e-29j)
+  [PASS] q=3 g=0.9 p=0 h=2.02051 entry 12: (0.1594555788 + 1.713439706e-30j) vs (0.1594555788 - 3.607535512e-29j)
+  [PASS] q=3 g=0.9 p=0 h=2.02051 entry 22: (0.3238158854 + 8.51365354e-30j) vs (0.3238158854 - 6.998272015e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=0.9 p=0 h=4.08453 entry 11: (0.02989504966 - 1.80714344e-31j) vs (0.02989504966 + 1.235754352e-30j)
+  [PASS] q=3 g=0.9 p=0 h=4.08453 entry 21: (0.1532658902 + 4.819049173e-31j) vs (0.1532658902 + 8.325081951e-30j)
+  [PASS] q=3 g=0.9 p=0 h=4.08453 entry 12: (0.1532658902 - 1.713439706e-30j) vs (0.1532658902 + 8.325081951e-30j)
+  [PASS] q=3 g=0.9 p=0 h=4.08453 entry 22: (0.785763307 - 1.28507978e-29j) vs (0.785763307 + 2.289397537e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=1 h=1.0 entry 11: (-0.2160907309 + 3.90664253e-28j) vs (-0.2160907309 - 6.250749032e-28j)
+  [PASS] q=3 g=1.0 p=1 h=1.0 entry 21: (0.2160907309 - 3.850420289e-28j) vs (0.2160907309 + 6.292374441e-28j)
+  [PASS] q=3 g=1.0 p=1 h=1.0 entry 12: (0.2160907309 - 3.996598114e-28j) vs (0.2160907309 + 6.292374441e-28j)
+  [PASS] q=3 g=1.0 p=1 h=1.0 entry 22: (-0.2160907309 + 3.852026639e-28j) vs (-0.2160907309 - 6.2576866e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=1 h=3.0659 entry 11: (-0.03871980881 - 3.011905733e-30j) vs (-0.03871980881 - 4.769578201e-31j)
+  [PASS] q=3 g=1.0 p=1 h=3.0659 entry 21: (0.158706958 + 8.674288512e-30j) vs (0.158706958 + 6.243811463e-30j)
+  [PASS] q=3 g=1.0 p=1 h=3.0659 entry 12: (0.158706958 + 6.853758824e-30j) vs (0.158706958 + 6.243811463e-30j)
+  [PASS] q=3 g=1.0 p=1 h=3.0659 entry 22: (-0.65051712 - 1.16460355e-29j) vs (-0.65051712 - 3.408080424e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=1 h=2.0 entry 11: (-0.1735957917 + 1.220022616e-28j) vs (-0.1735957917 + 3.780974719e-29j)
+  [PASS] q=3 g=1.0 p=1 h=2.0 entry 21: (-0.3471915833 + 2.289048357e-28j) vs (-0.3471915833 + 8.741336049e-29j)
+  [PASS] q=3 g=1.0 p=1 h=2.0 entry 12: (-0.3471915833 + 2.231755217e-28j) vs (-0.3471915833 + 8.741336049e-29j)
+  [PASS] q=3 g=1.0 p=1 h=2.0 entry 22: (-0.6943831667 + 4.78049678e-28j) vs (-0.6943831667 + 1.7066418e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=1 h=3.82114 entry 11: (-0.07802168069 - 1.626429096e-30j) vs (-0.07802168069 + 5.853573247e-31j)
+  [PASS] q=3 g=1.0 p=1 h=3.82114 entry 21: (-0.3691764549 - 1.156571802e-29j) vs (-0.3691764549 - 2.913778683e-29j)
+  [PASS] q=3 g=1.0 p=1 h=3.82114 entry 12: (-0.3691764549 - 2.09896364e-29j) vs (-0.3691764549 - 2.913778683e-29j)
+  [PASS] q=3 g=1.0 p=1 h=3.82114 entry 22: (-1.746838233 - 2.955683493e-29j) vs (-1.746838233 - 7.770076488e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=0 h=1.0 entry 11: (0.520787375 - 1.403307119e-27j) vs (0.520787375 + 9.032713917e-28j)
+  [PASS] q=3 g=1.0 p=0 h=1.0 entry 21: (-0.520787375 + 1.416800457e-27j) vs (-0.520787375 - 8.921712824e-28j)
+  [PASS] q=3 g=1.0 p=0 h=1.0 entry 12: (-0.520787375 + 1.415301197e-27j) vs (-0.520787375 - 8.921712824e-28j)
+  [PASS] q=3 g=1.0 p=0 h=1.0 entry 22: (0.520787375 - 1.405556009e-27j) vs (0.520787375 + 8.748273617e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=0 h=2.82114 entry 11: (0.1116351381 - 2.811112018e-31j) vs (0.1116351381 + 3.598863552e-30j)
+  [PASS] q=3 g=1.0 p=0 h=2.82114 entry 21: (-0.4165906596 - 3.036000979e-29j) vs (-0.4165906596 - 1.942519122e-29j)
+  [PASS] q=3 g=1.0 p=0 h=2.82114 entry 12: (-0.4165906596 - 8.56719853e-30j) vs (-0.4165906596 - 1.942519122e-29j)
+  [PASS] q=3 g=1.0 p=0 h=2.82114 entry 22: (1.554598137 + 3.983747317e-29j) vs (1.554598137 + 4.995049171e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=0 h=2.0 entry 11: (0.07203024363 - 8.234550275e-29j) vs (0.07203024363 - 1.545776935e-29j)
+  [PASS] q=3 g=1.0 p=0 h=2.0 entry 21: (0.1440604873 - 1.599924326e-28j) vs (0.1440604873 - 3.052530049e-29j)
+  [PASS] q=3 g=1.0 p=0 h=2.0 entry 12: (0.1440604873 - 1.610633324e-28j) vs (0.1440604873 - 3.052530049e-29j)
+  [PASS] q=3 g=1.0 p=0 h=2.0 entry 22: (0.2881209745 - 3.152862922e-28j) vs (0.2881209745 - 6.326195087e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=3 g=1.0 p=0 h=4.0659 entry 11: (0.02786146774 + 1.646508468e-30j) vs (0.02786146774 + 1.41786552e-29j)
+  [PASS] q=3 g=1.0 p=0 h=4.0659 entry 21: (0.1420616388 + 6.264763925e-30j) vs (0.1420616388 + 7.215071024e-29j)
+  [PASS] q=3 g=1.0 p=0 h=4.0659 entry 12: (0.1420616388 + 1.156571802e-29j) vs (0.1420616388 + 7.215071024e-29j)
+  [PASS] q=3 g=1.0 p=0 h=4.0659 entry 22: (0.7243519766 + 5.718605019e-29j) vs (0.7243519766 + 3.638754569e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.111111 (delta^2 = 0.111111); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=1 h=1.01157 entry 11: (-0.1757629486 - 4.583450048e-29j) vs (-0.1757629486 - 9.233067038e-30j)
+  [PASS] q=5 g=0.9 p=1 h=1.01157 entry 21: (0.3566083599 + 1.073492248e-28j) vs (0.3566083599 + 1.538844506e-29j)
+  [PASS] q=5 g=0.9 p=1 h=1.01157 entry 12: (0.3566083599 + 9.572173574e-29j) vs (0.3566083599 + 1.538844506e-29j)
+  [PASS] q=5 g=0.9 p=1 h=1.01157 entry 22: (-0.7235286125 - 1.89127623e-28j) vs (-0.7235286125 - 1.538844506e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=1 h=3.07528 entry 11: (-0.02866843396 - 3.618513196e-31j) vs (-0.02866843396 + 3.847111266e-31j)
+  [PASS] q=5 g=0.9 p=1 h=3.07528 entry 21: (0.2060745105 + 7.237026392e-30j) vs (0.2060745105 - 4.616533519e-30j)
+  [PASS] q=5 g=0.9 p=1 h=3.07528 entry 12: (0.2060745105 + 3.087797927e-30j) vs (0.2060745105 - 4.616533519e-30j)
+  [PASS] q=5 g=0.9 p=1 h=3.07528 entry 22: (-1.481305326 - 4.679943733e-29j) vs (-1.481305326 - 5.50136911e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=1 h=1.93483 entry 11: (-0.3483025552 - 3.309733403e-28j) vs (-0.3483025552 + 3.623978812e-28j)
+  [PASS] q=5 g=0.9 p=1 h=1.93483 entry 21: (-0.9881620035 - 9.444319441e-28j) vs (-0.9881620035 + 1.031025819e-27j)
+  [PASS] q=5 g=0.9 p=1 h=1.93483 entry 12: (-0.9881620035 - 9.556734584e-28j) vs (-0.9881620035 + 1.031025819e-27j)
+  [PASS] q=5 g=0.9 p=1 h=1.93483 entry 22: (-2.803494061 - 2.570591774e-27j) vs (-2.803494061 + 2.871483849e-27j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=1 h=3.51254 entry 11: (-0.1129657804 - 5.065918474e-30j) vs (-0.1129657804 - 1.442666725e-30j)
+  [PASS] q=5 g=0.9 p=1 h=3.51254 entry 21: (-0.7660607183 + 6.030855326e-31j) vs (-0.7660607183 + 3.847111266e-30j)
+  [PASS] q=5 g=0.9 p=1 h=3.51254 entry 12: (-0.7660607183 + 3.859747409e-31j) vs (-0.7660607183 + 3.847111266e-30j)
+  [PASS] q=5 g=0.9 p=1 h=3.51254 entry 22: (-5.194927369 - 3.164992875e-28j) vs (-5.194927369 - 1.477290726e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=0 h=0.934832 entry 11: (1.149307882 - 1.43408915e-26j) vs (1.149307882 + 1.846613408e-29j)
+  [PASS] q=5 g=0.9 p=0 h=0.934832 entry 21: (-2.111369832 + 2.629211688e-26j) vs (-2.111369832 + 3.077689013e-30j)
+  [PASS] q=5 g=0.9 p=0 h=0.934832 entry 12: (-2.111369832 + 2.626789697e-26j) vs (-2.111369832 + 3.077689013e-30j)
+  [PASS] q=5 g=0.9 p=0 h=0.934832 entry 22: (3.878754018 - 4.830473882e-26j) vs (3.878754018 - 1.327253387e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=0 h=2.51254 entry 11: (0.1690967074 + 7.960729031e-30j) vs (0.1690967074 - 7.694222531e-31j)
+  [PASS] q=5 g=0.9 p=0 h=2.51254 entry 21: (-0.9776075841 - 1.025245405e-29j) vs (-0.9776075841 + 6.193849138e-29j)
+  [PASS] q=5 g=0.9 p=0 h=2.51254 entry 12: (-0.9776075841 - 7.449312499e-29j) vs (-0.9776075841 + 6.193849138e-29j)
+  [PASS] q=5 g=0.9 p=0 h=2.51254 entry 22: (5.651893543 + 2.624628238e-28j) vs (5.651893543 - 1.046414264e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=0 h=4.39525 entry 11: (0.05355815716 + 2.050490811e-30j) vs (0.05355815716 + 1.923555633e-31j)
+  [PASS] q=5 g=0.9 p=0 h=4.39525 entry 21: (-0.5617250737 - 1.839410875e-29j) vs (-0.5617250737 + 8.078933658e-30j)
+  [PASS] q=5 g=0.9 p=0 h=4.39525 entry 12: (-0.5617250737 - 3.319382772e-29j) vs (-0.5617250737 + 8.078933658e-30j)
+  [PASS] q=5 g=0.9 p=0 h=4.39525 entry 22: (5.891447263 + 1.080729274e-28j) vs (5.891447263 + 1.477290726e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=0 h=2.01157 entry 11: (0.05948428443 + 1.922335135e-30j) vs (0.05948428443 + 2.166404531e-29j)
+  [PASS] q=5 g=0.9 p=0 h=2.01157 entry 21: (0.1801729351 + 0.0j) vs (0.1801729351 + 6.770915828e-29j)
+  [PASS] q=5 g=0.9 p=0 h=2.01157 entry 12: (0.1801729351 + 1.080729274e-29j) vs (0.1801729351 + 6.770915828e-29j)
+  [PASS] q=5 g=0.9 p=0 h=2.01157 entry 22: (0.5457287897 + 1.929873704e-29j) vs (0.5457287897 + 2.292878314e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=0.9 p=0 h=4.07528 entry 11: (0.02064992192 - 1.507713832e-31j) vs (0.02064992192 - 1.442666725e-31j)
+  [PASS] q=5 g=0.9 p=0 h=4.07528 entry 21: (0.1690857436 - 7.237026392e-30j) vs (0.1690857436 + 7.694222531e-30j)
+  [PASS] q=5 g=0.9 p=0 h=4.07528 entry 12: (0.1690857436 - 7.719494818e-30j) vs (0.1690857436 + 7.694222531e-30j)
+  [PASS] q=5 g=0.9 p=0 h=4.07528 entry 22: (1.38450832 - 7.719494818e-29j) vs (1.38450832 - 1.538844506e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=1 h=1.0 entry 11: (-0.1625508755 + 2.687349133e-28j) vs (-0.1625508755 - 2.415985875e-28j)
+  [PASS] q=5 g=1.0 p=1 h=1.0 entry 21: (0.325101751 - 5.451893215e-28j) vs (0.325101751 + 4.770417969e-28j)
+  [PASS] q=5 g=1.0 p=1 h=1.0 entry 12: (0.325101751 - 5.218378497e-28j) vs (0.325101751 + 4.770417969e-28j)
+  [PASS] q=5 g=1.0 p=1 h=1.0 entry 22: (-0.6502035019 + 1.055640916e-27j) vs (-0.6502035019 - 9.87938173e-28j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=1 h=3.06561 entry 11: (-0.02697833026 - 6.030855326e-31j) vs (-0.02697833026 - 4.808889082e-32j)
+  [PASS] q=5 g=1.0 p=1 h=3.06561 entry 21: (0.1932734049 + 4.824684261e-30j) vs (0.1932734049 + 4.616533519e-30j)
+  [PASS] q=5 g=1.0 p=1 h=3.06561 entry 12: (0.1932734049 - 1.543898964e-30j) vs (0.1932734049 + 4.616533519e-30j)
+  [PASS] q=5 g=1.0 p=1 h=3.06561 entry 22: (-1.384615308 - 3.208415034e-29j) vs (-1.384615308 - 2.183235643e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=1 h=2.0 entry 11: (-0.3089980468 + 1.314726461e-29j) vs (-0.3089980468 - 3.050759234e-28j)
+  [PASS] q=5 g=1.0 p=1 h=2.0 entry 21: (-0.9269941404 + 4.221598728e-29j) vs (-0.9269941404 - 9.171513257e-28j)
+  [PASS] q=5 g=1.0 p=1 h=2.0 entry 12: (-0.9269941404 + 4.940476683e-29j) vs (-0.9269941404 - 9.171513257e-28j)
+  [PASS] q=5 g=1.0 p=1 h=2.0 entry 22: (-2.780982421 + 1.157924223e-28j) vs (-2.780982421 - 2.702210953e-27j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=1 h=3.55953 entry 11: (-0.1156801149 - 2.050490811e-30j) vs (-0.1156801149 - 1.923555633e-30j)
+  [PASS] q=5 g=1.0 p=1 h=3.55953 entry 21: (-0.7980582734 - 2.532959237e-29j) vs (-0.7980582734 - 2.231324534e-29j)
+  [PASS] q=5 g=1.0 p=1 h=3.55953 entry 12: (-0.7980582734 - 2.508835816e-29j) vs (-0.7980582734 - 2.231324534e-29j)
+  [PASS] q=5 g=1.0 p=1 h=3.55953 entry 22: (-5.505674061 - 3.164992875e-28j) vs (-5.505674061 + 1.231075605e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=0 h=1.0 entry 11: (0.9269941404 + 1.371850723e-26j) vs (0.9269941404 + 2.652967929e-27j)
+  [PASS] q=5 g=1.0 p=0 h=1.0 entry 21: (-1.853988281 - 2.741144363e-26j) vs (-1.853988281 - 5.269003589e-27j)
+  [PASS] q=5 g=1.0 p=0 h=1.0 entry 12: (-1.853988281 - 2.735788963e-26j) vs (-1.853988281 - 5.269003589e-27j)
+  [PASS] q=5 g=1.0 p=0 h=1.0 entry 22: (3.707976562 + 5.467308081e-26j) vs (3.707976562 + 1.058859669e-26j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=0 h=2.55953 entry 11: (0.171848193 - 2.894810557e-30j) vs (0.171848193 - 1.346488943e-30j)
+  [PASS] q=5 g=1.0 p=0 h=2.55953 entry 21: (-1.013704504 + 2.412342131e-29j) vs (-1.013704504 + 1.962026746e-29j)
+  [PASS] q=5 g=1.0 p=0 h=2.55953 entry 12: (-1.013704504 - 2.701823186e-30j) vs (-1.013704504 + 1.962026746e-29j)
+  [PASS] q=5 g=1.0 p=0 h=2.55953 entry 22: (5.979677785 - 3.859747409e-29j) vs (5.979677785 + 1.846613408e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=0 h=4.42426 entry 11: (0.05612559786 - 2.171107917e-30j) vs (0.05612559786 + 5.770666899e-31j)
+  [PASS] q=5 g=1.0 p=0 h=4.42426 entry 21: (-0.5927233604 + 2.110799364e-30j) vs (-0.5927233604 - 5.001244645e-30j)
+  [PASS] q=5 g=1.0 p=0 h=4.42426 entry 12: (-0.5927233604 - 2.701823186e-30j) vs (-0.5927233604 - 5.001244645e-30j)
+  [PASS] q=5 g=1.0 p=0 h=4.42426 entry 22: (6.259549926 + 2.624628238e-28j) vs (6.259549926 + 9.84860484e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=0 h=2.0 entry 11: (0.05418362516 - 5.207643574e-29j) vs (0.05418362516 + 7.549955859e-30j)
+  [PASS] q=5 g=1.0 p=0 h=2.0 entry 21: (0.1625508755 - 1.555960674e-28j) vs (0.1625508755 + 1.846613408e-29j)
+  [PASS] q=5 g=1.0 p=0 h=2.0 entry 12: (0.1625508755 - 1.636532901e-28j) vs (0.1625508755 + 1.846613408e-29j)
+  [PASS] q=5 g=1.0 p=0 h=2.0 entry 22: (0.4876526265 - 4.882580472e-28j) vs (0.4876526265 + 6.0784358e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+  [PASS] q=5 g=1.0 p=0 h=4.06561 entry 11: (0.01941206997 + 4.824684261e-31j) vs (0.01941206997 + 1.923555633e-31j)
+  [PASS] q=5 g=1.0 p=0 h=4.06561 entry 21: (0.1584806048 + 3.618513196e-30j) vs (0.1584806048 + 7.694222531e-30j)
+  [PASS] q=5 g=1.0 p=0 h=4.06561 entry 12: (0.1584806048 - 6.175595854e-30j) vs (0.1584806048 + 7.694222531e-30j)
+  [PASS] q=5 g=1.0 p=0 h=4.06561 entry 22: (1.293839458 + 3.859747409e-30j) vs (1.293839458 - 1.231075605e-29j)
+  [INFO]    F_21/F_12 at this root: literal prefactor 0.04 (delta^2 = 0.04); column prefactor: 1.0
+
+M. Small identities: the flux in superspace; I_a from Thong's weights
+  [PASS] A_b dB_- + B_+ dA = j0 . dX: (-2.573333333 + 0.0j) vs (-2.573333333 + 0.0j)
+  [PASS] coefficient of dB_b is 2 delta (A_b - c A): (-0.1206666667 + 0.0j) vs (-0.1206666667 + 0.0j)
+  [PASS] coefficient of dA_psi is -2 nu B_psi - c (2 mu A + 2 delta B_b): (-2.274333333 + 0.0j) vs (-2.274333333 + 0.0j)
+  [PASS] h=1.3: cos(pi w) + tan(pi(h-1)/2) sin(pi w) = cot(pi h/2): (-0.5095254495 + 0.0j) vs (-0.5095254495 + 0.0j)
+  [PASS] h=1.3: cos(pi w) + tan(pi h/2) sin(pi w) = tan(pi h/2), [T](C.8): (-1.962610506 + 0.0j) vs (-1.962610506 + 0.0j)
+  [PASS] h=2.4: cos(pi w) + tan(pi(h-1)/2) sin(pi w) = cot(pi h/2): (1.37638192 + 0.0j) vs (1.37638192 + 0.0j)
+  [PASS] h=2.4: cos(pi w) + tan(pi h/2) sin(pi w) = tan(pi h/2), [T](C.8): (0.726542528 + 0.0j) vs (0.726542528 + 0.0j)
+
+N. Neutral kernel in position space; boundary forms; the superspace flux; imaginary frequency
+ The d=1 chain formula, in its convergent range
+  [PASS] the pieces are B(.4,.4) + 2 B(.2,.4): (17.90234003 + 0.0j) vs (17.90234003 + 0.0j)
+  [PASS] int |z|^(-2a) |z-1|^(-2a) dz at a=0.3: (17.90234003 + 0.0j) vs (17.90234003 + 0.0j)
+ The boson rail: int G_b G_b = -rho', with the same continuation
+  [PASS] q=3: d^2 K = 2 d rho_0 / b^2 = 4 d mu C: (-1.368926812 + 0.0j) vs (-1.368926812 + 0.0j)
+  [PASS] q=5: d^2 K = 2 d rho_0 / b^2 = 4 d mu C: (-0.8140884346 + 0.0j) vs (-0.8140884346 + 0.0j)
+  [PASS] q=7: d^2 K = 2 d rho_0 / b^2 = 4 d mu C: (-0.5776653269 + 0.0j) vs (-0.5776653269 + 0.0j)
+ First row on (f, -f'): K^11 f + K^12 (-f') against K^(0) f, smooth test functions, direct quadrature
+  [PASS] q=3 f=y^2 e^(-y^2) x=0.7: first row = K^(0) f: (-0.2546129105 + 0.0j) vs (-0.2546129101 + 0.0j)
+  [PASS] q=3 f=y^2 e^(-y^2) x=-1.3: first row = K^(0) f: (0.03001202447 + 0.0j) vs (0.03001202423 + 0.0j)
+  [PASS] q=3 f=y^3 e^(-y^2) x=0.7: first row = K^(0) f: (0.0957143599 + 0.0j) vs (0.09571435967 + 0.0j)
+  [PASS] q=3 f=y^3 e^(-y^2) x=-1.3: first row = K^(0) f: (0.1420341149 + 0.0j) vs (0.1420341146 + 0.0j)
+  [PASS] q=5 f=y^2 e^(-y^2) x=0.7: first row = K^(0) f: (-0.2578640711 + 0.0j) vs (-0.2578640711 + 0.0j)
+  [PASS] q=5 f=y^2 e^(-y^2) x=-1.3: first row = K^(0) f: (-0.008041548583 + 0.0j) vs (-0.008041548583 + 0.0j)
+  [PASS] q=5 f=y^3 e^(-y^2) x=0.7: first row = K^(0) f: (0.02420396491 + 0.0j) vs (0.02420396491 + 0.0j)
+  [PASS] q=5 f=y^3 e^(-y^2) x=-1.3: first row = K^(0) f: (0.18985416 + 0.0j) vs (0.18985416 + 0.0j)
+ Boundary forms: the conserved Wronskians, with coefficient 2 rho and the Dirac form
+  [PASS] q=3 rho=0.667 theta=0.3: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=3 rho=0.667 theta=1.1: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=3 rho=0.333 theta=0.3: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=3 rho=0.333 theta=1.1: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=3 theta=0.3: psi0^T s1 g1 psi1 = b0 a1 - a0 b1: (0.8310249307 + 0.0j) vs (0.8310249307 + 0.0j)
+  [PASS] q=3 theta=1.1: psi0^T s1 g1 psi1 = b0 a1 - a0 b1: (0.8310249307 + 0.0j) vs (0.8310249307 + 0.0j)
+  [PASS] q=5 rho=0.8 theta=0.3: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=5 rho=0.8 theta=1.1: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=5 rho=0.2 theta=0.3: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=5 rho=0.2 theta=1.1: f0 f1' - f1 f0' = -2 rho (A0 B1 - B0 A1): (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=5 theta=0.3: psi0^T s1 g1 psi1 = b0 a1 - a0 b1: (0.9345794393 + 0.0j) vs (0.9345794393 + 0.0j)
+  [PASS] q=5 theta=1.1: psi0^T s1 g1 psi1 = b0 a1 - a0 b1: (0.9345794393 + 0.0j) vs (0.9345794393 + 0.0j)
+ Superspace, with Grassmann variables: flux and superpotential on all components
+  [PASS] top component of Phi_+ dPhi_-: {('t3', 'tb4'): -1, (): Ab*dB + Bp*dA, ('tb3', 't4'): 1}
+  [PASS] top component of Phi_-^2: {('t2', 'tb2'): -2, (): 2*A*B}
+ Imaginary frequency: k_p(1/2 + iy) = s_p L (mu - iy) D_psi, k_(1-p)(-1/2 + iy) = s_p L (mu + iy) D_psi, D_psi real
+  [PASS] q=3 p=0 y=0.3: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=3 p=0 y=0.3: k_p: (1.128955811 - 2.03212046j) vs (1.128955811 - 2.03212046j)
+  [PASS] q=3 p=0 y=0.3: k_(1-p): (1.128955811 + 2.03212046j) vs (1.128955811 + 2.03212046j)
+  [PASS] q=3 p=0 y=1.7: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=3 p=0 y=1.7: k_p: (0.08246968754 - 0.8411908129j) vs (0.08246968754 - 0.8411908129j)
+  [PASS] q=3 p=0 y=1.7: k_(1-p): (0.08246968754 + 0.8411908129j) vs (0.08246968754 + 0.8411908129j)
+  [PASS] q=3 p=1 y=0.3: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=3 p=1 y=0.3: k_p: (-0.2947449196 + 0.5305408553j) vs (-0.2947449196 + 0.5305408553j)
+  [PASS] q=3 p=1 y=0.3: k_(1-p): (-0.2947449196 - 0.5305408553j) vs (-0.2947449196 - 0.5305408553j)
+  [PASS] q=3 p=1 y=1.7: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=3 p=1 y=1.7: k_p: (-0.08111185829 + 0.8273409546j) vs (-0.08111185829 + 0.8273409546j)
+  [PASS] q=3 p=1 y=1.7: k_(1-p): (-0.08111185829 - 0.8273409546j) vs (-0.08111185829 - 0.8273409546j)
+  [PASS] q=5 p=0 y=0.3: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=5 p=0 y=0.3: k_p: (1.474332733 - 1.474332733j) vs (1.474332733 - 1.474332733j)
+  [PASS] q=5 p=0 y=0.3: k_(1-p): (1.474332733 + 1.474332733j) vs (1.474332733 + 1.474332733j)
+  [PASS] q=5 p=0 y=1.7: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=5 p=0 y=1.7: k_p: (0.1263227082 - 0.7158286798j) vs (0.1263227082 - 0.7158286798j)
+  [PASS] q=5 p=0 y=1.7: k_(1-p): (0.1263227082 + 0.7158286798j) vs (0.1263227082 + 0.7158286798j)
+  [PASS] q=5 p=1 y=0.3: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=5 p=1 y=0.3: k_p: (-0.6353371086 + 0.6353371086j) vs (-0.6353371086 + 0.6353371086j)
+  [PASS] q=5 p=1 y=0.3: k_(1-p): (-0.6353371086 - 0.6353371086j) vs (-0.6353371086 - 0.6353371086j)
+  [PASS] q=5 p=1 y=1.7: Im D_psi: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] q=5 p=1 y=1.7: k_p: (-0.1249073366 + 0.7078082406j) vs (-0.1249073366 + 0.7078082406j)
+  [PASS] q=5 p=1 y=1.7: k_(1-p): (-0.1249073366 - 0.7078082406j) vs (-0.1249073366 - 0.7078082406j)
+
+O. Fock space of one multiplet. Modes: b (boson at |w|, w = H - 1/2), f, fbar (Dirac, energy H), t (boson at H + 1/2)
+  [PASS] H=0.3: {Q, Qbar} = 2 (L_0 - J_0/2) on low states, with E_vac from the zero-point sum: (1.694065895e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=0.3: |Q vac|^2 + |Qbar vac|^2 = 2 E_vac: (0.4 + 0.0j) vs (0.4 + 0.0j)
+  [PASS] H=0.3: the state with f filled is invariant: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    that state: L_0 = E_vac + H, J_0 = 1, L_0 - J_0/2: 0.5, 1, 0.0
+  [PASS] H=0.4: {Q, Qbar} = 2 (L_0 - J_0/2) on low states, with E_vac from the zero-point sum: (1.694065895e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=0.4: |Q vac|^2 + |Qbar vac|^2 = 2 E_vac: (0.2 + 0.0j) vs (0.2 + 0.0j)
+  [PASS] H=0.4: the state with f filled is invariant: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    that state: L_0 = E_vac + H, J_0 = 1, L_0 - J_0/2: 0.5, 1, 0.0
+  [PASS] H=0.45: {Q, Qbar} = 2 (L_0 - J_0/2) on low states, with E_vac from the zero-point sum: (4.235164736e-22 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=0.45: |Q vac|^2 + |Qbar vac|^2 = 2 E_vac: (0.1 + 0.0j) vs (0.1 + 0.0j)
+  [PASS] H=0.45: the state with f filled is invariant: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [INFO]    that state: L_0 = E_vac + H, J_0 = 1, L_0 - J_0/2: 0.5, 1, 0.0
+  [PASS] H=0.7: {Q, Qbar} = 2 (L_0 - J_0/2) on low states, with E_vac from the zero-point sum: (1.694065895e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=0.7: |Q vac|^2 + |Qbar vac|^2 = 2 E_vac: (0.0 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=1.3: {Q, Qbar} = 2 (L_0 - J_0/2) on low states, with E_vac from the zero-point sum: (6.776263578e-21 + 0.0j) vs (0.0 + 0.0j)
+  [PASS] H=1.3: |Q vac|^2 + |Qbar vac|^2 = 2 E_vac: (0.0 + 0.0j) vs (0.0 + 0.0j)
+
+P. Bulycheva (4.99): chi^h read as chi^h 2F1(h,h;2h+1;chi), summed over h = 2 Delta + n
+ Printed factor: sin(pi h) - sin(2 pi D)/cos(pi h). With (4.39) corrected: sin(2 pi D) - sin(pi h)/cos(pi h).
+  [PASS] q=3: leading coefficient of (4.99) as printed: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    printed / corrected at n = 0, 1, 2, 3: 1.0, -1.0, 1.0, -1.0
+  [PASS] q=3: corrected (4.39) gives the corrected factor: (-2.8896765 + 0.0j) vs (-2.8896765 + 0.0j)
+  [PASS] q=3: printed (4.39) gives the printed factor: (2.525714485 + 0.0j) vs (2.525714485 + 0.0j)
+  [PASS] q=3 chi=0.2: sum with the corrected factor and the block = chi^(2 Delta): (0.5848035476 + 0.0j) vs (0.5848035476 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 0.60213754 / 0.59284622
+  [PASS] q=3 chi=0.5: sum with the corrected factor and the block = chi^(2 Delta): (0.793700526 + 0.0j) vs (0.793700526 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 0.8660254 / 0.82236532
+  [PASS] q=3 chi=0.8: sum with the corrected factor and the block = chi^(2 Delta): (0.9283177667 + 0.0j) vs (0.9283177667 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 1.1191464 / 0.98487634
+  [PASS] q=5: leading coefficient of (4.99) as printed: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [INFO]    printed / corrected at n = 0, 1, 2, 3: 1.0, -1.0, 1.0, -1.0
+  [PASS] q=5: corrected (4.39) gives the corrected factor: (-3.446156803 + 0.0j) vs (-3.446156803 + 0.0j)
+  [PASS] q=5: printed (4.39) gives the printed factor: (1.124522848 + 0.0j) vs (1.124522848 + 0.0j)
+  [PASS] q=5 chi=0.2: sum with the corrected factor and the block = chi^(2 Delta): (0.7247796637 + 0.0j) vs (0.7247796637 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 0.73386202 / 0.72902705
+  [PASS] q=5 chi=0.5: sum with the corrected factor and the block = chi^(2 Delta): (0.8705505633 + 0.0j) vs (0.8705505633 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 0.9031515 / 0.8838241
+  [PASS] q=5 chi=0.8: sum with the corrected factor and the block = chi^(2 Delta): (0.9563524998 + 0.0j) vs (0.9563524998 + 0.0j)
+  [INFO]    printed factor, with the block / with bare chi^h, for comparison: 1.0329468 / 0.98070306
+
+472/472 checks passed

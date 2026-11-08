@@ -1,0 +1,60 @@
+\section{The model and its ladders}
+\label{sec:model}
+
+\subsection{Two-point functions}
+
+The model has $N$ complex fermions $\psi_i$ and auxiliary complex bosons $b_i$, with supercharge built from an odd number $q\ge3$ of fermions~\cite{Fu:2016vas}. We use the component conventions of~\cite{Peng:2017spg}, with
+\begin{equation}
+\ket{C_{i_1\cdots i_q}\bar C_{i_1\cdots i_q}}=\frac{(q-1)!\,J}{N^{q-1}}.
+\end{equation}
+In the conformal limit, at the charge-symmetric point,
+\begin{equation}\label{eq:props}
+G_\psi(\tau)=b_\psi\frac{\sgn\tau}{|\tau|^{\delta}},\qquad G_b(\tau)=-\partial_\tau G_\psi(\tau)=\frac{\delta\,b_\psi}{|\tau|^{1+\delta}},\qquad Jb_\psi^q=\frac{\tan(\pi\delta/2)}{2\pi},
+\end{equation}
+so the dimensions are $\Delta_\psi=\delta/2$ and $\Delta_b=(1+\delta)/2$. We will use throughout
+\begin{equation}\label{eq:params}
+\delta=\frac1q,\qquad\nu=1-\delta,\qquad\mu=\half-\delta,\qquad L_q=2(q-1)4^{-\nu},\qquad\sigma_p=(-1)^p.
+\end{equation}
+Note that $0<\mu<\half$ and $\half<\nu<1$. The label $p=0,1$ is the parity of the fermion-pair component under exchange. The relation $G_b=-\partial G_\psi$ is the zero-supermomentum relation of \cref{sec:cylinder} applied to the propagator.
+
+In superspace~\cite{Fu:2016vas,Bulycheva:2018qcp}, the chiral field is $\Psi=\psi(\tau+\theta\bar\theta)+\theta b$, and correlators depend on the invariant
+\begin{equation}\label{eq:bracket}
+\ket{12}=\tau_{12}-2\bar\theta_1\theta_2-\theta_1\bar\theta_1-\theta_2\bar\theta_2,
+\end{equation}
+which is chiral in the first point and antichiral in the second. The superfield dimension satisfies $2\Delta=\delta$. The normalization of $b$ in~\cite{Bulycheva:2018qcp} differs from~\eqref{eq:props} by a factor of 2 in $G_b$, which accounts for $4\pi$ in place of $2\pi$ in the relation for $Jb^q$ there. Kernels are unaffected.
+
+\subsection{Ladder kernels}
+
+There are two kinds of ladder. The charged channel has $\psi b$ on one side and $\bar\psi\bar b$ on the other, with a diagonal kernel~\cite[(2.12)]{Peng:2017spg},
+\begin{equation}\label{eq:Kd}
+K^d(1,2;3,4)=J(q-1)\,G_\psi(\tau_{14})G_b(\tau_{23})G_\psi(\tau_{34})^{q-2}.
+\end{equation}
+The neutral channels $\psi\bar\psi$ and $b\bar b$ mix, through a matrix kernel with entries~\cite[(2.22)--(2.24)]{Peng:2017spg}
+\begin{equation}\label{eq:Kmatrix}
+\begin{aligned}
+K^{11}&=J(q-1)(q-2)\,G_\psi(\tau_{14})G_\psi(\tau_{23})G_b(\tau_{34})G_\psi(\tau_{34})^{q-3},\\
+K^{12}&=J(q-1)\,G_\psi(\tau_{14})G_\psi(\tau_{23})G_\psi(\tau_{34})^{q-2},\\
+K^{21}&=J(q-1)\,G_b(\tau_{14})G_b(\tau_{23})G_\psi(\tau_{34})^{q-2},\qquad K^{22}=0,
+\end{aligned}
+\end{equation}
+which is $K=C_0V$ with diagonal rails $C_0$. We write $g$ for a coupling multiplying each rung, with the physical theory at $g=1$. Its meaning at $g\neq1$ is discussed in \cref{subsec:line}.
+
+Everything is controlled by two functions~\cite{Peng:2017spg,Bulycheva:2018qcp},
+\begin{equation}\label{eq:kAkS}
+k_{A,S}(H)=-C_\delta\,\Gamma(\delta-H)\Gamma(\delta+H)\,[\sin\pi\delta\mp\sin\pi H],\qquad C_\delta=\frac{\nu\Gamma(\nu)}{\pi\delta\Gamma(\delta)},
+\end{equation}
+which satisfy $k_A(H)=k_S(-H)$, $k_A(n)=k_S(n)$ at integers, $k_{A,S}(1)=1$ and $k_{A,S}(0)=-(q-1)$. In terms of them, the eigenvalues of the neutral kernel at component dimension $h$ are
+\begin{equation}\label{eq:spectra}
+\operatorname{spec}\sk_1(h)=\{k_A(h),\,k_S(h-1)\},\qquad\operatorname{spec}\sk_0(h)=\{k_S(h),\,k_A(h-1)\},
+\end{equation}
+and those of the charged kernel at dimension $h$ are $k_A(h-\half)$ and $k_S(h-\half)$. So each root of $gk_\alpha(H)=1$ gives a multiplet with component dimensions
+\begin{equation}\label{eq:multiplet}
+(H,\ H+\half,\ H+\half,\ H+1).
+\end{equation}
+At $q=3$, $g=1$, the first nonexceptional roots are $H_S=2.82114\ldots$ and $H_A=3.06590\ldots$, in agreement with the spectra of~\cite{Fu:2016vas,Peng:2017spg}.
+
+We checked~\eqref{eq:kAkS}--\eqref{eq:spectra} against the printed formulas of~\cite{Peng:2017spg} entry by entry, and against~\cite{Fu:2016vas}. Our~\eqref{eq:kAkS} has the opposite overall sign to the literal~\cite[(4.48), (4.49)]{Bulycheva:2018qcp}. Those printed signs disagree with (4.51) together with (B.8) of the same paper, with~\cite{Peng:2017spg}, and with its statement that $k=1$ at $h=1$. \Cref{app:conventions} lists this and the other printed discrepancies we encountered.
+
+\subsection{Two protected multiplets}
+
+At $g=1$ both branches have a root at $H=1$, with component dimensions $(1,\tfrac32,\tfrac32,2)$. As anticipated in~\cite{Fu:2016vas} and confirmed in~\cite{Peng:2017spg}, they differ. The $S$-branch multiplet gives a divergence in the conformal ladder, and is expected to correspond to the super-Schwarzian. The $A$-branch multiplet gives no divergence, and is expected to correspond to operators of the IR theory associated with an extra symmetry of the low-energy equations~\cite[Sec.~VI]{Fu:2016vas}. We return to this in \cref{sec:fourpoint}.

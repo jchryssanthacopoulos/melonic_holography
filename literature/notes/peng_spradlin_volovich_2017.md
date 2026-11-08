@@ -54,3 +54,5 @@ This is the draft's source for its component input. **The comparison is now done
 | "$-F$" with $\chi=z/(z-1)$ | (4.9) gives $F_0=-z^\delta$ | agrees (by hand) |
 
 PSV's formulas with $g$ inserted are our extension: they treat only $g=1$.
+
+**Normalization of the mixed correlators (found in the audit, 2026-11-06).** Below (4.5), "and similarly for the others" suggests $F^{bb\psi\psi}(\tau_i)=G_b(\tau_{12})G_\psi(\tau_{34})F^{bb\psi\psi}(\chi)$, and so an amplitude $b_bb_\psi$. But the matrix (4.25) acts on coefficients with no amplitudes extracted, so (4.26), (4.35) make sense only if the normalized correlators of a column carry the amplitude $b_j^2$ of the $(3,4)$ pair in both rows. The literal reading gives $F_{21}/F_{12}=\delta^2$ after centre reduction, which violates the symmetry of the covariance. With the column normalization the ratio is 1, and all four entries of [N2](12) agree at every root with $\omega<4$, for $q=3,5$, $g=0.9,1$ (`scripts/audit_n2_paper.py`, part K). This is our inference from that symmetry. PSV don't state it.

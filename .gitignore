@@ -1,0 +1,11 @@
+
+# LaTeX build products
+research/tex/*/*.aux
+research/tex/*/*.log
+research/tex/*/*.out
+research/tex/*/*.toc
+research/tex/*/main.pdf
+
+# Python cache
+__pycache__/
+*.pyc

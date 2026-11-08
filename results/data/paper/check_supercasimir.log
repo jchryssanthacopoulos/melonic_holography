@@ -1,0 +1,33 @@
+# scripts/check_supercasimir.py, run 2026-11-06, Python 3.12.4, mpmath 1.3.0, sympy 1.12
+1. One-particle Casimir at Q=0. Which ordering of (A.9) is central?
+    ordering 'printed': largest [C, generator] on a test superfunction = 87.2467
+  [PASS] printed order -L_1 L_{-1} is not central with these generators
+    ordering 'right': largest [C, generator] on a test superfunction = 0
+  [PASS] order -L_{-1} L_1, with translation acting first, is central
+  [PASS] (A.10): C f(tau) = Delta^2 f(tau) at Q=0
+2. R-charges. (A.15) sets Q=0, but only the total can vanish: |Q_i| = 2 Delta
+  [PASS] printed Q/2 in (A.3), (A.5), (A.7) does not close
+  [PASS] Q/2 -> Q closes
+  [PASS] and the Casimir is central at Q != 0
+  [PASS] <12>^(-2 Delta) is invariant under all generators for Q_1 = -2 Delta, Q_2 = +2 Delta
+  [PASS] but not for the opposite assignment
+3. Zero total supermomentum
+  [PASS] total L1 annihilates f(<12>)
+  [PASS] total Gm annihilates f(<12>)
+  [PASS] total Gbm annihilates f(<12>)
+  [PASS] total J0 annihilates f(<12>)
+4. Reduced Casimir on f(<12>) = <12>^(h - 2 Delta)
+  [PASS] C_pair f(<12>) = h^2 f(<12>)
+  [PASS] C_pair f(<12>) = L_0^2 f(<12>)
+  [PASS] L_0 f(<12>) = -(x f' + 2 Delta f)(<12>) for f = u^(3/7)
+  [PASS] L_0 f(<12>) = -(x f' + 2 Delta f)(<12>) for f = exp(-u)
+  [PASS] L_0 f(<12>) = -(x f' + 2 Delta f)(<12>) for f = log u
+5. Component content: f(<12>) gives boson entry -2 f'(tau_12)
+    coefficient of thetabar_1 theta_2 = -2.245521994, -2 f' = -2.245521994
+  [PASS] coefficient of thetabar_1 theta_2 in f(<12>) is -2 f'(tau_12)
+6. Cross-ratio form (A.16)-(A.17), as a test of the implementation against the paper
+    largest coefficient of the residual at a generic point: 1.64011E-142
+  [PASS] (A.16)-(A.17) reproduced, including all odd terms
+
+19/19 checks passed
+exit=0

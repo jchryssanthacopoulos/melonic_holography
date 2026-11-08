@@ -1,0 +1,29 @@
+\section{Record of checks}
+\label{app:checks}
+
+All numerical statements can be reproduced from the scripts below, in \texttt{scripts/} of the project repository, using \texttt{mpmath} and \texttt{sympy}. Each exits with an error if a check fails. Logs are in \texttt{results/data/}. Passing means agreement within the stated tolerance at the tested parameter values, generally $q=3,5$ or $q=3,5,7$. It is not a proof.
+
+{\small\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{0.34\textwidth}p{0.62\textwidth}@{}}
+\toprule
+Script & Tests\\
+\midrule
+\endhead
+\texttt{check\_literature\_inputs.py} & Formulas transcribed from~\cite{Peng:2017spg,Bulycheva:2018qcp,Fu:2016vas,Maldacena:2016hyu} against \cref{sec:model}; printed spectra; \eqref{eq:eigvec-bottom}, \eqref{eq:eigvec-top}; \eqref{eq:cov-norm} via \eqref{eq:PF}; \eqref{eq:roots} against~\cite{Peng:2017spg}; \eqref{eq:Ia}, \eqref{eq:Phi-res}, \eqref{eq:step-lemma}; complex SYK.\\
+\texttt{check\_supercasimir.py} & The generators and \eqref{eq:casimir}: centrality, closure, invariance of the two-point function, \eqref{eq:casimir-chi} on all odd components, \cref{prop:cylinder}.\\
+\texttt{check\_dirac\_reduction.py} & \eqref{eq:AB} by quadrature; \eqref{eq:c}; \cref{prop:kernel,prop:response}; positivity in \eqref{eq:spectral}.\\
+\texttt{check\_bulk\_susy\_algebra.py} & Symbolic: \eqref{eq:killing}, \eqref{eq:intertwine}, closure and $\beta$, \eqref{eq:vectors}.\\
+\texttt{check\_bulk\_susy\_modes.py} & On normal modes: \eqref{eq:bilinears}, the lines of \cref{prop:maps}, boundary conditions at finite $g$ for all embeddings, \eqref{eq:boundary-susy} in part, kernels, $\{q,\bar q\}$.\\
+\texttt{check\_ward\_and\_vacuum.py} & \eqref{eq:ward}; the quadratic form in \eqref{eq:superpotential}; \eqref{eq:gstar}, \eqref{eq:vacuum}; data for \cref{fig:spectrum}.\\
+\texttt{check\_reconstruction.py} & \eqref{eq:reconstruction} against \eqref{eq:roots} at finite $g$, including below $g_*$.\\
+\texttt{check\_robin\_identities.py} & Thong's closed forms; \eqref{eq:T2}; \eqref{eq:homogeneous}; \eqref{eq:finite-part}; order $g^1$ of \eqref{eq:reconstruction} against a direct integral.\\
+\texttt{check\_super\_centre.py} & The Grassmann expansion and the counting in \cref{subsec:supercentre}; \eqref{eq:Ps-dirac} at $g=0$ in closed form; \eqref{eq:Ps-family} by quadrature, including $H<\half$; the weights from~\cite{Peng:2017spg} against the Dirac weights at finite $g$; the $11$ entry of $\sG_{g,p}$ in terms of $G^F$.\\
+\texttt{audit\_n2\_paper.py} & An independent pass with its own implementations: \eqref{eq:reduced} by direct integration; \eqref{eq:S} from the free spectral sum; \eqref{eq:closure-psi}, $\{q,q\}=0$, closure on $\Phi_\psi$; all maps in \eqref{eq:boundary-susy}; $E_+$ on bulk modes; (4.24) and (4.99) of~\cite{Bulycheva:2018qcp}; $\cN=1$; \eqref{eq:Phi-res}; the seed; all entries of \eqref{eq:cov-norm}; the neutral kernel on $(f,-\partial f)$; the boundary forms and Grassmann algebra in \eqref{eq:flux}, \eqref{eq:superpotential}; \eqref{eq:fock}; $\omega^2\ge0$.\\
+\bottomrule
+\end{longtable}}
+
+\paragraph{Not checked.} A direct two-rung integral at order $g^2$. Convergence of infinite sums, and whether the reductions commute with them. A characterization of the continued superfamilies in superspace. The ordinary centre integral of the even part of the seed diverges, so the even sector's component reduction has no direct test on the seed; the super-centre integral of the seed does.
+
+\paragraph{Derived by hand only.} The finite part at the collisions in~\eqref{eq:Ps}, which is a prescription. The Grassmann reduction of~\cite[(4.42)]{Bulycheva:2018qcp} in \cref{sec:dirac}, though the component statement there is exact and the eigenvalues are tested. The polarization boundary term and the continuation to Euclidean time in~\eqref{eq:flux}; the bilinear forms and Grassmann algebra in it are tested. The form of the charges in~\eqref{eq:fock}: the matrices are tested, but the operator content was read off from the norm and frequency. \Cref{subsec:line}.
+
+\paragraph{Audit.} A record of the audit of an earlier version of this draft, and of what it changed, is in \texttt{research/notes/n2\_dirac\_ladders\_audit.md} of the project repository.

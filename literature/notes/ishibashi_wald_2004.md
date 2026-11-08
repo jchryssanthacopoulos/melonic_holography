@@ -23,7 +23,7 @@ Dynamics is set by a positive self-adjoint extension $A_E$ of the spatial operat
 - $\nu=\tfrac12$ gives ordinary Robin (168). They note the double-trace connection in footnote 5.
 - **Theorem 3.2, Eq. (169)**: positive if and only if $b_\nu/a_\nu\ge-\frac{\Gamma(-\nu)}{\Gamma(\nu)}\frac{\Gamma(\zeta^0_{\nu,\sigma})^2}{\Gamma(\zeta^0_{-\nu,\sigma})^2}$.
 
-The form of (169) is Thong's condition $\kappa>\mathcal R_J(0)$, with his $\mathcal R_J(0)=\frac{\Gamma(-\nu)}{\Gamma(\nu)}[\Gamma(\frac{J+\Delta_+}{2})/\Gamma(\frac{J+\Delta_-}{2})]^2$. The overall sign in the printed extraction of (169) needs checking against the PDF, and I haven't mapped their sign convention for $b_\nu$ or variables $\sigma,\zeta$ in detail. **Treat this as matching in form only.**
+The form of (169) is Thong's condition $\kappa>\mathcal R_J(0)$, with Thong's $\mathcal R_J(0)=\frac{\Gamma(-\nu)}{\Gamma(\nu)}[\Gamma(\frac{J+\Delta_+}{2})/\Gamma(\frac{J+\Delta_-}{2})]^2$. The overall sign in the printed extraction of (169) needs checking against the PDF, and I haven't mapped their sign convention for $b_\nu$ or variables $\sigma,\zeta$ in detail. **Treat this as matching in form only.**
 
 ## Numerical methods
 

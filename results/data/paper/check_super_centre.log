@@ -1,0 +1,193 @@
+
+1. Brackets along the supertranslation orbit of the pair (12)
+  [PASS] X tau = -eta theta - etabar thetabar, X theta = etabar, X thetabar = eta, X^2 tau = 0
+  [PASS] <12> is invariant under the supertranslation of both points
+  [PASS] <12> = x
+  [PASS] <34> = y
+  [PASS] <14> = Y + s + eta etabar
+  [PASS] <32> = s - Y + eta etabar
+  [PASS] z = z0 - 2 s z0^2 eta etabar/(xy), z0 = xy/(s^2 - Y^2)
+
+2. Counting: rank of the algebra on four chiral-antichiral points, at a generic body
+  [PASS] rank of the even block (3 means one even invariant): (3.0 + 0.0j) vs (3.0 + 0.0j)
+  [PASS] rank of the odd block (4 means no odd invariant): (4.0 + 0.0j) vs (4.0 + 0.0j)
+
+3. The seed sgn(z)|z|^a: direct integral, Beta functions, and the Dirac correlator
+  [PASS] a=-0.2 C=1.3: int du a|z|^(1+a) = a C^(-1-2a) [B(1/2,-a) + B(1/2+a,-a)]: (-2.395097653 + 1.646666712e-21j) vs (-2.395097653 + 0.0j)
+  [PASS] a=-0.2 C=0.45: int du a|z|^(1+a) = a C^(-1-2a) [B(1/2,-a) + B(1/2+a,-a)]: (-4.5264917 + 3.112033112e-21j) vs (-4.5264917 + 0.0j)
+  [PASS] a=-0.35 C=1.3: int du a|z|^(1+a) = a C^(-1-2a) [B(1/2,-a) + B(1/2+a,-a)]: (-4.203050208 + 5.137992584e-39j) vs (-4.203050208 + 0.0j)
+  [PASS] a=-0.35 C=0.45: int du a|z|^(1+a) = a C^(-1-2a) [B(1/2,-a) + B(1/2+a,-a)]: (-5.778083712 + 7.063382494e-39j) vs (-5.778083712 + 0.0j)
+  [PASS] q=3 t=0.6: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (2.511752556 + 0.0j) vs (2.511752556 + 0.0j)
+  [PASS] q=3 t=0.6: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (5.715716254 + 0.0j) vs (5.715716254 + 0.0j)
+  [PASS] q=3 t=-1.1: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (2.350001162 + 0.0j) vs (2.350001162 + 0.0j)
+  [PASS] q=3 t=-1.1: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (-3.7278091 + 0.0j) vs (-3.7278091 + 0.0j)
+  [PASS] q=3 t=2.3: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (1.7901076 + 0.0j) vs (1.7901076 + 0.0j)
+  [PASS] q=3 t=2.3: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (2.047060401 + 0.0j) vs (2.047060401 + 0.0j)
+  [PASS] q=3: 8 pi N_delta L_q b^2 = 2 l_psi in [PSV]'s normalization: (3.517765044 + 0.0j) vs (3.517765044 + 0.0j)
+  [PASS] q=5 t=0.6: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (3.030587379 + 0.0j) vs (3.030587379 + 0.0j)
+  [PASS] q=5 t=0.6: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (4.963443644 + 0.0j) vs (4.963443644 + 0.0j)
+  [PASS] q=5 t=-1.1: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (2.911934117 + 0.0j) vs (2.911934117 + 0.0j)
+  [PASS] q=5 t=-1.1: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (-3.840722212 + 0.0j) vs (-3.840722212 + 0.0j)
+  [PASS] q=5 t=2.3: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (2.473250926 + 0.0j) vs (2.473250926 + 0.0j)
+  [PASS] q=5 t=2.3: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (2.680520253 + 0.0j) vs (2.680520253 + 0.0j)
+  [PASS] q=5: 8 pi N_delta L_q b^2 = 2 l_psi in [PSV]'s normalization: (7.802868648 + 0.0j) vs (7.802868648 + 0.0j)
+  [PASS] q=7 t=0.6: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (3.275395774 + 0.0j) vs (3.275395774 + 0.0j)
+  [PASS] q=7 t=0.6: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (4.659120982 + 0.0j) vs (4.659120982 + 0.0j)
+  [PASS] q=7 t=-1.1: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (3.183276103 + 0.0j) vs (3.183276103 + 0.0j)
+  [PASS] q=7 t=-1.1: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (-3.879304287 + 0.0j) vs (-3.879304287 + 0.0j)
+  [PASS] q=7 t=2.3: n'=n, against 8 pi N L cfrak (2cosh(t/2))^(-2delta): (2.832839085 + 0.0j) vs (2.832839085 + 0.0j)
+  [PASS] q=7 t=2.3: n'=-n, against 8 pi N L cfrak sgn t |2sinh(t/2)|^(-2delta): (3.000453105 + 0.0j) vs (3.000453105 + 0.0j)
+  [PASS] q=7: 8 pi N_delta L_q b^2 = 2 l_psi in [PSV]'s normalization: (13.01439328 + 0.0j) vs (13.01439328 + 0.0j)
+
+4. One superfamily: the super-centre integral is a single exponential e^{-H|t|}
+ R/n with n' = n and n' = -n; predicted -4 pi tan(pi H/2) [theta(t) n' + theta(-t) n] e^{-H|t|} (A),
+ 4 pi cot(pi H/2) [theta(t) n + theta(-t) n'] e^{-H|t|} (S)
+  [PASS] A H=1.3 t=0.7 same sign: (9.927411056 + 0.0j) vs (9.927411056 + 0.0j)
+  [PASS] A H=1.3 t=0.7 opposite sign: (-9.927411056 + 0.0j) vs (-9.927411056 + 0.0j)
+  [PASS] A H=1.3 t=-0.9 same sign: (7.654546037 + 0.0j) vs (7.654546037 + 0.0j)
+  [PASS] A H=1.3 t=-0.9 opposite sign: (7.654546037 + 0.0j) vs (7.654546037 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): -3.430767, -2.239082
+  [PASS] A H=1.7 t=0.7 same sign: (1.947893962 + 0.0j) vs (1.947893962 + 0.0j)
+  [PASS] A H=1.7 t=0.7 opposite sign: (-1.947893962 + 0.0j) vs (-1.947893962 + 0.0j)
+  [PASS] A H=1.7 t=-0.9 same sign: (1.386453114 + 0.0j) vs (1.386453114 + 0.0j)
+  [PASS] A H=1.7 t=-0.9 opposite sign: (1.386453114 + 0.0j) vs (1.386453114 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): -0.41988974, -0.21517069
+  [PASS] A H=2.4 t=0.7 same sign: (-1.7015949 + 0.0j) vs (-1.7015949 + 0.0j)
+  [PASS] A H=2.4 t=0.7 opposite sign: (1.7015949 + 0.0j) vs (1.7015949 + 0.0j)
+  [PASS] A H=2.4 t=-0.9 same sign: (-1.052918663 + 0.0j) vs (-1.052918663 + 0.0j)
+  [PASS] A H=2.4 t=-0.9 opposite sign: (-1.052918663 + 0.0j) vs (-1.052918663 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): 0.21435066, 0.070453756
+  [PASS] S H=1.3 t=0.7 same sign: (-2.577316572 + 0.0j) vs (-2.577316572 + 0.0j)
+  [PASS] S H=1.3 t=0.7 opposite sign: (-2.577316572 + 0.0j) vs (-2.577316572 + 0.0j)
+  [PASS] S H=1.3 t=-0.9 same sign: (-1.98724403 + 0.0j) vs (-1.98724403 + 0.0j)
+  [PASS] S H=1.3 t=-0.9 opposite sign: (1.98724403 + 0.0j) vs (1.98724403 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): 0.89068263, 0.58130192
+  [PASS] S H=1.7 t=0.7 same sign: (-7.502975871 + 0.0j) vs (-7.502975871 + 0.0j)
+  [PASS] S H=1.7 t=0.7 opposite sign: (-7.502975871 + 0.0j) vs (-7.502975871 + 0.0j)
+  [PASS] S H=1.7 t=-0.9 same sign: (-5.340395557 + 0.0j) vs (-5.340395557 + 0.0j)
+  [PASS] S H=1.7 t=-0.9 opposite sign: (5.340395557 + 0.0j) vs (5.340395557 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): 1.6173481, 0.82880308
+  [PASS] S H=2.4 t=0.7 same sign: (3.223547646 + 0.0j) vs (3.223547646 + 0.0j)
+  [PASS] S H=2.4 t=0.7 opposite sign: (3.223547646 + 0.0j) vs (3.223547646 + 0.0j)
+  [PASS] S H=2.4 t=-0.9 same sign: (1.994677746 + 0.0j) vs (1.994677746 + 0.0j)
+  [PASS] S H=2.4 t=-0.9 opposite sign: (-1.994677746 + 0.0j) vs (-1.994677746 + 0.0j)
+  [INFO]    ordinary P at t=0.7, 1.4 (two exponentials e^(-(H-1/2)|t|), e^(-(H+1/2)|t|)): -0.40607172, -0.13346951
+ Below H = 1/2, where the ordinary centre integral of the bottom component diverges
+  [PASS] S H=0.3 t=0.7 same sign: (19.99135089 + 0.0j) vs (19.99135089 + 0.0j)
+  [PASS] S H=0.3 t=0.7 opposite sign: (19.99135089 + 0.0j) vs (19.99135089 + 0.0j)
+  [PASS] S H=0.3 t=-0.9 same sign: (18.82714525 + 0.0j) vs (18.82714525 + 0.0j)
+  [PASS] S H=0.3 t=-0.9 opposite sign: (-18.82714525 + 0.0j) vs (-18.82714525 + 0.0j)
+  [INFO]    S H=0.3: ordinary P cut at |u| = 50, 500 (it diverges): -103.81517, -321.05145
+  [PASS] A H=0.4 t=0.7 same sign: (-6.90030758 + 0.0j) vs (-6.90030758 + 0.0j)
+  [PASS] A H=0.4 t=0.7 opposite sign: (6.90030758 + 0.0j) vs (6.90030758 + 0.0j)
+  [PASS] A H=0.4 t=-0.9 same sign: (-6.369786723 + 0.0j) vs (-6.369786723 + 0.0j)
+  [PASS] A H=0.4 t=-0.9 opposite sign: (-6.369786723 + 0.0j) vs (-6.369786723 + 0.0j)
+  [INFO]    A H=0.4: ordinary P cut at |u| = 50, 500 (it diverges): 66.582456, 120.63663
+  [PASS] S H=0.45 t=0.7 same sign: (10.73762423 + 0.0j) vs (10.73762423 + 0.0j)
+  [PASS] S H=0.45 t=0.7 opposite sign: (10.73762423 + 0.0j) vs (10.73762423 + 0.0j)
+  [PASS] S H=0.45 t=-0.9 same sign: (9.813449641 + 0.0j) vs (9.813449641 + 0.0j)
+  [PASS] S H=0.45 t=-0.9 opposite sign: (-9.813449641 + 0.0j) vs (-9.813449641 + 0.0j)
+  [INFO]    S H=0.45: ordinary P cut at |u| = 50, 500 (it diverges): -29.024685, -56.78339
+
+5. Finite g: the super-centre weights of [PSV]'s four-point function against the Dirac weights
+  [PASS] q=3: k_A(H) = -L_q / R_F,1(H) at H=0.83: (0.3782705329 + 0.0j) vs (0.3782705329 + 0.0j)
+  [PASS] q=3: k_S(H) = +L_q / R_F,0(H) at H=0.83: (1.457060473 + 0.0j) vs (1.457060473 + 0.0j)
+ q=3 g=0.15
+  [PASS] A root H=1.2618196: [PSV] weight vs Dirac: (-2.446062131 - 3.786532345e-28j) vs (-2.446062131 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.2799792: [PSV] weight vs Dirac: (-1.842387868 - 2.524354897e-29j) vs (-1.842387868 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=0.4479468 (below 1/2): [PSV] weight vs Dirac: (4.1819623 - 7.57306469e-29j) vs (4.1819623 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.3991519: [PSV] weight vs Dirac: (2.489009103 - 1.262177448e-29j) vs (2.489009103 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+ q=3 g=0.5
+  [PASS] A root H=1.1269302: [PSV] weight vs Dirac: (-1.763089475 - 4.733165431e-29j) vs (-1.763089475 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.1750566: [PSV] weight vs Dirac: (-1.429497103 - 1.893266173e-29j) vs (-1.429497103 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=0.7077952: [PSV] weight vs Dirac: (3.778201587 - 1.166251962e-26j) vs (3.778201587 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.5706025: [PSV] weight vs Dirac: (2.78540047 + 1.325286321e-28j) vs (2.78540047 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+ q=3 g=0.9
+  [PASS] A root H=1.0205061: [PSV] weight vs Dirac: (-1.172626734 + 2.887230913e-28j) vs (-1.172626734 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.0845322: [PSV] weight vs Dirac: (-1.052499971 - 1.735493991e-29j) vs (-1.052499971 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=0.95075643: [PSV] weight vs Dirac: (2.803427503 + 7.784479413e-27j) vs (2.803427503 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.7733966: [PSV] weight vs Dirac: (2.64791958 + 7.415292509e-29j) vs (2.64791958 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+ q=3 g=1
+  [PASS] A root H=1.0 (exceptional): [PSV] weight vs Dirac: (-1.061198113 + 3.084446139e-27j) vs (-1.061198113 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.0659046: [PSV] weight vs Dirac: (-0.9758072554 - 3.155443621e-30j) vs (-0.9758072554 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=1.0 (exceptional): [PSV] weight vs Dirac: (2.557530243 - 1.064015589e-26j) vs (2.557530243 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.8211442: [PSV] weight vs Dirac: (2.545032638 + 9.624103044e-29j) vs (2.545032638 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] q=5: k_A(H) = -L_q / R_F,1(H) at H=0.83: (0.09540736388 + 0.0j) vs (0.09540736388 + 0.0j)
+  [PASS] q=5: k_S(H) = +L_q / R_F,0(H) at H=0.83: (1.328933738 + 0.0j) vs (1.328933738 + 0.0j)
+ q=5 g=0.3
+  [PASS] A root H=1.1146411: [PSV] weight vs Dirac: (-1.14767672 + 1.451504066e-28j) vs (-1.14767672 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.149264: [PSV] weight vs Dirac: (-0.7308730504 - 6.310887242e-29j) vs (-0.7308730504 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=0.45903349 (below 1/2): [PSV] weight vs Dirac: (4.198695485 + 0.0j) vs (4.198695485 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.2809678: [PSV] weight vs Dirac: (1.481571161 + 2.524354897e-29j) vs (1.481571161 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+ q=5 g=0.7
+  [PASS] A root H=1.0386347: [PSV] weight vs Dirac: (-0.7268284386 + 2.382359934e-28j) vs (-0.7268284386 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.0966378: [PSV] weight vs Dirac: (-0.5516050848 + 2.682127078e-29j) vs (-0.5516050848 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=0.79037186: [PSV] weight vs Dirac: (3.702894362 + 1.948170892e-26j) vs (3.702894362 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.4249643: [PSV] weight vs Dirac: (1.999423604 + 5.679798518e-29j) vs (1.999423604 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+ q=5 g=1
+  [PASS] A root H=1.0 (exceptional): [PSV] weight vs Dirac: (-0.5315582278 - 4.023190617e-28j) vs (-0.5315582278 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] A root H=3.0656096: [PSV] weight vs Dirac: (-0.4526861059 - 1.341063539e-29j) vs (-0.4526861059 + 0.0j)
+  [PASS]    R_F,1(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=1.0 (exceptional): [PSV] weight vs Dirac: (3.031367017 - 2.241627148e-26j) vs (3.031367017 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+  [PASS] S root H=2.5595349: [PSV] weight vs Dirac: (2.31475827 + 1.57772181e-29j) vs (2.31475827 + 0.0j)
+  [PASS]    R_F,0(H) = g sigma_p L_q and w > 0: (1.0 + 0.0j) vs (1.0 + 0.0j)
+
+6. The mechanism: G_{g,p,11}(w) = -[G^F_{g,p}(w + 1/2) + G^F_{g,1-p}(w - 1/2)] / 2w
+ So the bottom (at w = H - 1/2) and top (at w = H + 1/2) of one Dirac pole have weights in the
+ ratio (H + 1/2) : -(H - 1/2), which is what lets the super-centre integral collapse them.
+  [PASS] q=3 g=0.7 p=0 w=0.83: (-0.4351291305 + 0.0j) vs (-0.4351291305 + 0.0j)
+  [PASS] q=3 g=0.7 p=0 w=(1.3 + 0.4j): (0.05531645439 + 0.2506856887j) vs (0.05531645439 + 0.2506856887j)
+  [PASS] q=3 g=0.7 p=0 w=2.71: (-0.1227184398 + 0.0j) vs (-0.1227184398 + 0.0j)
+  [PASS] q=3 g=0.7 p=1 w=0.83: (-0.008592546133 + 0.0j) vs (-0.008592546133 + 0.0j)
+  [PASS] q=3 g=0.7 p=1 w=(1.3 + 0.4j): (0.11262457 + 0.425537729j) vs (0.11262457 + 0.425537729j)
+  [PASS] q=3 g=0.7 p=1 w=2.71: (-0.2428523135 + 0.0j) vs (-0.2428523135 + 0.0j)
+  [PASS] q=3 g=1.0 p=0 w=0.83: (-0.4795965921 + 0.0j) vs (-0.4795965921 + 0.0j)
+  [PASS] q=3 g=1.0 p=0 w=(1.3 + 0.4j): (0.04247288315 + 0.2146839178j) vs (0.04247288315 + 0.2146839178j)
+  [PASS] q=3 g=1.0 p=0 w=2.71: (-0.1381299891 + 0.0j) vs (-0.1381299891 + 0.0j)
+  [PASS] q=3 g=1.0 p=1 w=0.83: (-0.004206202708 + 0.0j) vs (-0.004206202708 + 0.0j)
+  [PASS] q=3 g=1.0 p=1 w=(1.3 + 0.4j): (0.1666293319 + 0.2481648432j) vs (0.1666293319 + 0.2481648432j)
+  [PASS] q=3 g=1.0 p=1 w=2.71: (-0.09805201455 + 0.0j) vs (-0.09805201455 + 0.0j)
+  [PASS] q=5 g=0.7 p=0 w=0.83: (-0.3762510863 + 0.0j) vs (-0.3762510863 + 0.0j)
+  [PASS] q=5 g=0.7 p=0 w=(1.3 + 0.4j): (-0.02824777363 + 0.157497362j) vs (-0.02824777363 + 0.157497362j)
+  [PASS] q=5 g=0.7 p=0 w=2.71: (-0.06514966134 + 0.0j) vs (-0.06514966134 + 0.0j)
+  [PASS] q=5 g=0.7 p=1 w=0.83: (0.1932827548 + 0.0j) vs (0.1932827548 + 0.0j)
+  [PASS] q=5 g=0.7 p=1 w=(1.3 + 0.4j): (0.05051402708 + 0.3022774057j) vs (0.05051402708 + 0.3022774057j)
+  [PASS] q=5 g=0.7 p=1 w=2.71: (0.01322255176 + 0.0j) vs (0.01322255176 + 0.0j)
+  [PASS] q=5 g=1.0 p=0 w=0.83: (-0.4450857207 + 0.0j) vs (-0.4450857207 + 0.0j)
+  [PASS] q=5 g=1.0 p=0 w=(1.3 + 0.4j): (-0.0154806826 + 0.1413601961j) vs (-0.0154806826 + 0.1413601961j)
+  [PASS] q=5 g=1.0 p=0 w=2.71: (-0.07045085751 + 0.0j) vs (-0.07045085751 + 0.0j)
+  [PASS] q=5 g=1.0 p=1 w=0.83: (0.09660942568 + 0.0j) vs (0.09660942568 + 0.0j)
+  [PASS] q=5 g=1.0 p=1 w=(1.3 + 0.4j): (0.1295077285 + 0.1751800908j) vs (0.1295077285 + 0.1751800908j)
+  [PASS] q=5 g=1.0 p=1 w=2.71: (0.006493117455 + 0.0j) vs (0.006493117455 + 0.0j)
+
+182/182 checks passed
+
+real	1m6.073s
+user	1m5.177s
+sys	0m0.451s

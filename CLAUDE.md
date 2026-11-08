@@ -33,8 +33,9 @@ This repository extends the construction of Thong, *Melonic ladder holography wi
       research_questions.md  Open questions
       todo.md                Task list
     research/                Earlier, non-authoritative material
-      pdf/                   Generated reports, including the N=2 draft
-      notes/, tex/           Markdown notes and LaTeX sources (empty so far)
+      pdf/                   Generated reports, including the N=2 draft and the working paper
+      tex/                   LaTeX sources; the working paper is in n2_dirac_ladders/
+      notes/                 Markdown notes, including the audit of the paper
     scripts/                 Runnable experiments and checks
     src/                     Reusable research code (empty so far)
     results/
@@ -159,11 +160,18 @@ Use command-line arguments for experiment parameters rather than hard-coding the
 
     python scripts/run_experiment.py --q 3 --g 1.0 --parity 0 --dps 30
 
-Currently the code is three check scripts. Run them after changing anything they cover.
+Currently the code is nine check scripts and one audit script. Run them after changing anything they cover. The records used by the paper are in `results/data/paper/`.
 
 - `scripts/check_robin_identities.py`: closed-form relations from Thong and the draft.
 - `scripts/check_literature_inputs.py`: the draft against formulas transcribed from its source papers, with equation numbers. It imports from the first script.
 - `scripts/check_supercasimir.py`: the $su(1,1|1)$ generators and pair Casimir, as operators on a Grassmann algebra.
+- `scripts/check_dirac_reduction.py`: the reduced kernel as a Dirac correlator.
+- `scripts/check_bulk_susy_algebra.py`: Killing spinors, intertwiners and closure, symbolically (about 2 minutes).
+- `scripts/check_bulk_susy_modes.py`: the supercharges on normal modes, and which boundary conditions they preserve.
+- `scripts/check_ward_and_vacuum.py`: the off-shell Ward identity, the threshold $g_*$, vacuum energy, and figure data.
+- `scripts/check_reconstruction.py`: the four-point reconstruction at finite $g$.
+- `scripts/check_super_centre.py`: the super-centre integral of the four-point function against the Dirac propagator (about 1 minute).
+- `scripts/audit_n2_paper.py`: an independent pass over the paper, with its own implementations and direct integrals (about 2 minutes). See `research/notes/n2_dirac_ladders_audit.md`.
 
 The project has no `.venv` yet: these use system `python3` with `mpmath` and `sympy`, and SciPy in the current Anaconda install fails to import.
 

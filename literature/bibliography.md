@@ -38,6 +38,17 @@ Bracketed numbers such as `[T36]` are the reference numbers in Thong 2026.
 | `benedetti_delporte_2021` | D. Benedetti, N. Delporte, *Remarks on a melonic field theory with cubic interaction*, JHEP 04 (2021) 197, arXiv:2012.12238. [T24] | AR model conventions. Thong uses half of the eigenvalue printed in its Eq. (6.19). | background | Thong refs |
 | `ishibashi_wald_2004` | A. Ishibashi, R. M. Wald, *Dynamics in nonglobally hyperbolic static space-times. 3. Anti-de Sitter space-time*, Class. Quant. Grav. 21 (2004) 2981, hep-th/0402184v4. [T64] [Note](notes/ishibashi_wald_2004.md) | Self-adjoint extensions and the positivity theorem, single-field. | part (Sec. 3.3) | Thong refs, PDF |
 
+## Added while writing the paper
+
+| Key | Citation | Relevance | Status | Metadata source |
+|---|---|---|---|---|
+| `amsel_marolf_2008` | A. J. Amsel, D. Marolf, *Supersymmetric Multi-trace Boundary Conditions in AdS*, Class. Quant. Grav. 26 (2009) 025010, arXiv:0808.2184. PDF not in `papers/`. [Note](notes/amsel_marolf_2008.md) | Boundary superfields, half-supersymmetric linear conditions, massive multiplets, $d=3,4,5$. | part (Secs. I, III, VI) | arXiv |
+| `forste_kames-king_wiesner_2017` | S. Förste, J. Kames-King, M. Wiesner, *Towards the Holographic Dual of N=2 SYK*, JHEP 03 (2018) 028, arXiv:1712.07398. | N=(2,2) JT and the super-Schwarzian. | background | arXiv |
+| `heydeman_turiaci_zhao_2022` | M. Heydeman, G. J. Turiaci, W. Zhao, *Phases of N=2 Sachdev-Ye-Kitaev models*, JHEP 01 (2023) 098, arXiv:2206.14900. | Bilinear spectrum at nonzero charge. | background | arXiv (journal inferred from DOI) |
+| `gao_jafferis_wall_2016` | P. Gao, D. L. Jafferis, A. C. Wall, *Traversable Wormholes via a Double Trace Deformation*, JHEP 12 (2017) 151, arXiv:1608.05687. | Two-boundary double-trace coupling; structural comparison only. | background | arXiv (journal inferred from DOI) |
+| `maldacena_qi_2018` | J. Maldacena, X.-L. Qi, *Eternal traversable wormhole*, arXiv:1804.00491. | As above. | background | arXiv |
+| `robin_global_ads4_2026` | *Robin boundary conditions in global AdS$_4$: exact double-trace thermodynamics and a soft-mode instability*, arXiv:2608.17064. Seen in a search only; authors not confirmed. | Possibly relevant to a soft-mode comparison. | background | search result |
+
 ## Alternative single-field and bulk constructions for SYK
 
 | Key | Citation | Relevance | Status | Metadata source |

@@ -1,0 +1,90 @@
+\section{Unitarity, the threshold $g_*$, and the meaning of $g$}
+\label{sec:stability}
+
+\subsection{A BPS bound}
+
+For real $g$, the scalar problem is self-adjoint (\cref{sec:neutral}), and it has no tachyons: $\omega=iy$ with real $y\neq0$ would need $\sigma_pL_qD_\psi(\mu\pm iy)$, with $D_\psi$ real and nonzero, to equal the real number $1/g$, which is impossible. So $\omega^2\ge0$ for all real $g$, unlike Thong's AR model, where $\omega^2$ goes negative beyond a critical coupling~\cite{Thong:2026}.
+
+The surviving algebra says more. The rotation in~\eqref{eq:first-order} is orthogonal, so $\psi^T\psi=u^2+v^2$ pointwise, and the Klein--Gordon norm of the image of a Dirac mode is
+\begin{equation}\label{eq:norm}
+2\omega\int d\theta\,(u^2+v^2)=2\omega\,\|\psi\|^2=(2\Omega-1)\,\|\psi\|^2.
+\end{equation}
+This is the central charge of~\eqref{eq:twisted}. If $\omega=H-\half>0$, the bosonic image has positive norm, so its coefficient in the field is an annihilation operator. Every charge then has the form $a^\dagger a$, and annihilates the Fock vacuum. The bound $\omega\ge0$ is saturated at $H=\half$. It is a condition for the invariance of that vacuum, not for unitarity of the auxiliary system, whose stationary quantization has a positive norm at every $g$ (see below).
+
+Numerically, the only root that reaches $H=\half$ for $0<g\le1$ is the lowest $S$-branch root, which grows from $H=\delta$ at $g=0$ to $H=1$ at $g=1$, as shown in \cref{fig:spectrum}. It does so at
+\begin{equation}\label{eq:gstar}
+g_*=\frac{1}{k_S(\half)},\qquad g_*=0.21784,\ 0.34729,\ 0.39485\quad\text{for }q=3,5,7.
+\end{equation}
+This is where the lowest $p=0$ boson has zero frequency.
+
+\subsection{Vacuum energy}
+
+Summing the zero-point energies multiplet by multiplet, with bosons $\tfrac12|\omega|$ and each Dirac mode $-\tfrac12|\Omega|$, gives
+\begin{equation}\label{eq:vacuum}
+E_{\rm vac}(H)=\frac{|H-\half|+(H+\half)}{2}-H=
+\begin{cases}0,&H\ge\half,\\ \half-H,&H<\half.\end{cases}
+\end{equation}
+So at $g>g_*$, including the physical point, each multiplet contributes zero, and the Fock vacuum is invariant under $q_A,\bar q_A$. We sum per multiplet, and don't address regularization of the full series.
+
+The algebra confirms this, and shows what happens at $g<g_*$. Take the doublet of \cref{fig:multiplet} containing the lowest boson, with $a$ the annihilation operator of the boson at frequency $|\omega|$ and $f$ that of the Dirac mode at energy $H$. For $\omega>0$, the charge that lowers $L_0$ by $\half$ is $\bar Q=\sqrt{2\omega}\,a^\dagger f$. For $\omega<0$, the image $e^{-i\omega t}=e^{+i|\omega|t}$ has negative norm, so its coefficient in the field is a creation operator, and instead $\bar Q=\sqrt{2|\omega|}\,af$. Then, with $Q=\bar Q^\dagger$,
+\begin{equation}\label{eq:fock}
+\half\{Q,\bar Q\}=|\omega|\,(N_a-N_f+1)=L_0-\half J_0,\qquad L_0=E_{\rm vac}+|\omega|N_a+HN_f,\quad J_0=N_f,
+\end{equation}
+which holds exactly when $E_{\rm vac}=|\omega|=\half-H$, as in~\eqref{eq:vacuum}. So the vacuum energy is the constant in the algebra. Two things follow at $g<g_*$:
+\begin{itemize}
+\item The Fock vacuum, which is the lowest state of $L_0$, isn't invariant: $Q|0\rangle\neq0$, and $\langle0|\{Q,\bar Q\}|0\rangle=2E_{\rm vac}>0$.
+\item The state with $N_a=0$, $N_f=1$ \emph{is} invariant. It has $L_0=\half$ and $J_0=1$, so $L_0-\half J_0=0$. It is a BPS state, and the lowest state of the twisted Hamiltonian.
+\end{itemize}
+So whether to call this spontaneous breaking depends on which Hamiltonian defines the vacuum. In terms of $L_0$, the generator of cylinder time, the ground state isn't supersymmetric. In terms of $L_0-\half J_0$, the only energy in the surviving algebra, it is, in the sector of R-charge 1. The reduced ladder of \cref{sec:fourpoint} uses the Fock vacuum. We haven't identified a role for the BPS state in the CFT. The pair $(\bar f,t)$ has twisted energy $H+\half>0$ and plays no part in this. The same computation for $q_B^{(-)},\bar q_B^{(-)}$ exchanges $f$ and $\bar f$, so no Fock state is invariant under the charges of both embeddings.
+
+\subsection{Two quantizations below $g_*$}
+
+At $g=0$, $\Phi_\psi$ in the even sector has the mode $\omega=-\mu$. This is Thong's condition $a+J>0$ failing, since $a+J=\delta-\half=-\mu$. In representation theory this is the lowest state of the long multiplet with $H=-\mu<0$. There are two options, and they differ:
+\begin{itemize}
+\item The \emph{continued} covariance keeps the $su(1,1|1)$ covariance of the reduced seed, with a growing exponential of negative coefficient, $w(-\mu)e^{\mu|\tau|}$, $w(-\mu)=-w(\mu)<0$, where $w(\omega)=1/(2\nu\cR'_{\nu,0}(\omega))$. Its norm isn't positive. This agrees with non-unitarity of the multiplet: $\|G_{-1/2}\ket{H}\|^2\propto2H<0$.
+\item The \emph{stationary} covariance has the positive decaying mode $w(\mu)e^{-\mu|\tau|}$, but no $su(1,1|1)$ invariance.
+\end{itemize}
+They have the same meromorphic response, and differ by a homogeneous solution,
+\begin{equation}\label{eq:homogeneous}
+G^{\rm cont}(\tau)-G^{\rm stat}(\tau)=-2w(\mu)\cosh(\mu\tau),
+\end{equation}
+which we checked for $q=3,5$. At $g>g_*$ the question disappears, because all modes have $\omega>0$. At the physical point, the reduced ladder computed directly from the literature's four-point function has exactly the stationary modes and weights, in the entries and range tested (\cref{subsec:reduced-cov}). So no continuation in $g$ through $g_*$ is needed to define the physical system.
+
+\subsection{The four-point function doesn't see $g_*$}
+
+$g_*$ isn't a phase transition of the correlator on $0<z<1$. In the superblock expansion of \cref{sec:fourpoint}, poles sit at $\pm H$ and never pinch the contour, since $H\ge\delta>0$ throughout. We confirmed that~\eqref{eq:reconstruction} and the root sum agree at $g=0.15<g_*$ for $q=3$, as at larger $g$. What fails at $g_*$ is the ordinary centre integral of a component block, which needs $\mathrm{Re}\,h>\half$, because its tail is $|u|^{-2h}$. So $g_*$ is a boundary of validity for the reduced bosonic description. The Dirac description, with $\Omega=H$ and weight $\delta$, has no such boundary, and nor does the super-centre integral of \cref{subsec:supercentre}, which converges for $H>-\half$ and gives the Dirac propagator at every $g$.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=0.72\textwidth,height=0.42\textwidth,xlabel={$g$},ylabel={$H$},xmin=0,xmax=1,ymin=0,ymax=3,
+ legend style={at={(0.98,0.72)},anchor=north east,font=\small,draw=none,fill=white,fill opacity=0.8,text opacity=1},tick label style={font=\small},label style={font=\small}]
+\addplot[thick,blue!70!black] table[x=g,y=HS0,col sep=space,comment chars={\#}] {../../../results/data/paper/spectrum_q3.dat};
+\addlegendentry{$S$-branch, lowest}
+\addplot[thick,red!70!black,dashed] table[x=g,y=HA0,col sep=space,comment chars={\#}] {../../../results/data/paper/spectrum_q3.dat};
+\addlegendentry{$A$-branch, lowest}
+\addplot[thick,blue!70!black,dotted] table[x=g,y=HS1,col sep=space,comment chars={\#}] {../../../results/data/paper/spectrum_q3.dat};
+\addlegendentry{$S$-branch, next}
+\addplot[gray,densely dashed] coordinates {(0,0.5) (1,0.5)};
+\node[font=\small,gray] at (axis cs:0.84,0.36) {$H=\tfrac12$};
+\addplot[gray] coordinates {(0.21784,0) (0.21784,3)};
+\node[font=\small,gray,anchor=west] at (axis cs:0.225,1.85) {$g_*$};
+\addplot[only marks,mark=*,mark size=1.3pt] coordinates {(1,1)};
+\end{axis}
+\end{tikzpicture}
+\caption{Lowest roots of $gk_\alpha(H)=1$ at $q=3$, computed from~\eqref{eq:kAkS}. Both lowest branches reach $H=1$ at $g=1$. Below $g_*$, the lowest $S$-branch root violates the bound $H\ge\half$, and the Fock vacuum isn't invariant under the surviving charges. Data: \texttt{results/data/paper/spectrum\_q3.dat}.}
+\label{fig:spectrum}
+\end{figure}
+
+\subsection{A supersymmetric line of theories}
+\label{subsec:line}
+
+So far $g$ has been a formal weight. In the $\cN=0$ model, it has a microscopic meaning through conformal SYK~\cite{Gross:2017aos}, in which the kinetic term is replaced by a bilocal. The construction appears to carry over. Replace the kinetic term by
+\begin{equation}\label{eq:bilocal}
+S_0=\int d\mu_1d\mu_2\,\bar\Psi(1)\,K(\ket{12})\,\Psi(2),
+\end{equation}
+with $K$ the inverse of $\bar G=\bar b\,\sgn\ket{12}/|\ket{12}|^\delta$, and keep the superpotential. In components we expect UV propagators $\bar G_\psi$ and $\bar G_b=-\partial\bar G_\psi$, though we haven't carried out this reduction. Schwinger--Dyson is then $G_i^{-1}=\bar G_i^{-1}-\Sigma_i$, with $\Sigma_i$ as in~\cite{Peng:2017spg}. With the conformal form, and $b_\psi/\bar b_\psi=b_b/\bar b_b=r$, we have in frequency space $G_i\bar G_i^{-1}=r$ and $G_i\Sigma_i=-g$, where $g=Jb_\psi^{q-1}b_b/(Jb_\psi^{q-1}b_b)_{\rm IR}$ is the same in both equations, since the IR solution makes each product $-1$. Thus
+\begin{equation}
+g=1-r,
+\end{equation}
+which is~\cite[(C.9)]{Thong:2026} with $r=2\bar b$. All three entries of~\eqref{eq:Kmatrix} scale the same way, as $Jb_\psi^q$ at fixed $b_b/b_\psi=\delta$, so $\hat{\sk}_p\to g\hat{\sk}_p$. This is exactly the formal $g$ above. At $g<1$ the $H=1$ multiplets lift, as $k_\alpha(1)=1\neq1/g$, consistent with a nonlocal theory having no local stress tensor. We have checked neither reflection positivity nor anything beyond leading order in $1/N$, so this remains a proposal.

@@ -2,7 +2,7 @@
 
 **Citation.** J. Maldacena, D. Stanford, *Remarks on the Sachdev-Ye-Kitaev model*, Phys. Rev. D 94 (2016) 106002, arXiv:1604.07818. PDF: `papers/maldacena_standford_2016.pdf` (the filename has a typo). Tag: **[MS]**.
 
-**The PDF is arXiv v1, titled "Comments on the Sachdev-Ye-Kitaev model", and its equation numbers differ from the published version.** Thong cites the published numbering. For example, Thong's [MS](3.35) for the kernel is (3.73) in v1, and his (3.45) for the ladder sum is (3.83)–(3.84) in v1. **All numbers below are v1.** It would be worth pulling the current arXiv version if we need to check further cross-references; the formula used here is checked by its special cases.
+**The PDF is arXiv v1, titled "Comments on the Sachdev-Ye-Kitaev model", and its equation numbers differ from the published version.** Thong cites the published numbering. For example, Thong's [MS](3.35) for the kernel is (3.73) in v1, and Thong's (3.45) for the ladder sum is (3.83)–(3.84) in v1. **All numbers below are v1.** It would be worth pulling the current arXiv version if we need to check further cross-references; the formula used here is checked by its special cases.
 
 **Read:** Secs. 3.2.1–3.2.5. Secs. 1, 2, 3.3 and 4–7 were not read.
 

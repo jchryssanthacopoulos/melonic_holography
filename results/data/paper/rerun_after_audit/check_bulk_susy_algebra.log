@@ -1,0 +1,27 @@
+gamma3 = gamma^0 gamma^1 = [[0, I], [-I, 0]]
+1. Killing equation
+    eps_A solves nabla eps = kappa gamma eps with kappa = 1/2
+  [PASS] eps_A is Killing with kappa = 1/2
+    eps_B solves nabla eps = kappa gamma eps with kappa = 1/2
+  [PASS] eps_B is Killing with kappa = 1/2
+2. Intertwining relations for arbitrary Phi(t, theta)
+  [PASS] (nabla - mu)(d + mu) Phi eps_A = (box - mu(mu-1)) Phi eps_A
+  [PASS] (nabla - mu) g3 (d - mu) Phi eps_A = -g3 (box - mu(mu+1)) Phi eps_A
+  [PASS] (nabla - mu)(d + mu) Phi eps_B = (box - mu(mu-1)) Phi eps_B
+  [PASS] (nabla - mu) g3 (d - mu) Phi eps_B = -g3 (box - mu(mu+1)) Phi eps_B
+3. Closure: delta Psi = -M eps, delta Phi_b = Psibar eps + ebar Psi,
+   delta Phi_psi = -beta Psibar g3 eps + conj(beta) ebar g3 Psi, as the action requires.
+   [delta_1, delta_2] Phi_b = ebar_1 (M - Mbar) eps_2 - (1 <-> 2), Mbar = s1 M^dagger s1.
+  [PASS] beta=+i: M - Mbar = 2 d-slash Phi_b, no Phi_psi (closes)
+  [PASS] beta=-i: M - Mbar = 2 d-slash Phi_b, no Phi_psi (closes)
+  [PASS] beta=1: M - Mbar = 2 d-slash Phi_b, no Phi_psi is FALSE (does not close)
+4. The Killing vectors xi^a = ebar_1 cos(theta) gamma^a eps_2
+    (A,A): xi^t = I, xi^theta = 0
+    (B,B): xi^t = I, xi^theta = 0
+    (A,B): xi^t = I*exp(I*t)*sin(theta), xi^theta = exp(I*t)*cos(theta)
+    (B,A): xi^t = I*exp(-I*t)*sin(theta), xi^theta = -exp(-I*t)*cos(theta)
+  [PASS] (A,A) and (B,B) generate d_t
+  [PASS] (A,B) is a conformal Killing vector of the strip, so an isometry of AdS2 with E^theta = 0 at the boundary
+  [PASS] (A,B) raises energy by one unit: xi ~ exp(i t)
+
+12/12 checks passed

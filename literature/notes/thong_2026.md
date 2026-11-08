@@ -139,6 +139,6 @@ Details are in [`docs/derivations.md`](../../docs/derivations.md) and [`docs/res
 
 - **Cited Maldacena–Stanford numbers** are from a later version than the v1 in `papers/`. For example, Thong's [MS](3.35) is v1 (3.73). The kernel itself agrees.
 - **(C.8) has an even-sector analogue,** with $\tan(\pi h/2)\to\cot(\pi h/2)$, found by quadrature. See `docs/derivations.md` 7.1.
-- **(C.8) has a pole at $h=1$** that Thong never meets, as his physical roots stay in $(2n+1+2\Delta,2n+2)$. N=2 does meet it. The family there is a step function on $\chi>1$, `docs/derivations.md` 7.2.
+- **(C.8) has a pole at $h=1$** that Thong never meets, as the physical roots there stay in $(2n+1+2\Delta,2n+2)$. N=2 does meet it. The family there is a step function on $\chi>1$, `docs/derivations.md` 7.2.
 - **His p. 6 remark on complex SYK** can be sharpened at zero charge: one scalar with a parity-dependent $\kappa$, `docs/derivations.md` Sec. 9.
 

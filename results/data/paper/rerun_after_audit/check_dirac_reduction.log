@@ -1,0 +1,157 @@
+
+q=3, delta=0.333333
+ 1. Boundary correlators against closed forms
+  [PASS] A(0.1): (5.88835063166 + 0.0j) vs (5.88835063166 + 0.0j)
+  [PASS] B(0.1): (2.10109357771 + 0.0j) vs (2.10109357771 + 0.0j)
+  [PASS] A(-0.2): (8.65465388195 + 0.0j) vs (8.65465388195 + 0.0j)
+  [PASS] B(-0.2): (-5.87405160781 + 0.0j) vs (-5.87405160781 + 0.0j)
+ 3. c = J (q-1) b^q C(nu) 2 mu = -0.377364453575
+ 2. Reduced kernel eigenvalue against kA, kS, for both parities, with this c
+    H=0.1: c(A+B)=-3.014932248 c(A-B)=-1.429176189 kA(H)=-1.429176189 kS(H)=-3.014932248 kA(-H)=-3.014932248 kS(-H)=-1.429176189
+  [PASS] sigma=+1 gives kA(H): (-1.42917618872 + 0.0j) vs (-1.42917618872 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-3.01493224844 + 0.0j) vs (-3.01493224844 + 0.0j)
+    H=-0.2: c(A+B)=-1.049300458 c(A-B)=-5.482617008 kA(H)=-5.482617008 kS(H)=-1.049300458 kA(-H)=-1.049300458 kS(-H)=-5.482617008
+  [PASS] sigma=+1 gives kA(H): (-5.4826170083 + 0.0j) vs (-5.4826170083 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-1.04930045779 + 0.0j) vs (-1.04930045779 + 0.0j)
+    H=0.28333: c(A+B)=-14.94995993 c(A-B)=-0.8086460913 kA(H)=-0.8086460913 kS(H)=-14.94995993 kA(-H)=-14.94995993 kS(-H)=-0.8086460913
+  [PASS] sigma=+1 gives kA(H): (-0.808646091287 + 0.0j) vs (-0.808646091287 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-14.9499599347 + 0.0j) vs (-14.9499599347 + 0.0j)
+ 4. The response [N2](22): k = sigma L / R_F
+  [PASS] p=1 H=1.37: (-14.0404278031 + 0.0j) vs (-14.0404278031 + 0.0j)
+  [PASS] p=0 H=1.37: (0.407169266048 + 0.0j) vs (0.407169266048 + 0.0j)
+  [PASS] p=1 H=0.31: (-0.740924582963 + 0.0j) vs (-0.740924582963 + 0.0j)
+  [PASS] p=0 H=0.31: (-32.2113065198 + 0.0j) vs (-32.2113065198 + 0.0j)
+  [PASS] p=1 H=2.23: (-0.495436732584 + 0.0j) vs (-0.495436732584 + 0.0j)
+  [PASS] p=0 H=2.23: (-3.69637978929 + 0.0j) vs (-3.69637978929 + 0.0j)
+
+q=5, delta=0.2
+ 1. Boundary correlators against closed forms
+  [PASS] A(0.06): (10.488994604 + 0.0j) vs (10.488994604 + 0.0j)
+  [PASS] B(0.06): (3.34380896751 + 0.0j) vs (3.34380896751 + 0.0j)
+  [PASS] A(-0.12): (15.1203811823 + 0.0j) vs (15.1203811823 + 0.0j)
+  [PASS] B(-0.12): (-9.46975708804 + 0.0j) vs (-9.46975708804 + 0.0j)
+ 3. c = J (q-1) b^q C(nu) 2 mu = -0.420986098498
+ 2. Reduced kernel eigenvalue against kA, kS, for both parities, with this c
+    H=0.06: c(A+B)=-5.823418007 c(A-B)=-3.008023824 kA(H)=-3.008023824 kS(H)=-5.823418007 kA(-H)=-5.823418007 kS(-H)=-3.008023824
+  [PASS] sigma=+1 gives kA(H): (-3.00802382416 + 0.0j) vs (-3.00802382416 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-5.82341800687 + 0.0j) vs (-5.82341800687 + 0.0j)
+    H=-0.12: c(A+B)=-2.378834192 c(A-B)=-10.35210637 kA(H)=-10.35210637 kS(H)=-2.378834192 kA(-H)=-2.378834192 kS(-H)=-10.35210637
+  [PASS] sigma=+1 gives kA(H): (-10.3521063719 + 0.0j) vs (-10.3521063719 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-2.37883419151 + 0.0j) vs (-2.37883419151 + 0.0j)
+    H=0.17: c(A+B)=-27.90760849 c(A-B)=-2.003554641 kA(H)=-2.003554641 kS(H)=-27.90760849 kA(-H)=-27.90760849 kS(-H)=-2.003554641
+  [PASS] sigma=+1 gives kA(H): (-2.0035546414 + 0.0j) vs (-2.0035546414 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-27.9076084945 + 0.0j) vs (-27.9076084945 + 0.0j)
+ 4. The response [N2](22): k = sigma L / R_F
+  [PASS] p=1 H=1.37: (-2.46404927548 + 0.0j) vs (-2.46404927548 + 0.0j)
+  [PASS] p=0 H=1.37: (0.540046004314 + 0.0j) vs (0.540046004314 + 0.0j)
+  [PASS] p=1 H=0.31: (-1.31491812758 + 0.0j) vs (-1.31491812758 + 0.0j)
+  [PASS] p=0 H=0.31: (7.77463056128 + 0.0j) vs (7.77463056128 + 0.0j)
+  [PASS] p=1 H=2.23: (-0.488293081659 + 0.0j) vs (-0.488293081659 + 0.0j)
+  [PASS] p=0 H=2.23: (8.29530228182 + 0.0j) vs (8.29530228182 + 0.0j)
+
+q=7, delta=0.142857
+ 1. Boundary correlators against closed forms
+  [PASS] A(0.04286): (14.9995790504 + 0.0j) vs (14.9995790504 + 0.0j)
+  [PASS] B(0.04286): (4.6405115018 + 0.0j) vs (4.6405115018 + 0.0j)
+  [PASS] A(-0.08571): (21.4880082676 + 0.0j) vs (21.4880082676 + 0.0j)
+  [PASS] B(-0.08571): (-13.1754233257 + 0.0j) vs (-13.1754233257 + 0.0j)
+ 3. c = J (q-1) b^q C(nu) 2 mu = -0.440670620192
+ 2. Reduced kernel eigenvalue against kA, kS, for both parities, with this c
+    H=0.042857: c(A+B)=-8.654810884 c(A-B)=-4.564936721 kA(H)=-4.564936721 kS(H)=-8.654810884 kA(-H)=-8.654810884 kS(-H)=-4.564936721
+  [PASS] sigma=+1 gives kA(H): (-4.56493672124 + 0.0j) vs (-4.56493672124 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-8.65481088426 + 0.0j) vs (-8.65481088426 + 0.0j)
+    H=-0.085714: c(A+B)=-3.663111962 c(A-B)=-15.2751559 kA(H)=-15.2751559 kS(H)=-3.663111962 kA(-H)=-3.663111962 kS(-H)=-15.2751559
+  [PASS] sigma=+1 gives kA(H): (-15.2751558982 + 0.0j) vs (-15.2751558982 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-3.66311196173 + 0.0j) vs (-3.66311196173 + 0.0j)
+    H=0.12143: c(A+B)=-40.98917477 c(A-B)=-3.131477749 kA(H)=-3.131477749 kS(H)=-40.98917477 kA(-H)=-40.98917477 kS(-H)=-3.131477749
+  [PASS] sigma=+1 gives kA(H): (-3.13147774922 + 0.0j) vs (-3.13147774922 + 0.0j)
+  [PASS] sigma=-1 gives kS(H): (-40.9891747652 + 0.0j) vs (-40.9891747652 + 0.0j)
+ 4. The response [N2](22): k = sigma L / R_F
+  [PASS] p=1 H=1.37: (-1.65878171741 + 0.0j) vs (-1.65878171741 + 0.0j)
+  [PASS] p=0 H=1.37: (0.593824650975 + 0.0j) vs (0.593824650975 + 0.0j)
+  [PASS] p=1 H=0.31: (-1.67557888605 + 0.0j) vs (-1.67557888605 + 0.0j)
+  [PASS] p=0 H=0.31: (5.37350505055 + 0.0j) vs (5.37350505055 + 0.0j)
+  [PASS] p=1 H=2.23: (-0.47926198754 + 0.0j) vs (-0.47926198754 + 0.0j)
+  [PASS] p=0 H=2.23: (2.30791868572 + 0.0j) vs (2.30791868572 + 0.0j)
+
+5. Closed forms and positivity, for the paper
+  [PASS] q=3: c = -nu Gamma(nu)/(2 delta Gamma(delta) cos(pi delta) Gamma(1-2 delta)): (-0.377364453575 + 0.0j) vs (-0.377364453575 + 0.0j)
+  [PASS] q=3: c/L = c_F = -Gamma(delta+1/2)/(sqrt(pi) Gamma(delta)): (-0.237724709271 + 0.0j) vs (-0.237724709271 + 0.0j)
+  [PASS] q=3 H=0.11 p=1: 1/R_F = c_F (sigma A + B): (0.872373894067 + 0.0j) vs (0.872373894067 + 0.0j)
+  [PASS] q=3 H=0.11 p=0: 1/R_F = c_F (sigma A + B): (-1.99322780309 + 0.0j) vs (-1.99322780309 + 0.0j)
+  [PASS] q=3 H=1.37 p=1: 1/R_F = c_F (sigma A + B): (8.84491526931 + 0.0j) vs (8.84491526931 + 0.0j)
+  [PASS] q=3 H=1.37 p=0: 1/R_F = c_F (sigma A + B): (0.256500564582 + 0.0j) vs (0.256500564582 + 0.0j)
+    g=0.6 p=1: root Omega=-2.621977, weight Res G^F = 0.324141 PASS
+    g=0.6 p=1: root Omega=-0.7752368, weight Res G^F = 0.411733 PASS
+    g=0.6 p=1: root Omega=1.096117, weight Res G^F = 0.184394 PASS
+    g=0.6 p=1: root Omega=3.149761, weight Res G^F = 0.15334 PASS
+    g=0.6 p=0: root Omega=-3.149761, weight Res G^F = 0.15334 PASS
+    g=0.6 p=0: root Omega=-1.096117, weight Res G^F = 0.184394 PASS
+    g=0.6 p=0: root Omega=0.7752368, weight Res G^F = 0.411733 PASS
+    g=0.6 p=0: root Omega=2.621977, weight Res G^F = 0.324141 PASS
+    g=0.95 p=1: root Omega=-2.797507, weight Res G^F = 0.300887 PASS
+    g=0.95 p=1: root Omega=-0.9759433, weight Res G^F = 0.31016 PASS
+    g=0.95 p=1: root Omega=1.009997, weight Res G^F = 0.129117 PASS
+    g=0.95 p=1: root Omega=3.075042, weight Res G^F = 0.117314 PASS
+    g=0.95 p=0: root Omega=-3.075042, weight Res G^F = 0.117314 PASS
+    g=0.95 p=0: root Omega=-1.009997, weight Res G^F = 0.129117 PASS
+    g=0.95 p=0: root Omega=0.9759433, weight Res G^F = 0.31016 PASS
+    g=0.95 p=0: root Omega=2.797507, weight Res G^F = 0.300887 PASS
+  [PASS] q=3 w=1.63: B_minus = -w a_F: (-1.63 + 0.0j) vs (-1.63 + 0.0j)
+  [PASS] q=3 w=1.63: B_plus = -w b_F: (-1.2551 + 0.0j) vs (-1.2551 + 0.0j)
+  [PASS] q=3 w=2.37: B_minus = -w a_F: (-2.37 + 0.0j) vs (-2.37 + 0.0j)
+  [PASS] q=3 w=2.37: B_plus = -w b_F: (-1.8249 + 0.0j) vs (-1.8249 + 0.0j)
+  [PASS] q=5: c = -nu Gamma(nu)/(2 delta Gamma(delta) cos(pi delta) Gamma(1-2 delta)): (-0.420986098498 + 0.0j) vs (-0.420986098498 + 0.0j)
+  [PASS] q=5: c/L = c_F = -Gamma(delta+1/2)/(sqrt(pi) Gamma(delta)): (-0.159523900941 + 0.0j) vs (-0.159523900941 + 0.0j)
+  [PASS] q=5 H=0.11 p=1: 1/R_F = c_F (sigma A + B): (0.93500578489 + 0.0j) vs (0.93500578489 + 0.0j)
+  [PASS] q=5 H=0.11 p=0: 1/R_F = c_F (sigma A + B): (-3.47847342526 + 0.0j) vs (-3.47847342526 + 0.0j)
+  [PASS] q=5 H=1.37 p=1: 1/R_F = c_F (sigma A + B): (0.933700076887 + 0.0j) vs (0.933700076887 + 0.0j)
+  [PASS] q=5 H=1.37 p=0: 1/R_F = c_F (sigma A + B): (0.204639168854 + 0.0j) vs (0.204639168854 + 0.0j)
+    g=0.6 p=1: root Omega=-2.384918, weight Res G^F = 0.146699 PASS
+    g=0.6 p=1: root Omega=-0.7118491, weight Res G^F = 0.304455 PASS
+    g=0.6 p=1: root Omega=1.054528, weight Res G^F = 0.0636328 PASS
+    g=0.6 p=1: root Omega=3.108447, weight Res G^F = 0.0463029 PASS
+    g=0.6 p=0: root Omega=-3.108447, weight Res G^F = 0.0463029 PASS
+    g=0.6 p=0: root Omega=-1.054528, weight Res G^F = 0.0636328 PASS
+    g=0.6 p=0: root Omega=0.7118491, weight Res G^F = 0.304455 PASS
+    g=0.6 p=0: root Omega=2.384918, weight Res G^F = 0.146699 PASS
+    g=0.95 p=1: root Omega=-2.535807, weight Res G^F = 0.178139 PASS
+    g=0.95 p=1: root Omega=-0.9680294, weight Res G^F = 0.246964 PASS
+    g=0.95 p=1: root Omega=1.005637, weight Res G^F = 0.0438047 PASS
+    g=0.95 p=1: root Omega=3.070367, weight Res G^F = 0.0366395 PASS
+    g=0.95 p=0: root Omega=-3.070367, weight Res G^F = 0.0366395 PASS
+    g=0.95 p=0: root Omega=-1.005637, weight Res G^F = 0.0438047 PASS
+    g=0.95 p=0: root Omega=0.9680294, weight Res G^F = 0.246964 PASS
+    g=0.95 p=0: root Omega=2.535807, weight Res G^F = 0.178139 PASS
+  [PASS] q=5 w=1.63: B_minus = -w a_F: (-1.63 + 0.0j) vs (-1.63 + 0.0j)
+  [PASS] q=5 w=1.63: B_plus = -w b_F: (-1.2551 + 0.0j) vs (-1.2551 + 0.0j)
+  [PASS] q=5 w=2.37: B_minus = -w a_F: (-2.37 + 0.0j) vs (-2.37 + 0.0j)
+  [PASS] q=5 w=2.37: B_plus = -w b_F: (-1.8249 + 0.0j) vs (-1.8249 + 0.0j)
+  [PASS] q=7: c = -nu Gamma(nu)/(2 delta Gamma(delta) cos(pi delta) Gamma(1-2 delta)): (-0.440670620192 + 0.0j) vs (-0.440670620192 + 0.0j)
+  [PASS] q=7: c/L = c_F = -Gamma(delta+1/2)/(sqrt(pi) Gamma(delta)): (-0.120499230033 + 0.0j) vs (-0.120499230033 + 0.0j)
+  [PASS] q=7 H=0.11 p=1: 1/R_F = c_F (sigma A + B): (0.898443807935 + 0.0j) vs (0.898443807935 + 0.0j)
+  [PASS] q=7 H=0.11 p=0: 1/R_F = c_F (sigma A + B): (-7.29571886562 + 0.0j) vs (-7.29571886562 + 0.0j)
+  [PASS] q=7 H=1.37 p=1: 1/R_F = c_F (sigma A + B): (0.453585763563 + 0.0j) vs (0.453585763563 + 0.0j)
+  [PASS] q=7 H=1.37 p=0: 1/R_F = c_F (sigma A + B): (0.162378452155 + 0.0j) vs (0.162378452155 + 0.0j)
+    g=0.6 p=1: root Omega=-2.274653, weight Res G^F = 0.0792743 PASS
+    g=0.6 p=1: root Omega=-0.6820586, weight Res G^F = 0.236543 PASS
+    g=0.6 p=1: root Omega=1.038032, weight Res G^F = 0.0321725 PASS
+    g=0.6 p=1: root Omega=3.082761, weight Res G^F = 0.022118 PASS
+    g=0.6 p=0: root Omega=-3.082761, weight Res G^F = 0.022118 PASS
+    g=0.6 p=0: root Omega=-1.038032, weight Res G^F = 0.0321725 PASS
+    g=0.6 p=0: root Omega=0.6820586, weight Res G^F = 0.236543 PASS
+    g=0.6 p=0: root Omega=2.274653, weight Res G^F = 0.0792743 PASS
+    g=0.95 p=1: root Omega=-2.394044, weight Res G^F = 0.107798 PASS
+    g=0.95 p=1: root Omega=-0.9638806, weight Res G^F = 0.200724 PASS
+    g=0.95 p=1: root Omega=1.003922, weight Res G^F = 0.021994 PASS
+    g=0.95 p=1: root Omega=3.057395, weight Res G^F = 0.0177393 PASS
+    g=0.95 p=0: root Omega=-3.057395, weight Res G^F = 0.0177393 PASS
+    g=0.95 p=0: root Omega=-1.003922, weight Res G^F = 0.021994 PASS
+    g=0.95 p=0: root Omega=0.9638806, weight Res G^F = 0.200724 PASS
+    g=0.95 p=0: root Omega=2.394044, weight Res G^F = 0.107798 PASS
+  [PASS] q=7 w=1.63: B_minus = -w a_F: (-1.63 + 0.0j) vs (-1.63 + 0.0j)
+  [PASS] q=7 w=1.63: B_plus = -w b_F: (-1.2551 + 0.0j) vs (-1.2551 + 0.0j)
+  [PASS] q=7 w=2.37: B_minus = -w a_F: (-2.37 + 0.0j) vs (-2.37 + 0.0j)
+  [PASS] q=7 w=2.37: B_plus = -w b_F: (-1.8249 + 0.0j) vs (-1.8249 + 0.0j)
+
+126/126 checks passed

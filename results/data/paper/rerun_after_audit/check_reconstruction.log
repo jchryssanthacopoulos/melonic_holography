@@ -1,0 +1,20 @@
+
+q=3
+  [PASS] g=0.15 z=0.25: contour + integers = root sum: (0.56006340204 + 0.0j) vs (0.56006340204 + 0.0j)
+  [PASS] g=0.15 z=0.6: contour + integers = root sum: (0.857123746507 + 0.0j) vs (0.857123746507 + 0.0j)
+  [PASS] g=0.5 z=0.25: contour + integers = root sum: (0.445672035341 + 0.0j) vs (0.445672035341 + 0.0j)
+  [PASS] g=0.5 z=0.6: contour + integers = root sum: (0.922455910369 + 0.0j) vs (0.922455910369 + 0.0j)
+  [PASS] g=0.85 z=0.25: contour + integers = root sum: (0.68623512398 + 0.0j) vs (0.68623512398 + 0.0j)
+  [PASS] g=0.85 z=0.6: contour + integers = root sum: (1.80728677656 + 0.0j) vs (1.80728677656 + 0.0j)
+  [PASS] g -> 0 tends to z^delta (to O(g)): (0.736697588308 + 0.0j) vs (0.736806299728 + 0.0j)
+
+q=5
+  [PASS] g=0.15 z=0.25: contour + integers = root sum: (0.655005024276 + 0.0j) vs (0.655005024276 + 0.0j)
+  [PASS] g=0.15 z=0.6: contour + integers = root sum: (0.894895286628 + 0.0j) vs (0.894895286628 + 0.0j)
+  [PASS] g=0.5 z=0.25: contour + integers = root sum: (0.478443551697 + 0.0j) vs (0.478443551697 + 0.0j)
+  [PASS] g=0.5 z=0.6: contour + integers = root sum: (0.908610933277 + 0.0j) vs (0.908610933277 + 0.0j)
+  [PASS] g=0.85 z=0.25: contour + integers = root sum: (0.649990841335 + 0.0j) vs (0.649990841335 + 0.0j)
+  [PASS] g=0.85 z=0.6: contour + integers = root sum: (1.66124139565 + 0.0j) vs (1.66124139565 + 0.0j)
+  [PASS] g -> 0 tends to z^delta (to O(g)): (0.832367402779 + 0.0j) vs (0.832553207402 + 0.0j)
+
+14/14 checks passed

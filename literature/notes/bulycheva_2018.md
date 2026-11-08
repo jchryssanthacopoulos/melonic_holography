@@ -34,16 +34,18 @@ Checked in `scripts/check_literature_inputs.py` and `scripts/check_supercasimir.
 
 | Eq. | Problem | Evidence |
 |---|---|---|
-| (4.48), (4.49) | Overall sign | Disagrees with her own (4.51)+(B.8), with [PSV], and with her statement $k(1)=1$ (literal gives $-1$) |
-| (4.39) | Sign before $\varphi_{-h}$ should be minus | Disagrees with (4.38)+(B.4), (B.5); those we confirmed by direct integration of (4.26) |
-| (4.90)–(4.92), (4.106) | Prefactor $\alpha$ should be $\alpha/2$ | Disagrees with (4.85)+(4.88), and the seed's leading coefficient comes out 2. (4.99) is correct |
-| (A.9) | Should read $-L_{-1}L_1$ | As printed the operator isn't central. Reordered, it is, and gives (A.10), (A.16) |
-| (A.3), (A.5), (A.7) | $Q/2$ should be $Q$ | As printed the algebra doesn't close with (A.4) |
+| (4.48), (4.49) | Overall sign | Disagrees with (4.51)+(B.8) of the same paper, with [PSV], and with its statement $k(1)=1$ (literal gives $-1$) |
+| (4.39) | Sign before $\varphi_{-h}$ should be minus | Disagrees with (4.38)+(B.4), (B.5), and with direct integration of the definition (4.24), e.g. 2.926 against 5.793 at $h=0.3$, $\chi=0.6$ |
+| (4.90)–(4.92), (4.106) | Prefactor $\alpha$ should be $\alpha/2$ | Disagrees with (4.85)+(4.88), and the seed's leading coefficient comes out 2 |
+| (4.96), (4.98), (4.99) | Inherit the signs of (4.39), (4.48). The factor should be $\sin2\pi\Delta-\sin\pi h/\cos\pi h$, not $\sin\pi h-\sin2\pi\Delta/\cos\pi h$ | They agree at $h=2\Delta$, so the leading coefficient 1 and (4.100) stand, and differ by $(-1)^n$ at $h=2\Delta+n$. With the corrected factor and the full block, the sum is $\chi^{2\Delta}$ to 12 digits at $\chi=0.2,0.5,0.8$, $q=3,5$; with the printed factor it isn't (0.8660 against 0.7937 at $q=3$, $\chi=0.5$). The paper says (4.99) was checked numerically for any $\chi$, so the check presumably used a correct form |
+| (A.9), (A.14) | Should read $-L_{-1}L_1$ | As printed the operator isn't central. Reordered, it is, and with the printed generators it reproduces (A.10)–(A.12) exactly, which suggests a misprint of the ordering only |
+| (A.3), (A.5), (A.7) | $Q/2$ should be $Q$, or equivalently $Q\to Q/2$ in (A.4) | As printed the algebra doesn't close. $Q/2\to Q$ gives [FGMS]'s normalization, with supercharge of R-charge 1 |
+| (A.11), (A.12) | The $\pm Q/4$ terms | They follow from the printed generators, but a Casimir must be constant on the multiplet. With a closed algebra, $C=\Delta^2-Q^2/4$ on all components |
 | (A.15) | $Q=0$ holds for the pair only | $\langle12\rangle^{-2\Delta}$ is invariant only for $Q_1=-2\Delta$, $Q_2=+2\Delta$ |
 
-None affects her final structure. With the corrected signs, (4.106) reorganizes exactly into [N2](26) (see `docs/derivations.md` Sec. 5.3).
+None affects the final structure. With the corrected signs, (4.106) reorganizes exactly into [N2](26) (see `docs/derivations.md` Sec. 5.3).
 
-**Normalization difference with [PSV].** Her $Jb^q=\tan(\pi\Delta)/(4\pi)$, against $1/(2\pi)$ in [PSV](2.10). This is a normalization of $b$: her $\langle12\rangle$ implies $G_b=-2\partial G_\psi$, whereas [PSV] has $G_b=-\partial G_\psi$. Putting a factor of 2 into the Schwinger–Dyson equation accounts for the difference (derived by hand). Kernels don't depend on this.
+**Normalization difference with [PSV].** Here $Jb^q=\tan(\pi\Delta)/(4\pi)$, against $1/(2\pi)$ in [PSV](2.10). This is a normalization of $b$: $\langle12\rangle$ implies $G_b=-2\partial G_\psi$, whereas [PSV] has $G_b=-\partial G_\psi$. Putting a factor of 2 into the Schwinger–Dyson equation accounts for the difference (derived by hand). Kernels don't depend on this.
 
 ## Important equations for us
 
@@ -51,7 +53,7 @@ None affects her final structure. With the corrected signs, (4.106) reorganizes 
 
 ## Numerical methods
 
-Analytic; (4.99) is said to have been checked numerically.
+Analytic; (4.99) is said to have been checked numerically. See the table above: as printed, it holds at leading order only.
 
 ## Limitations
 
@@ -60,5 +62,5 @@ The $h=1$ subspace is left to "the theory outside the conformal limit", with [Fu
 ## Relationship to our project
 
 - **Superblocks and Casimir**: source of [N2](24), and of $\mathcal C_2$. Agree.
-- **It answers B1.** Appendix A is enough to derive the N=2 relative cylinder (`docs/derivations.md` Sec. 6): at zero total supermomentum the pair Casimir is $L_0^2$, which is why the eigenvalue is $h^2$ and the shadow is $-h$. She does not make this statement; she computes the cross-ratio form directly.
-- **The purely bosonic relative space**: counting $2|2$ pair coordinates minus $1|2$ supertranslations leaves $1|0$, so no odd relative coordinate. That is the same fact as her (4.7), one level down.
+- **It answers B1.** Appendix A is enough to derive the N=2 relative cylinder (`docs/derivations.md` Sec. 6): at zero total supermomentum the pair Casimir is $L_0^2$, which is why the eigenvalue is $h^2$ and the shadow is $-h$. The paper doesn't make this statement; it computes the cross-ratio form directly.
+- **The purely bosonic relative space**: counting $2|2$ pair coordinates minus $1|2$ supertranslations leaves $1|0$, so no odd relative coordinate. That is the same fact as (4.7) of the paper, one level down.

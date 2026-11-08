@@ -1,0 +1,60 @@
+\section{Introduction and summary}
+\label{sec:intro}
+
+In the usual large-$N$ dictionary, each single-trace primary corresponds to one bulk field. Melonic theories such as the SYK model~\cite{Maldacena:2016hyu,Kitaev} then seem to need an infinite tower of bulk fields, one for each bilinear family. Thong has shown that, at the level of the four-point function, one field is enough~\cite{Thong:2026}. Integrating out the centre of a bilocal turns the pair Casimir into an operator on a relative cylinder $\mathbb R\times S^{d-1}$, on which a family of dimension $h$ is represented by the energy $\omega=h-d/2$. The ladder sum is then the Robin boundary-to-boundary propagator of a single free scalar in rigid AdS$_{d+1}$. The constituent dimension fixes the mass, the ladder coupling fixes the Robin coefficient, and the Robin condition breaks $2d$ isometries, leaving $\mathbb R\times SO(d)$.
+
+Thong remarks that supersymmetric SYK should go beyond a single scalar~\cite[p.~6]{Thong:2026}. This paper studies the $\cN=2$ model~\cite{Fu:2016vas}, whose ladders have been solved in components~\cite{Peng:2017spg} and in superspace~\cite{Bulycheva:2018qcp}. It has features absent from the cases Thong treats: constituents of different dimensions, mixed neutral channels, charged channels, kernels that aren't even in $h$, and two distinct protected multiplets. It also raises a natural question. If the bulk field content is supersymmetric, what happens to the supersymmetry when the boundary condition breaks the AdS isometries?
+
+\subsection*{Main results}
+
+\begin{enumerate}
+\item \textbf{The cylinder (\cref{sec:cylinder}).} On a chiral--antichiral pair, zero total supermomentum leaves functions of the single invariant $x=\ket{12}$, so there is no odd relative coordinate. The $su(1,1|1)$ pair Casimir reduces to $L_0^2$, and $WCW^{-1}=\partial_\tau^2$. This derives the eigenvalue $H^2$ and shadow $-H$ of~\cite{Bulycheva:2018qcp}, and gives $\omega=H$.
+
+\item \textbf{A Dirac response (\cref{sec:dirac}).} The reduced kernel is one boundary correlator of a dimension-$\delta$ fermion, with $\delta=1/q$, multiplied by a constant boundary vertex, \cref{eq:ladder-dirac}. Its eigenvalues reproduce the known kernels $k_A,k_S$ with no free constant.
+
+\item \textbf{The full four-point function (\cref{subsec:supercentre}).} Integrating over the super-centre of a pair, its whole supertranslation orbit, turns the neutral superconformal four-point function into the same Dirac propagator, family by family. Each superblock gives the single exponential $e^{-H|\tau|}$, where the ordinary centre integral gives two. The trigonometric factors in the coefficients cancel, as in Thong's case, and the reduction holds at every $g$.
+
+\item \textbf{The neutral channels (\cref{sec:neutral}).} An ordinary centre integral keeps all components of a multiplet, which is why a $2\times2$ matrix with frequency-dependent eigenvectors appears. We show that its resolvent is two Dirac resolvents, \cref{eq:ward}, and that the matrix boundary condition is the superfield condition $\Phi_+=c\,\Phi_-$ on the cylinder, \cref{eq:bc-super}, so the mixing matrix is derived rather than fitted.
+
+\item \textbf{Broken supersymmetry (\cref{sec:susy}).} At $g\neq0$,
+\begin{equation*}
+su(1,1|1)\ \longrightarrow\ u(1|1),\qquad\text{dimension }4|4\to2|2.
+\end{equation*}
+The two broken bosonic generators are Thong's $E_\pm$. In addition, two of the four Killing supercharges are broken, in each of the two embeddings of the superalgebra on the fields. The two that survive close on the twisted Hamiltonian $L_0-\half J_0$, and on them the boundary data form ordinary superfields of flat $\cN=2$ quantum mechanics. The other two Killing spinors still give odd symmetries of the boundary condition, but only in the other embedding, and the four together do not close on a Lie superalgebra with constant structure constants.
+
+\item \textbf{A BPS threshold (\cref{sec:stability}).} The Fock vacuum of the stationary quantization is invariant under the surviving charges only if $2\omega=2H-1\ge0$. This is saturated at the formal coupling $g_*<1$ where the lowest even-sector mode has zero frequency. Below $g_*$, that vacuum has energy $\half-H$ and isn't invariant, whereas a state with one Dirac mode filled is invariant and carries R-charge. The four-point function on $0<z<1$ stays smooth throughout.
+
+\item \textbf{The exceptional multiplets (\cref{sec:fourpoint}).} Of the two $H=1$ multiplets, one is Thong's mechanism in $\cN=2$ form: an enhanced mode that the centre integral kills, leaving a finite remainder. The other is its mirror image. It has vanishing OPE coefficient on $0<\chi<1$ yet nonzero reduced weight, because the family is a finite step function supported on $\chi>1$.
+\end{enumerate}
+
+\Cref{tab:dictionary} compares the two constructions.
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lll@{}}
+\toprule
+& Thong, SYK ($d=1$) & $\cN=2$ SYK (this paper)\\
+\midrule
+Reduced Casimir & $\partial_\tau^2-\tfrac14$ & $\partial_\tau^2$\\
+Cylinder energy & $\omega=h-\half$ & $\Omega=H$\\
+Cylinder weight & $a=2\Delta-\half$ & $a=2\Delta=\delta$\\
+Bulk field & scalar, $m^2=\nu^2-\tfrac14$ & Dirac, $m_F=\mu$; scalars $\mu(\mu\mp1)$\\
+Rung & Neumann propagator & Dirac boundary correlator\\
+Ladder sum & Robin propagator & Dirac propagator with boundary mass\\
+Boundary condition & $B=\kappa A$ & $b_F=g\sigma_pL_q\,a_F$; $\Phi_+=c\,\Phi_-$\\
+Spectrum & $\cR_J(\omega)=\kappa$ & $\cR_{F,p}(\Omega)=g\sigma_pL_q$\\
+Reduced family & $\cI(h)\,e^{-(h-\frac12)|\tau|}$ & $\cI_s(H)\,e^{-H|\tau|}$\\
+Bulk symmetry at $g=0$ & $sl(2,\mathbb R)$ & $su(1,1|1)$\\
+Bulk symmetry at $g\neq0$ & $\mathbb R$ & $u(1|1)$: $\mathbb R\times U(1)_R$, 2 supercharges\\
+\bottomrule
+\end{tabular}
+\caption{Thong's construction at $d=1$ and its $\cN=2$ analogue. Here $\nu=d-2\Delta_\phi$ in the middle column, and $\nu=1-\delta$, $\mu=\half-\delta$, $\delta=1/q$ in the last. A reduced family is the centre integral of a block in the middle column, and the super-centre integral of a superblock in the last.}
+\label{tab:dictionary}
+\end{table}
+
+\subsection*{Scope and status}
+
+As in~\cite{Thong:2026}, this is a statement about four-point data at leading order in $1/N$, not an equivalence of theories. Multiparticle bulk states do not correspond to multi-trace operators, and we do not address higher-point functions or gravity. Derivations are at a physicist's level of rigour, and we don't prove convergence of the infinite family sums. Most closed-form statements below were tested numerically or symbolically, and the published formulas were transcribed and compared directly; \cref{app:checks} lists the tests, and the statements derived only by hand. We distinguish these from conjectures, which are flagged as such. As in~\cite{Thong:2026}, the reductions of families use a continuation of each family outside the region of its operator expansion, and we don't prove that they commute with the infinite sum over families (\cref{sec:discussion}).
+
+Our starting point was an earlier unpublished note that proposed the matrix boundary condition and the reconstruction formula. Its formulas pass the tests listed here, and its central claims are given a derivation. We searched for prior work on the $\cN=2$ extension and found none, but the search was not exhaustive. The closest precedents for the boundary-condition analysis are Amsel--Marolf~\cite{Amsel:2008iz} and Correa et al.~\cite{Correa:2019rdk}; see \cref{subsec:compare}.

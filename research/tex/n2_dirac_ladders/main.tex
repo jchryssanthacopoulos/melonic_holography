@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=2.7cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=green!40!black,urlcolor=blue!55!black]{hyperref}
+\usepackage[nameinlink,capitalize]{cleveref}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+
+\numberwithin{equation}{section}
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+
+% Symbols used throughout
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\sD}{\mathsf{D}}
+\newcommand{\sM}{\mathsf{M}}
+\newcommand{\sG}{\mathsf{G}}
+\newcommand{\sP}{\mathsf{P}}
+\newcommand{\sk}{\mathsf{k}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Res}{\operatorname*{Res}}
+\newcommand{\ket}[1]{\langle #1\rangle}
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\half}{\tfrac12}
+
+\title{\vspace{-1.5cm}\textbf{\Large The melonic ladders of $\mathcal{N}=2$ SYK\\ as a half-supersymmetric Dirac problem in rigid AdS$_2$}}
+\author{James Chryssanthacopoulos}
+\date{\small Working draft, 6 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+A recent construction of Thong shows that, once the centre of a conformal bilocal is integrated out, the ladder sum of a melonic CFT$_d$ is the Robin boundary-to-boundary propagator of one free scalar in rigid AdS$_{d+1}$. Here we work out the analogue for $\cN=2$ supersymmetric SYK at the charge-symmetric point. Zero total supermomentum removes every odd relative coordinate, and the $su(1,1|1)$ pair Casimir reduces to $L_0^2$, which derives the eigenvalue $H^2$ and the shadow $H\to-H$. The reduced kernel is a single boundary correlator of a Dirac field of mass $\mu=\half-1/q$ in AdS$_2$, with the ladder coupling entering as a constant boundary mass, and it reproduces the known kernels with no free constant. Integrating the full superconformal four-point function over the super-centre of a pair, instead of the centre, gives the same Dirac propagator, with one exponential per superblock. The neutral channels require two scalars with masses $\mu(\mu\mp1)$, which complete the Dirac field to a long AdS$_2$ multiplet. We show that the matrix boundary condition found in earlier work is the linear superfield condition $\Phi_+=c\,\Phi_-$ written on the cylinder, so its boundary term is a double-trace superpotential. This answers the question of how much bulk supersymmetry survives: at $g\neq0$ the boundary condition breaks $su(1,1|1)$, of dimension $4|4$, to $u(1|1)$, of dimension $2|2$, for either embedding of the algebra on the fields. Beyond Thong's two broken isometries, two of the four Killing supercharges are lost, and the two that remain close on a twisted Hamiltonian. We test these statements, together with the agreement of the construction with the published kernels, spectra and four-point data, by explicit computation. We also find that the Fock vacuum of the stationary quantization is invariant under the surviving charges only above a threshold $g_*<1$, and that the apparent mismatch at the $H=1$ multiplets is resolved by step-function terms in the family decomposition, supported on $\chi>1$.
+\end{abstract}
+
+\tableofcontents
+
+\input{sec_intro}
+\input{sec_model}
+\input{sec_cylinder}
+\input{sec_dirac}
+\input{sec_neutral}
+\input{sec_susy}
+\input{sec_stability}
+\input{sec_fourpoint}
+\input{sec_discussion}
+\appendix
+\input{app_conventions}
+\input{app_checks}
+
+\section*{Acknowledgments}
+This draft was prepared with the assistance of Claude (Anthropic), which carried out derivations and numerical checks under the author's direction. The construction builds on an earlier unpublished note addressed to K.~H.~Thong. Errors are the author's.
+
+\input{refs}
+\end{document}

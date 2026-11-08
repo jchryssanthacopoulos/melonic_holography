@@ -1,0 +1,68 @@
+\section{Zero supermomentum and the relative cylinder}
+\label{sec:cylinder}
+
+\subsection{The superconformal generators}
+
+We use the $su(1,1|1)$ generators of~\cite[App.~A]{Bulycheva:2018qcp} acting on $(\tau,\theta,\bar\theta)$, for a field of dimension $\Delta$ and R-charge $Q$:
+\begin{equation}\label{eq:generators}
+\begin{aligned}
+L_1&=-\partial_\tau,\qquad L_0=-\tau\partial_\tau-\half\theta\partial_\theta-\half\bar\theta\partial_{\bar\theta}-\Delta,\qquad J_0=-\theta\partial_\theta+\bar\theta\partial_{\bar\theta}+Q,\\
+L_{-1}&=-\tau^2\partial_\tau-\tau\theta\partial_\theta-\tau\bar\theta\partial_{\bar\theta}-2\tau\Delta-Q\,\theta\bar\theta,\\
+G_{-1/2}&=\partial_{\bar\theta}-\theta\partial_\tau,\qquad G_{+1/2}=\tau\partial_{\bar\theta}-\tau\theta\partial_\tau-(2\Delta+Q)\theta-\theta\bar\theta\partial_{\bar\theta},\\
+\bar G_{-1/2}&=\partial_\theta-\bar\theta\partial_\tau,\qquad \bar G_{+1/2}=\tau\partial_\theta-\tau\bar\theta\partial_\tau-(2\Delta-Q)\bar\theta+\theta\bar\theta\partial_\theta.
+\end{aligned}
+\end{equation}
+Three remarks are needed to use these. First, the printed normalization of the R-charge is inconsistent: the coefficient $Q/2$ printed in $L_{-1}$, $G_{+1/2}$ and $\bar G_{+1/2}$ doesn't close with the constant $Q$ in $J_0$. We repair this by $Q/2\to Q$ in those three generators, as in~\eqref{eq:generators}; the alternative, $Q\to Q/2$ in $J_0$, differs only in how $Q$ is normalized. Ours is the normalization of~\cite{Fu:2016vas}, in which the supercharge has R-charge 1. Second, the printed Casimir has $-L_1L_{-1}$, with the translation on the left, while its fermionic terms have translations on the right, and it isn't central. The central operator, with translations acting first in every term, is
+\begin{equation}\label{eq:casimir}
+C=L_0^2-\tfrac14J_0^2-L_{-1}L_1+\half\big(G_{+1/2}\bar G_{-1/2}+\bar G_{+1/2}G_{-1/2}\big).
+\end{equation}
+As evidence that this ordering is what was intended, it reproduces the printed one-particle values~\cite[(A.10)--(A.12)]{Bulycheva:2018qcp} exactly when combined with the printed generators. Those values aren't constant on the multiplet, as a central element must be. With the closed algebra, $C=\Delta^2-Q^2/4$ on all components. None of this affects results at zero total charge. Third, $Q=0$ holds only for the pair. The two-point function $\ket{12}^{-2\Delta}$ is annihilated by all total generators only for $Q_1=-2\Delta$, $Q_2=+2\Delta$, in the normalization of~\eqref{eq:generators}, which is the chiral-primary condition of~\cite{Fu:2016vas}. With these corrections, a direct implementation on the Grassmann algebra reproduces the cross-ratio form of the Casimir~\cite[(4.9), (A.16)]{Bulycheva:2018qcp},
+\begin{equation}\label{eq:casimir-chi}
+\cC=\chi^2(1-\chi)\partial_\chi^2+\chi(1-\chi)\partial_\chi,
+\end{equation}
+on all odd components, with $\chi=\ket{12}\ket{34}/(\ket{14}\ket{32})$.
+
+\subsection{Reduction}
+
+Thong's first step is to restrict the pair Casimir to zero total momentum. The supersymmetric analogue is immediate.
+
+\begin{proposition}\label{prop:cylinder}
+Let $f$ be a function on a chiral--antichiral pair annihilated by the total $L_1$, $G_{-1/2}$ and $\bar G_{-1/2}$. Then $f=f(x)$ with $x=\ket{12}$, and
+\begin{equation}\label{eq:reduced-casimir}
+C\,f(x)=L_0^2f(x),\qquad L_0f(x)=-(x\partial_x+2\Delta)f(x).
+\end{equation}
+With $x=e^\tau n$, $n=\pm1$, and $(Wf)(\tau,n)=e^{2\Delta\tau}f(e^\tau n)$,
+\begin{equation}\label{eq:WCW}
+WCW^{-1}=\partial_\tau^2.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Chirality leaves the coordinates $(\tau_1,\bar\theta_1;\tau_2,\theta_2)$, which is $2|2$. The three conditions remove $1|2$, leaving $1|0$, and $\ket{12}$ is the unique invariant~\cite{Bulycheva:2018qcp}. Each term of~\eqref{eq:casimir} other than $L_0^2$ and $J_0^2$ has a translation on the right, so it annihilates $f$. Also $J_0f=0$, since $\bar\theta_1\theta_2$ is neutral and $Q_1+Q_2=0$. Finally $\ket{12}$ has weight $-1$, which gives the action of $L_0$, and $W$ turns $-(x\partial_x+2\Delta)$ into $-\partial_\tau$.
+\end{proof}
+
+So \emph{the relative space has no odd directions}: the cylinder is the ordinary $\mathbb R\times S^0$, with $S^0=\{\pm1\}$. On $e^{H\tau}Y_p(n)$, with $Y_p$ of parity $\sigma_p$, the eigenvalue is $H^2$, so $\Omega=H$ and the shadow is $-H$. This derives what~\cite{Bulycheva:2018qcp} finds by computing~\eqref{eq:casimir-chi} directly.
+
+The difference from Thong is a single term. Reordering in the same way gives $L_0^2+(1-\cN/2)L_0$ for $\cN=0,1,2$ at zero (super)momentum. With $L_0\to-h$ this is
+\begin{equation}\label{eq:pattern}
+h(h-d_s),\qquad d_s=1-\frac{\cN}{2},\qquad\omega=h-\frac{d_s}{2},
+\end{equation}
+which matches the eigenvalues $h(h-1)$~\cite{Maldacena:2016hyu}, $h(h-\half)$~\cite{Murugan:2017eto} and $h^2$~\cite{Bulycheva:2018qcp}. We also confirmed the $\cN=1$ case directly from the generators of~\cite{Murugan:2017eto}, on functions of $t_{12}-\theta_1\theta_2$. The number $d_s$ is the scaling weight of the measure on the superline with $\cN$ real odd coordinates: $d\tau\,d^{\cN}\theta$ scales with weight $-(1-\cN/2)$. So $\cN=2$ has a dimensionless measure, which is why the Casimir has no linear term. $\cN=2$ is special in another way. For $\cN=1$, the pair coordinates are $2|2$, supertranslations remove only $1|1$, and an odd relative coordinate remains. So $\cN=1$ has a true super-cylinder, and it isn't simply a smaller version of this problem.
+
+\subsection{Components}
+
+Expanding~\eqref{eq:bracket},
+\begin{equation}\label{eq:component-relation}
+f(\ket{12})=f(\tau_{12})-2\bar\theta_1\theta_2f'(\tau_{12})+\cdots,
+\end{equation}
+so at zero supermomentum the $b\bar b$ entry of a neutral bilocal is a derivative of the $\psi\bar\psi$ entry. In the normalization of~\eqref{eq:props} this reads $f_b=-\partial_\tau f_\psi$. The $h=0$ case is~\eqref{eq:props} itself. As a test, the matrix kernels of~\cite{Peng:2017spg} know nothing about superspace, but act on the two-component functions $(\sgn\tau\,|\tau|^{h-\delta},\ c\,|\tau|^{h-\delta-1})$ and their even partners, and on the branch $k_A$ (odd sector) or $k_S$ (even sector) their right eigenvector has exactly
+\begin{equation}\label{eq:eigvec-bottom}
+c=-(h-\delta)
+\end{equation}
+for all $h$ and $q$ tested, which is~\eqref{eq:component-relation}. The other branch has
+\begin{equation}\label{eq:eigvec-top}
+c=h+\delta-1,
+\end{equation}
+which isn't a function of $\ket{12}$ alone.
+
+This explains the structure of the neutral problem. An ordinary centre integral imposes only $L_1=0$, and functions annihilated by $L_1$ but not by $G_{-1/2},\bar G_{-1/2}$ are still allowed. So it keeps both the bottom and the top components of each multiplet: two branches, and a matrix. Superspace keeps one function $f(x)$, one branch per parity, and one scalar kernel. We now compute that kernel.

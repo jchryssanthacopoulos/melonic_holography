@@ -1,0 +1,44 @@
+\section{Labels and printed discrepancies}
+\label{app:conventions}
+
+\paragraph{Labels.} The conventions in the literature collide, as follows.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}llll@{}}
+\toprule
+This paper & \cite{Peng:2017spg}, kernels & \cite{Peng:2017spg}, four-point & \cite{Fu:2016vas}\\
+\midrule
+$p=1$ (odd fermion pair) & $k^{a,\pm}$ & $f^s,\Phi^s$ & \\
+$p=0$ (even fermion pair) & $k^{s,\pm}$ & $f^a,\Phi^a$ & \\
+$k_A(H)$ & $k^{a,+}(H)=k^{a,d}(H+\half)=k^{s,-}(H+1)$ & & $k_a(H+\half)$\\
+$k_S(H)$ & $k^{s,+}(H)=k^{s,d}(H+\half)=k^{a,-}(H+1)$ & & $k_s(H+\half)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Also, the $\chi$ of~\cite{Bulycheva:2018qcp} is our $z$, while the $\chi$ of~\cite{Peng:2017spg} is $z/(z-1)$, and $\delta=2\Delta$ in the notation of~\cite{Bulycheva:2018qcp}. The coupling $J$ is normalized differently in~\cite{Peng:2017spg} and~\cite{Fu:2016vas}.
+
+\paragraph{Printed equations in~\cite{Bulycheva:2018qcp}.} We list the following as algebraic inconsistencies that can be demonstrated from the paper. They are not an erratum, and none affects the structural conclusions of that paper. All were checked by computation.
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{@{}lp{0.72\textwidth}@{}}
+\toprule
+Equation & Observation\\
+\midrule
+\endhead
+(4.48), (4.49) & Overall sign. It disagrees with (4.51) with (B.8), with~\cite{Peng:2017spg}, and with $k(1)=1$.\\
+(4.39) & The term in $\varphi_{-h}$ should have a minus sign, as follows from (4.38), (B.4) and (B.5). We confirmed this by direct integration of the definition (4.24), with principal values, and (B.4), (B.5) by integrating (4.26).\\
+(4.90)--(4.92), (4.106) & The prefactor should be $\alpha/2$, as (4.85) with (4.88) implies and as the seed requires.\\
+(4.96), (4.98), (4.99) & These inherit the signs of (4.39) and (4.48). With both corrected, the factor in (4.98), (4.99) is $\sin2\pi\Delta-\sin\pi h/\cos\pi h$, not $\sin\pi h-\sin2\pi\Delta/\cos\pi h$. The two agree at $h=2\Delta$, so the leading coefficient 1 and (4.100) stand, and differ by $(-1)^n$ at $h=2\Delta+n$. With the corrected factor, and $\chi^h$ read as the leading term of $\chi^h{}_2F_1(h,h;2h+1;\chi)$, the residue sum equals $\chi^{2\Delta}$ at all tested $\chi$. With the printed factor it doesn't. We use neither form in the text.\\
+(A.3)--(A.7) & The normalization of $Q$ is inconsistent: $Q/2$ in (A.3), (A.5), (A.7) doesn't close with $Q$ in (A.4). Either $Q/2\to Q$ there, or $Q\to Q/2$ in (A.4).\\
+(A.9), (A.14) & The ordering should be $-L_{-1}L_1$ for the operator to be central. With that ordering and the printed generators, (A.10)--(A.12) are reproduced exactly, which suggests a misprint of the ordering only.\\
+(A.11), (A.12) & These follow from the printed generators, and aren't constant on the multiplet, in conflict with the statement that $C_2$ commutes with the generators. With a closed algebra, the $\pm Q/4$ terms are absent.\\
+(A.15) & $Q=0$ holds only for the pair: $Q_1=-2\Delta$, $Q_2=+2\Delta$ when $J_0\ni Q$.\\
+\bottomrule
+\end{longtable}}
+
+The first two of these were pointed out in the earlier note. As far as we know, the others haven't appeared elsewhere, but we have not made a thorough search.
+
+\paragraph{Normalization in~\cite{Peng:2017spg}.} The matrix equations (4.25), (4.26), (4.35) act on coefficients with no amplitudes extracted. The off-diagonal correlators $F^{b\bar b\psi\bar\psi}(\chi)$, $F^{\psi\bar\psi b\bar b}(\chi)$ must therefore carry $b_\psi^2$ and $b_b^2$ as amplitudes, not the $b_bb_\psi$ that ``similarly for the others'' below (4.5) might suggest. See \cref{subsec:reduced-cov}.

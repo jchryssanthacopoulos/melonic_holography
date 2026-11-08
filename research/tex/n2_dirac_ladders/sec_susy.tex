@@ -1,0 +1,148 @@
+\section{How much bulk supersymmetry survives}
+\label{sec:susy}
+
+Thong's Robin condition breaks $2d$ AdS isometries while leaving the four-point data intact. We now ask the same question of the supercharges.
+
+\subsection{The free multiplet}
+
+Take the action on the strip,
+\begin{equation}\label{eq:action}
+S=\int d^2x\sqrt{-g}\left[\half\Phi_b\big(\Box-\mu(\mu-1)\big)\Phi_b+\half\Phi_\psi\big(\Box-\mu(\mu+1)\big)\Phi_\psi+\bar\Psi(\gamma^a\nabla_a-\mu)\Psi\right],
+\end{equation}
+with $\bar\Psi=\Psi^\dagger\sigma_1$ and $\gamma_3=\gamma^0\gamma^1$. The Killing equation $\nabla_a\epsilon=\half\gamma_a\epsilon$ has the solutions (compare~\cite[(A.7)]{Correa:2019rdk}, in other conventions)
+\begin{equation}\label{eq:killing}
+\epsilon_A=\zeta^{-1/2}\begin{pmatrix}\cos(\frac\pi4+\frac\theta2)\\ \cos(\frac\pi4-\frac\theta2)\end{pmatrix}e^{-it/2},\qquad\epsilon_B=\zeta^{-1/2}\begin{pmatrix}-\cos(\frac\pi4+\frac\theta2)\\ \cos(\frac\pi4-\frac\theta2)\end{pmatrix}e^{+it/2},
+\end{equation}
+giving four real supercharges with parameters $\epsilon$ and $\bar\epsilon$. For any Killing $\epsilon$ and any function $\Phi$,
+\begin{equation}\label{eq:intertwine}
+\begin{aligned}
+(\gamma^a\nabla_a-\mu)\big(\gamma^a\partial_a+\mu\big)\Phi\,\epsilon&=\big(\Box-\mu(\mu-1)\big)\Phi\,\epsilon,\\
+(\gamma^a\nabla_a-\mu)\,\gamma_3\big(\gamma^a\partial_a-\mu\big)\Phi\,\epsilon&=-\gamma_3\big(\Box-\mu(\mu+1)\big)\Phi\,\epsilon.
+\end{aligned}
+\end{equation}
+Consequently~\eqref{eq:action} is invariant under
+\begin{equation}\label{eq:susy}
+\begin{aligned}
+\delta\Psi&=-\big[(\gamma^a\partial_a+\mu)\Phi_b+\beta\,\gamma_3(\gamma^a\partial_a-\mu)\Phi_\psi\big]\epsilon\ \equiv\ -M(\beta)\,\epsilon,\\
+\delta\Phi_b&=\bar\Psi\epsilon+\bar\epsilon\Psi,\qquad\delta\Phi_\psi=-\beta\,\bar\Psi\gamma_3\epsilon+\bar\beta\,\bar\epsilon\gamma_3\Psi,
+\end{aligned}
+\end{equation}
+for \emph{any} constant $\beta$. These are symmetries of the free theory. Closure selects $\beta$. Acting on $\Phi_b$,
+\begin{equation}
+[\delta_1,\delta_2]\Phi_b=\bar\epsilon_1\big(M-\bar M\big)\epsilon_2-(1\leftrightarrow2),\qquad M-\bar M=2\gamma^a\partial_a\Phi_b+(\beta+\bar\beta)\gamma_3(\gamma^a\partial_a-\mu)\Phi_\psi,
+\end{equation}
+where $\bar M=\sigma_1M^\dagger\sigma_1$. The cross term vanishes if and only if $\beta$ is imaginary, and the same normalization on $\Phi_\psi$ requires $|\beta|=1$. So there are \emph{two} embeddings of the superalgebra,
+\begin{equation}
+\beta=\pm i,
+\end{equation}
+exchanged by $\Phi_\psi\to-\Phi_\psi$. In each, the anticommutators give AdS$_2$ Killing vectors,
+\begin{equation}\label{eq:vectors}
+(\epsilon_A,\bar\epsilon_A),\ (\epsilon_B,\bar\epsilon_B)\to\partial_t,\qquad(\epsilon_A,\bar\epsilon_B)\to E_+,\qquad(\epsilon_B,\bar\epsilon_A)\to E_-,
+\end{equation}
+with $E_\pm=e^{\mp it}(i\sin\theta\,\partial_t\mp\cos\theta\,\partial_\theta)$, which take $\omega\to\omega\pm1$ on $e^{-i\omega t}$. On the fermion, closure gives on-shell
+\begin{equation}\label{eq:closure-psi}
+\{q(\epsilon_Y),\bar q(\bar\epsilon_X)\}\Psi=-2\mathcal L_\xi\Psi+\alpha\,\Psi,\qquad\alpha=+1\ (AA),\quad-1\ (BB),\quad0\ (AB,BA),
+\end{equation}
+with $\mathcal L_\xi$ the spinor Lie derivative, and $\{q,q\}=0$. The term in $\alpha$ is the R-rotation. So the free theory has $su(1,1|1)$ symmetry, of dimension $4|4$, with bosonic generators $\partial_t,E_\pm,J_0$, where $J_0$ rotates $\Psi$. The field content $(\Phi_\psi,\Psi,\Phi_b)$ is a long multiplet with real, neutral scalars of different masses, not the chiral multiplet with a complex scalar considered in~\cite{Correa:2019rdk}.
+
+\subsection{The bilinears}
+
+The maps of \cref{prop:maps} are these variations. With $\epsilon_A$, $\bar\epsilon_A\Psi$ has frequency $\Omega-\half$, and with $\epsilon_B$, $\bar\epsilon_B\Psi$ has frequency $\Omega+\half$. On modes, one finds
+\begin{equation}\label{eq:bilinears}
+(\Phi_b,\Phi_\psi)=(u,v)=(\bar\epsilon_A\psi,\ -i\,\bar\epsilon_A\gamma_3\psi),\qquad(\Phi_b,\Phi_\psi)=(v',u')=(-\bar\epsilon_B\psi,\ -i\,\bar\epsilon_B\gamma_3\psi),
+\end{equation}
+stripped of the factors of $\zeta$ and the phases of time. The relative sign differs between $A$ and $B$. In~\eqref{eq:susy}, the $\bar\epsilon$ terms have the ratio $\Phi_\psi:\Phi_b$ fixed by $\bar\beta$. Therefore:
+
+\begin{itemize}
+\item the first of~\eqref{eq:bilinears} is the variation under $\bar\epsilon_A$ with $\beta=+i$;
+\item the second is the variation under $\bar\epsilon_B$ with $\beta=-i$.
+\end{itemize}
+In a \emph{single} embedding, say $\beta=+i$, the $\bar\epsilon_B$ image is $(\Phi_b,\Phi_\psi)=(-v',u')$. Its line is $B_b/A_\psi=-(\omega'-\mu)/2\delta$, the opposite of the $u_+$ line allowed by~\eqref{eq:bc-matrix}. This is the crux of the breaking.
+
+\subsection{The surviving charges}
+\label{subsec:surviving}
+
+Define, in the embedding $\beta=+i$, $q_A$ with parameter $\epsilon_A$ and $\bar q_A$ with parameter $\bar\epsilon_A$. In~\eqref{eq:susy} the parameter $\epsilon$ stands to the right of the odd fields and $\bar\epsilon$ to the left. We move both to the left and strip them off, so that $q_A$ and $\bar q_A$ act as graded derivations. Let the twisted fermions be $\tilde a_F=e^{\tau/2}a_F$ and $\tilde{\bar a}_F=-e^{-\tau/2}\bar a_F$ on the Euclidean cylinder, and the same for $b_F$, where the minus sign absorbs the one from moving $\epsilon$ past $\bar\Psi$. Evaluating~\eqref{eq:susy} at the boundary on modes of free frequency, which carry generic boundary data, we find that the charges act on the data of \cref{subsec:superfields} as
+\begin{equation}\label{eq:boundary-susy}
+\begin{aligned}
+q_A:&\quad\delta A=\tilde{\bar a},\quad\delta\tilde a=\partial_\tau A+\cB,\quad\delta\cB=-\partial_\tau\tilde{\bar a},\quad\delta\tilde{\bar a}=0,\\
+\bar q_A:&\quad\delta A=\tilde a,\quad\delta\tilde{\bar a}=\partial_\tau A-\cB,\quad\delta\cB=\partial_\tau\tilde a,\quad\delta\tilde a=0,
+\end{aligned}
+\end{equation}
+with the same form on $(A_\psi,\tilde a_F,\cB_-)$ and on $(A_b,\tilde b_F,\cB_+)$. The normalization is exactly 1 in~\eqref{eq:susy}. The sign in $\tilde{\bar a}_F$ is needed: with the opposite one, $\{q_A,\bar q_A\}A$ would be $2\cB$. These are the supercharges of ordinary flat-time $\cN=2$ quantum mechanics, with $q_A^2=\bar q_A^2=0$ and
+\begin{equation}\label{eq:twisted}
+\{q_A,\bar q_A\}=2\partial_\tau\ \text{ on twisted fields, which is }-2H_{\rm tw}\ \text{ on }e^{-H_{\rm tw}\tau},\quad H_{\rm tw}=L_0-\half J_0,
+\end{equation}
+with $J_0=+1$ on $\Psi$, as in~\eqref{eq:closure-psi} at $\alpha=+1$. A boson of frequency $\omega$ and a fermion of frequency $\Omega=\omega+\half$ have the same twisted energy. In terms of the boundary superconformal generators, $q_A$ and $\bar q_A$ have the weights of $G_{-1/2}$ and $\bar G_{+1/2}$, whose anticommutator is $2L_0$ up to a multiple of $J_0$.
+
+\begin{proposition}\label{prop:breaking}
+For real $g\neq0$, the boundary condition~\eqref{eq:bc-super} is invariant under $\partial_\tau$, $J_0$, and $q_A,\bar q_A$. It is not invariant under $E_\pm$ or $q_B,\bar q_B$. So, in the embedding $\beta=+i$, the largest subalgebra of $su(1,1|1)$ that survives is
+\begin{equation}\label{eq:breaking}
+su(1,1|1)\ \longrightarrow\ u(1|1)=\big\{\,q_A,\ \bar q_A;\ L_0,\ J_0\,\big\},\qquad 4|4\to2|2.
+\end{equation}
+In the embedding $\beta=-i$, the same holds with $A\leftrightarrow B$.
+\end{proposition}
+
+\begin{proof}
+By~\eqref{eq:boundary-susy}, $q_A,\bar q_A$ act identically on $\Phi_-$ and $\Phi_+$, so they preserve $\Phi_+=c\,\Phi_-$ for constant $c$. The breaking of $E_+$ follows from the transformation of~\eqref{eq:bc-matrix}. It maps parity $p$ to $1-p$, and $\sM_{1-p}=-\sM_p$, so its second component has the mismatch $-2g\omega(\sM_p)_{21}(X_0)_1e^{-(\omega+1)\tau}$, as found in the earlier work. The breaking of $q_B$ follows from the line argument above, since an image with the wrong sign doesn't satisfy~\eqref{eq:bc-matrix} unless $A_\psi=0$ or $\omega'=\mu$. It also follows from the algebra, since if $q_B,\bar q_B$ together with $q_A,\bar q_A$ were preserved then so would be $E_\pm$, by~\eqref{eq:vectors}.
+\end{proof}
+
+We confirmed this on explicit normal modes, and the mismatch for $E_+$ on bulk mode functions. The images under $(\bar\epsilon_A,\beta=+i)$ and $(\bar\epsilon_B,\beta=-i)$ satisfy~\eqref{eq:bc-matrix} with residuals of order $10^{-19}$ in 20-digit arithmetic, for $q=3,5$ and $g=0.7,1$. The image under $(\bar\epsilon_B,\beta=+i)$ violates it by order 10. On a generic pair of scalars, the boson-to-fermion maps in~\eqref{eq:boundary-susy} hold with normalization 1, to working precision, and so do the fermion-to-boson maps on Dirac modes of free frequency.
+
+\Cref{tab:breaking} summarizes the pattern, and \cref{fig:multiplet} shows the action on a multiplet.
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Generator & Action on the cylinder & $g=0$ & $g\neq0$\\
+\midrule
+$L_0$ & $\partial_\tau$ & preserved & preserved\\
+$J_0$ & phase of $\Psi$ & preserved & preserved\\
+$E_\pm$ & $\omega\to\omega\pm1$, flips parity & preserved & \textbf{broken}\\
+$q_A,\bar q_A$ & $\omega\to\omega\pm\half$, keeps parity & preserved & preserved\\
+$q_B,\bar q_B$ & $\omega\to\omega\pm\half$, flips parity & preserved & \textbf{broken}\\
+\bottomrule
+\end{tabular}
+\caption{The fate of $su(1,1|1)$ in the embedding $\beta=+i$. Compared with Thong's $sl(2,\mathbb R)\to\mathbb R$, half of the supercharges survive in addition. The R-charge is preserved since~\eqref{eq:bc-super} is homogeneous.}
+\label{tab:breaking}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[>=Stealth,scale=1.05]
+\node (b) at (0,0) {\small $b$: $\omega=H-\half$};
+\node (f) at (-2.6,1.5) {\small $f$: $\Omega=H$};
+\node (fb) at (2.6,1.5) {\small $\bar f$: $\Omega=H$};
+\node (t) at (0,3) {\small $t$: $\omega=H+\half$};
+\draw[<->,thick,blue!70!black] (b) -- node[midway,below left,xshift=2pt] {\small $q_A,\bar q_A$} (f);
+\draw[<->,thick,blue!70!black] (fb) -- node[midway,above right,xshift=-2pt] {\small $q_A,\bar q_A$} (t);
+\draw[<->,thick,red!70!black,dashed] (b) -- node[midway,below right,xshift=-2pt] {\small $q_B,\bar q_B$} (fb);
+\draw[<->,thick,red!70!black,dashed] (f) -- node[midway,above left,xshift=2pt] {\small $q_B,\bar q_B$} (t);
+\node[align=left] at (6.3,1.5) {\small solid: preserved at $g\neq0$\\[1pt]\small dashed: broken in $\beta=+i$,\\[1pt]\small preserved in $\beta=-i$};
+\end{tikzpicture}
+\caption{One multiplet in the auxiliary system at any $g$. The four one-particle states have energies set by a root $H$ of $gk_\alpha(H)=1$. Each solid edge is a two-dimensional representation of $u(1|1)$, with central charge $2H\mp1$.}
+\label{fig:multiplet}
+\end{figure}
+
+\subsection{The other charges, and the algebra they generate}
+
+The dashed maps of \cref{fig:multiplet} are symmetries of the boundary condition too, but in the other embedding: $q_B$ and $\bar q_B$ with $\beta=-i$ preserve~\eqref{eq:bc-matrix} for all $g$. So the system with $g\neq0$ has four odd symmetries in total, $q_A^{(+)},\bar q_A^{(+)},q_B^{(-)},\bar q_B^{(-)}$, one for each Killing parameter. They explain why the spectrum~\eqref{eq:energies} has the full shape of an $su(1,1|1)$ multiplet at every $g$, although the algebra is broken. This qualifies the phrase ``half of the supersymmetry'': no supercharge is lost in the sense of having no symmetry attached to its Killing spinor. What's lost is the closure of those symmetries on AdS$_2$ isometries. The half refers to what remains of any one $su(1,1|1)$.
+
+They aren't a broken $su(1,1|1)$ restored, however. Whereas $\{q_A^{(+)},\bar q_B^{(+)}\}=E_+$, the mixed anticommutator $\{q_A^{(+)},\bar q_B^{(-)}\}$ annihilates the top line, and maps the bottom line to the top line with a coefficient $-4\omega$, in the normalization where these lines are the images of one Dirac mode under~\eqref{eq:bilinears}. Since this coefficient depends on the mode, the four charges do not close on a Lie superalgebra with constant structure constants and the generators listed. We have not classified what they do generate.
+
+\subsection{Origin of the breaking, and relation to the CFT}
+
+The Euclidean strip is the half-plane, $(x,z)=e^\tau(\sin\theta,\cos\theta)$, whose boundary is the line of relative separations $x$. So $\partial_\tau$ is dilatation of $x$, and $E_\pm$ are translation and special conformal transformation of $x$. This gives a simple explanation of Thong's pattern, in any $d$: the rung $\mathcal V(y)\propto|y|^{-2\nu}$ is a double-trace coupling with a profile that singles out $y=0$ and $y=\infty$. It preserves dilatation and rotations about the origin, and breaks the $2d$ generators that move the origin. In the present case, $\mathcal V(y)\propto\sgn(y)|y|^{-2\mu}$, with a reflection, does the same.
+
+These bulk generators aren't the CFT's pair generators, a point stressed in~\cite{Thong:2026}: bulk $E_\pm$ moves between families, while the CFT's $P_{12},K_{12}$ move within one. The same applies to supercharges. One relation does hold. By~\eqref{eq:boundary-susy}, $\delta\tilde a_F=\partial_\tau A_\psi+\cB_-$, and in terms of the original bilocal this combination is $f_b+\partial_xf_\psi$. So the condition $\delta\tilde a_F=0$ is the zero-supermomentum relation~\eqref{eq:component-relation}, and $q_A$ on the neutral fields has the same kernel as the CFT's total supertranslations. That is a matching of kernels, not an identification of charges: both $G_{-1/2}$ and $\bar G_{-1/2}$ have this kernel, and they anticommute on functions of $x$, unlike any pair of the bulk charges above that we have compared. We have not worked out the map. It is complicated by the reflection in the rung, as the reduced component covariance carries a factor $\sigma_p$ relative to $\sG_{g,p}$ (\cref{eq:cov-norm}).
+
+None of this means that the CFT data lose their supersymmetry. The four-point function of \cref{sec:fourpoint} is organized by $su(1,1|1)$ superblocks at all $g$. It is the auxiliary bulk description that has less symmetry than the data it encodes, just as Thong's scalar has less than $SL(2,\mathbb R)$ acting on the bulk while reproducing conformal data.
+
+\subsection{Comparison with earlier boundary-condition analyses}
+\label{subsec:compare}
+
+Amsel and Marolf~\cite{Amsel:2008iz} classify supersymmetric multi-trace conditions for scalar multiplets in AdS$_d$, $d=3,4,5$. Our results share their main features: supersymmetric conditions relate two distinct scalars, and linear conditions generically keep half of the supercharges. They note that the scalar--fermion mass relation holds in $d=2$ as well. There are two differences. Their preserved subalgebra is boundary Poincaré, closing on $P$, and their coupling is dimensionful, so it breaks dilatations. Ours closes on the twisted Hamiltonian $L_0-\half J_0$, with translations broken and dilatations preserved. In short, their condition is $\Phi_-=q\Phi_+$ in flat space with a constant, and ours is the same on the cylinder, which in flat space is a position-dependent and reflecting coupling.
+
+Correa et al.~\cite{Correa:2019rdk} treat massless multiplets in AdS$_2$. Their Type I condition $\chi\alpha-\beta=0$ also keeps 2 of 4 supercharges and breaks scale invariance. Their Type II, with a derivative in the scalar condition and an algebraic fermion condition, keeps all 4 for $m=0$. We have not examined whether a massive analogue of Type II exists for $\Phi_\pm$, which would change the conclusions of \cref{prop:breaking} for a modified boundary theory, though not for the ladder data.

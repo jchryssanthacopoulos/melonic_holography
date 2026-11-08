@@ -2,7 +2,7 @@
 
 The project's current understanding of the literature, updated as papers are reviewed. Per-paper detail is in [`notes/`](notes/); references are in [`bibliography.md`](bibliography.md). Eleven papers are in `papers/`. **Several were read only in part**, with the coverage stated in each note and in the bibliography. Statements about any other paper are second-hand and are marked.
 
-*Last updated 2026-11-06.*
+*Last updated 2026-11-07, after the super-centre integral (`docs/derivations.md` Sec. 12). Earlier: the audit of the paper (`research/notes/n2_dirac_ladders_audit.md`).*
 
 ## The problem
 
@@ -52,7 +52,7 @@ Thong's only remark on N=2 is that for "richer constituent field content and mul
 
 ## Supersymmetric boundary conditions
 
-[Correa et al.](notes/correa_giraldo-rivera_silva_2019.md) classify supersymmetric mixed conditions for massless fields on AdS$_2$. A plain Robin condition keeps 2 of 4 supercharges and breaks scale invariance in Poincaré time. A derivative condition on the scalar with an algebraic one on the fermion keeps all 4. The AdS$_2$ N=2 multiplet needs $m_B^2=m_F^2-m_F$, and the Killing spinors have global energy $\pm\tfrac12$. **Nothing here covers massive fields, which is the case the draft needs.**
+[Correa et al.](notes/correa_giraldo-rivera_silva_2019.md) classify supersymmetric mixed conditions for massless fields on AdS$_2$. A plain Robin condition keeps 2 of 4 supercharges and breaks scale invariance in Poincaré time. A derivative condition on the scalar with an algebraic one on the fermion keeps all 4. The AdS$_2$ N=2 multiplet needs $m_B^2=m_F^2-m_F$, and the Killing spinors have global energy $\pm\tfrac12$. **Nothing here covers massive fields.** [Amsel–Marolf](notes/amsel_marolf_2008.md) do cover massive multiplets, for $d=3,4,5$: supersymmetric conditions relate two distinct scalars, and linear ones generally keep half the supercharges, the boundary Poincaré subalgebra. Our $d=2$ cylinder result has the same shape but keeps a different half, closing on a twisted Hamiltonian instead of $P$.
 
 ## The project's N=2 draft
 
@@ -61,20 +61,23 @@ Thong's only remark on N=2 is that for "richer constituent field content and mul
 **Assessment after comparing with the sources** (details in [`../docs/derivations.md`](../docs/derivations.md) Sec. 5):
 
 - **Its physical input is right.** Kernels, spectra, blocks, seed and densities agree with [PSV], [Bulycheva 2018] and [Fu et al.].
-- **Its claimed misprints are real.** The two sign problems in [Bulycheva 2018] are confirmed, and we found further ones, including a factor of 2 in the printed four-point function.
-- **Its central identity holds where tested.** Computing the centre-integrated four-point function directly from [PSV] with Thong's (C.8) gives exactly the auxiliary covariance, at finite $g$, in both parities, in the fermion entry, for $\omega<4$.
+- **Its claimed misprints are real.** The two sign problems in [Bulycheva 2018] are confirmed, and we found further ones, including a factor of 2 in the printed four-point function and a factor in the printed seed sum (4.98), (4.99) that holds only at leading order.
+- **Its central identity holds where tested.** Computing the centre-integrated four-point function directly from [PSV] with Thong's (C.8) gives exactly the auxiliary covariance, at finite $g$, in both parities, in all four entries, for $\omega<4$, given a normalization of [PSV]'s mixed correlators that the symmetry $F_{21}=F_{12}$ forces.
 
 ## New in this project
 
 These are project-derived, not from the literature, and **not externally reviewed or searched for in prior work** (D5).
 
 - **The relative cylinder from the super-Casimir.** At zero total supermomentum $C\to L_0^2$, so $\omega=H$ and shadow $-H$. The relative space is bosonic. In general $d_s=1-\mathcal N/2$.
-- **Why the draft has a matrix.** Ordinary centre integration keeps both bottom and top components of a multiplet. Super-centre integration would keep one, so a single Dirac field is the conjectured N=2 analogue of Thong's single scalar.
-- **Exceptional families.** The $A$-branch $H=1$ modes are finite step functions on $\chi>1$, invisible to the $0<\chi<1$ OPE and to the draft's reconstruction. Their centre integral gives exactly the mode, via the Legendre generating function. This resolves an apparent contradiction with Thong's (3.13).
+- **Why the draft has a matrix.** Ordinary centre integration keeps both bottom and top components of a multiplet. Super-centre integration keeps one.
+- **The super-centre integral.** Integrating a pair over its whole supertranslation orbit turns each superblock into a single one-sided exponential $e^{-H|t|}$, and the full neutral four-point function into the Dirac propagator. The trigonometric factors of the coefficients cancel, as in Thong's (C.8), and it works below $g_*$. So a single Dirac field is the N=2 analogue of Thong's single scalar at the level of four-point data.
+- **The Dirac reduction.** The reduced kernel is one boundary correlator of a fermion of dimension $\delta$, reproducing $k_A,k_S$ with no free constant. The neutral $2\times2$ correlator is the same object with kinematic projectors.
+- **Superfield boundary condition and half supersymmetry.** The draft's matrix condition has the form of Amsel–Marolf's linear condition, $\Phi_+=c\Phi_-$, on the cylinder, and one superpotential gives both it and the Dirac condition. It breaks $su(1,1|1)\to u(1|1)$ in each embedding, with $E_\pm$ and two of four Killing supercharges lost. The two that survive close on $L_0-\tfrac12J_0$. Below $g_*$ the Fock vacuum isn't invariant under them, though a state with one Dirac mode filled is, and $F_g(z)$ on $0<z<1$ is smooth there.
+- **Exceptional families.** In the piecewise decomposition, the $A$-branch $H=1$ modes are finite step functions on $\chi>1$, invisible to the $0<\chi<1$ OPE and to the draft's reconstruction. Their centre integral gives exactly the mode, via the Legendre generating function. This resolves an apparent contradiction with Thong's (3.13).
 - **A supersymmetric line.** A superspace bilocal kinetic term gives a line with uniform $k\to gk$, on which the draft's formal $g$ and threshold $g_*$ may be physical.
 - **Complex SYK is one scalar.** Its symmetric channel is exactly Thong's $J=0$ sector, with a different $\kappa$.
 - **Stability.** The matrix boundary condition is self-adjoint with $\omega^2\ge0$ for all real $g$. In the even sector, the continued seed differs from the stationary covariance by one homogeneous mode, with a formal zero mode at $g_*<1$.
 
 ## What's still missing
 
-The super-centre integral of a superblock, which would make the Dirac statement a theorem. The surviving symmetry. The super-Schwarzian coefficient. Any comparison with finite-$N$ data. A literature search.
+A proof that the family reductions commute with the infinite sums, as Thong argues for N=0. The super-Schwarzian coefficient. Any comparison with finite-$N$ data. A literature search.

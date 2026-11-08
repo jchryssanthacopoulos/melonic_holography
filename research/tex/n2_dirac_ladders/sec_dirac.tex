@@ -1,0 +1,155 @@
+\section{The reduced ladder is a Dirac response}
+\label{sec:dirac}
+
+\subsection{The reduced kernel}
+
+Take the charged ladder with seed $F_0=G_\psi(\tau_{13})G_b(\tau_{24})$ and kernel~\eqref{eq:Kd}. Write $x=\tau_{12}$, $y=\tau_{34}$, and let $Y$ be the difference of the pair centres. As in~\cite{Thong:2026}, translation invariance gives fibrewise composition, $(KF)^{(0)}=K^{(0)}F^{(0)}$, on a common regulated domain.
+
+\paragraph{The rail.} The chain integral~\cite[(C.3)]{Thong:2026}, with $2\Delta=\delta$, gives
+\begin{equation}\label{eq:chain}
+\int dz\,G_\psi(z)G_\psi(z-t)=b_\psi^2\,\mathbf C\,|t|^{2\mu},\qquad\mathbf C=2B(\nu,2\delta-1)-B(\nu,\nu).
+\end{equation}
+The first Beta function is defined by continuation, as the integral diverges in the infrared for $q\ge3$. Using $G_b=-\partial G_\psi$, the mixed rail is its derivative,
+\begin{equation}\label{eq:rail}
+\rho(t)\equiv\int dz\,G_\psi(z)G_b(z-t)=\rho_0\,\sgn(t)\,|t|^{-2\delta},\qquad\rho_0=2\mu\,b_\psi^2\,\mathbf C,
+\end{equation}
+which defines the short-distance divergence of the boson rail by the same continuation. Notice that the odd statistics of the rail are automatic: $\rho$ is odd, even though one of the two propagators is even.
+
+\paragraph{Seed and rung.} In the seed $\tau_{13}-\tau_{24}=x-y$, while in the kernel $\tau_{14}-\tau_{23}=x+y$. Since $q-2$ is odd and $\delta(q-2)=2\mu$,
+\begin{equation}\label{eq:reduced}
+F_0^{(0)}(x,y)=\rho(x-y),\qquad K^{(0)}(x,y)=\rho(x+y)\,\mathcal V(y),\qquad\mathcal V(y)=v\,\sgn(y)\,|y|^{-2\mu},
+\end{equation}
+with $v=(q-1)Jb_\psi^{q-2}$. The appearance of $x+y$ is not an accident of labelling. The vertex exchanges which rail carries the fermion, and this makes the rung act with a reflection $y\to-y$.
+
+\paragraph{The neutral channels see the same kernel.} Reduce the matrix kernel~\eqref{eq:Kmatrix} on a pair of the form $(f,-\partial f)$, which is~\eqref{eq:component-relation} in the present normalization. Its rails give $\int G_\psi G_\psi=b_\psi^2\mathbf C|x+y|^{2\mu}\equiv\mathcal A(x+y)$, with $\mathcal A'=\rho$, and $\int G_bG_b=-\rho'$. Since $(q-2)G_bG_\psi^{q-3}=-\partial G_\psi^{q-2}$, the first row is
+\begin{equation}
+\begin{aligned}
+J(q-1)\int dy\,\mathcal A(x+y)\Big[-\partial_y\big(G_\psi^{q-2}\big)f-G_\psi^{q-2}\partial_yf\Big]&=J(q-1)\int dy\,\rho(x+y)\,G_\psi(y)^{q-2}f(y)\\
+&=(K^{(0)}f)(x),
+\end{aligned}
+\end{equation}
+after integrating by parts, and the second row is
+\begin{equation}
+J(q-1)\int dy\,\big(-\rho'(x+y)\big)G_\psi(y)^{q-2}f(y)=-\partial_x(K^{(0)}f)(x).
+\end{equation}
+So the subspace $\{(f,-\partial f)\}$ is invariant, and on it the $2\times2$ neutral kernel acts as the single scalar kernel $K^{(0)}$ of the charged channel. We checked the first row by direct quadrature on smooth test functions, and $\int G_bG_b=-\rho'$ from the chain formula. Superspace appears to explain why, though this step we did only by hand: with the odd coordinates of the outer points set to zero, the Grassmann integral in~\cite[(4.42)]{Bulycheva:2018qcp} acts on the rung and $f$ as a derivative, and its factor of 2 is compensated by the normalization noted in \cref{sec:model}. \Cref{subsec:supercentre} carries out the superspace version for the full four-point function.
+
+\paragraph{The cylinder.} Set $x=e^\tau n$, $y=e^{\tau'}n'$. Then $|x\mp y|^2=e^{\tau+\tau'}[2\cosh(\tau-\tau')\mp2nn']$, and the powers of $|y|$ from the measure, the rung and the weight combine as $1-2\mu-\delta=\delta$. This is the analogue of Thong's cancellation, and it leaves
+\begin{equation}\label{eq:S-kernel}
+v(|x||y|)^\delta\rho(x-y)=c\,\mathfrak S(\tau-\tau';n,n'),\qquad c=v\rho_0,
+\end{equation}
+with
+\begin{equation}\label{eq:S}
+\mathfrak S(t;n,n)=n\frac{\sgn t}{|2\sinh\frac t2|^{2\delta}},\qquad\mathfrak S(t;n,-n)=\frac{n}{(2\cosh\frac t2)^{2\delta}}.
+\end{equation}
+These are the same-boundary and cross-boundary correlators of a fermionic operator of dimension $\delta$ on the two boundaries of the AdS$_2$ strip, which we identify in \cref{subsec:dirac-field}. The constant is
+\begin{equation}\label{eq:c}
+c=(q-1)Jb_\psi^q\,2\mu\,\mathbf C=-\frac{\nu\Gamma(\nu)}{2\delta\,\Gamma(\delta)\cos(\pi\delta)\,\Gamma(1-2\delta)}.
+\end{equation}
+
+On $g(\tau,n)=g_p(\tau)Y_p(n)$ the cylinder kernel preserves parity, and acts by convolution with
+\begin{equation}\label{eq:kp-position}
+\mathbf k_p(t)=c\left[\frac{1}{(2\cosh\frac t2)^{2\delta}}-\sigma_p\frac{\sgn t}{|2\sinh\frac t2|^{2\delta}}\right].
+\end{equation}
+Define, for $|\mathrm{Re}\,H|<\delta$,
+\begin{equation}\label{eq:AB}
+\begin{aligned}
+A(H)&=\int dt\,\frac{e^{Ht}}{(2\cosh\frac t2)^{2\delta}}=\frac{\Gamma(\delta-H)\Gamma(\delta+H)}{\Gamma(2\delta)},\\
+B(H)&=\int dt\,\frac{e^{Ht}\sgn t}{|2\sinh\frac t2|^{2\delta}}=\frac{2\cos(\pi\delta)\,\Gamma(1-2\delta)}{\pi}\Gamma(\delta-H)\Gamma(\delta+H)\sin\pi H,
+\end{aligned}
+\end{equation}
+and note that $1/\Gamma(2\delta)=2\sin(\pi\delta)\cos(\pi\delta)\Gamma(1-2\delta)/\pi$. So
+\begin{equation}\label{eq:AplusB}
+A(H)+\sigma_pB(H)=\frac{2\cos(\pi\delta)\,\Gamma(1-2\delta)}{\pi}\,\Gamma(\delta-H)\Gamma(\delta+H)\,[\sin\pi\delta+\sigma_p\sin\pi H].
+\end{equation}
+
+\begin{proposition}\label{prop:kernel}
+On $e^{H\tau}Y_p(n)$, continued meromorphically from the strip $|\mathrm{Re}\,H|<\delta$, the reduced kernel has eigenvalue
+\begin{equation}\label{eq:kp}
+c\,[A(H)+\sigma_pB(H)]=
+\begin{cases}k_A(H),&p=1,\\ k_S(H),&p=0,\end{cases}
+\end{equation}
+with $k_A,k_S$ the functions~\eqref{eq:kAkS}. There is no free constant.
+\end{proposition}
+
+The mode $e^{H\tau}$ corresponds to the bilocal $|x|^{H-\delta}$, which is the three-point structure with the third operator at infinity, and $e^{-H\tau}$ is its shadow. Since $A$ is even and $B$ is odd, the shadow exchanges $k_A$ and $k_S$. This is the statement $k_A(H)=k_S(-H)$, which on the cylinder is $\tau\to-\tau$. We checked~\eqref{eq:AB} by direct integration, and~\eqref{eq:c},~\eqref{eq:kp} to working precision.
+
+\subsection{The Dirac field}
+\label{subsec:dirac-field}
+
+Consider global AdS$_2$, $ds^2=\sec^2\theta\,(-dt^2+d\theta^2)$, with $\theta\in(-\frac\pi2,\frac\pi2)$ and $\zeta=\cos\theta$, and a Dirac field of mass $\mu$. With frames $\gamma^0=i\sigma_1$, $\gamma^1=-\sigma_3$ and $\Psi=\zeta^{1/2}\psi$, the equation $(\gamma^a\nabla_a-\mu)\Psi=0$ becomes
+\begin{equation}\label{eq:HD}
+i\partial_t\psi=H_D\psi,\qquad H_D=J_2\partial_\theta+\mu\sec\theta\,\sigma_1,\qquad J_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
+\end{equation}
+On a mode $e^{-i\Omega t}$, the rotation $\psi=e^{(\pi/4-\theta/2)J_2}(u,v)^T$ gives the first-order system
+\begin{equation}\label{eq:first-order}
+(\partial_\theta+\mu\tan\theta)u=(\omega+\mu)v,\qquad(-\partial_\theta+\mu\tan\theta)v=(\omega-\mu)u,\qquad\omega=\Omega-\half.
+\end{equation}
+At the right endpoint, $v\to a_F\zeta^{-\mu}$ and $u\to b_F\zeta^{\mu}$, so $a_F$ has weight $\half-\mu=\delta$ and $b_F$ has weight $\half+\mu=\nu$. If $v$ has parity $p$, then $u$ has parity $1-p$. Since $|\mu|<\half$ both falloffs are normalizable, and any relation between $a_F$ and $b_F$ compatible with the boundary form is allowed.
+
+The regular solution of parity $p$ fixes the response~\cite{Thong:2026},
+\begin{equation}\label{eq:RF}
+\cR_{F,p}(\Omega)\equiv\frac{b_F}{a_F}=\frac{2\nu\,\cR_{\nu,p}(\Omega-\half)}{\Omega-\nu},\qquad\cR_{\rho,p}(\omega)=\frac{\Gamma(-\rho)}{\Gamma(\rho)}\prod_\pm\frac{\Gamma\big(\frac{p+\frac12+\rho\pm\omega}{2}\big)}{\Gamma\big(\frac{p+\frac12-\rho\pm\omega}{2}\big)}.
+\end{equation}
+
+\begin{proposition}\label{prop:response}
+The response~\eqref{eq:RF} is the Fourier transform of the correlators~\eqref{eq:S}:
+\begin{equation}\label{eq:RF-AB}
+\frac{1}{\cR_{F,p}(H)}=-\mathfrak c\,[\sigma_pA(H)+B(H)],\qquad\mathfrak c=\frac{\Gamma(\delta+\half)}{\sqrt\pi\,\Gamma(\delta)}.
+\end{equation}
+Moreover $c=-L_q\mathfrak c$, so that
+\begin{equation}\label{eq:k-RF}
+k_p(H)=\frac{\sigma_pL_q}{\cR_{F,p}(H)},\qquad(p,\alpha)=(1,A),\ (0,S).
+\end{equation}
+\end{proposition}
+
+Hence the seed is the free boundary correlator. Let $\mathfrak G_F=\mathfrak c\,\mathfrak S$, and let $(\mathsf R h)(\tau,n)=n\,h(\tau,-n)$, so that $\mathsf R^2=-1$. Then~\eqref{eq:reduced} and~\eqref{eq:S-kernel} say
+\begin{equation}\label{eq:K-G}
+WK^{(0)}W^{-1}=L_q\,\mathfrak G_F\,\mathsf R,\qquad v(|x||y|)^\delta F_0^{(0)}(x,y)=-L_q\,\mathfrak G_F(\tau-\tau';n,n').
+\end{equation}
+The structure is $K=C_0V$ with the constant boundary vertex $L_q\mathsf R$.
+
+\subsection{The ladder}
+
+Summing the geometric series, and continuing as a resolvent as in~\cite{Thong:2026},
+\begin{equation}\label{eq:ladder-position}
+v(|x||y|)^\delta F_g^{(0)}(x,y)=-L_q\,\mathfrak G_{F,g}(\tau-\tau';n,n'),\qquad\mathfrak G_{F,g}=\big(\mathfrak G_F^{-1}-gL_q\mathsf R\big)^{-1}.
+\end{equation}
+This is the $\cN=2$ analogue of~\cite[(3.11)]{Thong:2026}. No commutation of the rail and the vertex is assumed. A source $j$ for $b_F$ gives $b_F-gL_q\mathsf Ra_F=j$, so the source-free boundary condition is
+\begin{equation}\label{eq:bc-dirac}
+b_F=gL_q\mathsf R\,a_F,\qquad\text{i.e.}\qquad b_F=g\sigma_pL_q\,a_F\ \ \text{on parity }p,
+\end{equation}
+at the right endpoint. In the eigenbasis,
+\begin{equation}\label{eq:ladder-dirac}
+\boxed{\ \frac{k_p(H)}{1-gk_p(H)}=\sigma_pL_q\,G^F_{g,p}(H),\qquad G^F_{g,p}(\Omega)=\frac{1}{\cR_{F,p}(\Omega)-g\sigma_pL_q}.\ }
+\end{equation}
+So the operator spectrum is the normal-mode spectrum, $\cR_{F,p}(\Omega)=g\sigma_pL_q$, with $\Omega=H$.
+
+\paragraph{The boundary vertex couples antipodal endpoints.} In terms of endpoint data, $a_F(-)=\sigma_pa_F(+)$ and $b_F(-)=-\sigma_pb_F(+)$, so~\eqref{eq:bc-dirac} reads $b_F(n)=n\,gL_q\,a_F(-n)$: the coupling connects the two boundaries of the strip. It is the $x+y$ of the rail that does this. See \cref{fig:strip}.
+
+\paragraph{Spectral positivity.} The boundary form $\bar a_{F,1}b_{F,2}-\bar b_{F,1}a_{F,2}$ vanishes on~\eqref{eq:bc-dirac}, so $H_D$ is self-adjoint on it for real $g$. Thus
+\begin{equation}\label{eq:spectral}
+G^F_{g,p}(\Omega)=\sum_n\frac{w_n}{\Omega-\Omega_n},\qquad w_n=\frac{1}{\cR_{F,p}'(\Omega_n)}>0.
+\end{equation}
+The roots come in pairs: $\Omega_n$ at parity $p$ and $-\Omega_n$ at parity $1-p$, from $k_A(H)=k_S(-H)$. We confirmed $w_n>0$ at all roots with $|\Omega|<3.3$, for $q=3,5,7$ and $g=0.6,0.95$.
+
+Unlike the scalars of the next section, the Dirac field has no difficulty with stationarity at any $g\in(0,1]$. Its boundary weight is $\delta>0$, and its correlators~\eqref{eq:S} decay. The failure of Thong's condition $a+J>0$ found for the $p=0$ neutral sector is entirely a feature of the bosonic components (\cref{sec:stability}).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=1.0,>=Stealth]
+\fill[blue!6] (-2.6,0) rectangle (2.6,4);
+\draw[thick] (-2.6,0) -- (-2.6,4);
+\draw[thick] (2.6,0) -- (2.6,4);
+\node[below] at (-2.6,0) {\small $\theta=-\frac{\pi}{2}$};
+\node[below] at (2.6,0) {\small $\theta=+\frac{\pi}{2}$};
+\draw[->] (-3.3,0.5) -- (-3.3,3.5) node[midway,left] {\small $\tau$};
+\node at (0,3.45) {\small free fields $(\Phi_\psi,\ \Psi,\ \Phi_b)$};
+\draw[<->,thick,red!70!black,decorate,decoration={snake,amplitude=.6mm,segment length=3mm}] (-2.6,1.9) -- (2.6,1.9);
+\node[red!70!black] at (0,1.35) {\small $b_F(n)=n\,gL_q\,a_F(-n)$};
+\fill (-2.6,1.9) circle (1.3pt);
+\fill (2.6,1.9) circle (1.3pt);
+\end{tikzpicture}
+\caption{The auxiliary system. The bulk fields on the AdS$_2$ strip are free, the cylinder time $\tau$ is the logarithm of the pair separation, and the two boundaries are the two signs of the separation. All ladder rungs sit in a constant boundary vertex connecting antipodal endpoints at equal $\tau$.}
+\label{fig:strip}
+\end{figure}

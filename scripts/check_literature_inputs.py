@@ -426,7 +426,7 @@ def check_superfield_components():
     (G_psi, G_b) ~ (sgn|t|^-delta, delta |t|^(-1-delta)), so c(0)=delta and c = -(h-delta).
     That is G_b = -d G_psi in the normalization of [PSV](2.10). Bulycheva's <12> has the
     coefficient 2, which corresponds to G_b twice as large; put into the Schwinger-Dyson
-    equation this gives her J b^q = tan(pi delta/2)/(4 pi) instead of 1/(2 pi), Eq. (3.9).
+    equation this gives J b^q = tan(pi delta/2)/(4 pi) instead of 1/(2 pi), Eq. (3.9).
     """
     print("\n6. Superfield structure of the top-branch eigenvector of the [PSV] matrix kernel")
     for q in (3, 5, 7):
@@ -442,6 +442,10 @@ def check_superfield_components():
                 record(f"{sector} h={h} eigenvector ratio c/(h-delta)", c / (h - m.delta), -1)
                 # and it is an eigenvector: the first row closes too
                 record(f"{sector} h={h} first row", mat[0, 0] + mat[0, 1] * c, k)
+                # the other branch: k_S(h-1) in sector a, k_A(h-1) in sector s, with c = h + delta - 1
+                k2 = (m.kS if sector == "a" else m.kA)(h - 1)
+                c2 = mat[1, 0] / k2
+                record(f"{sector} h={h} top eigenvector c = h + delta - 1", c2, h + m.delta - 1)
 
 
 # --------------------------------------------------------------------------------------

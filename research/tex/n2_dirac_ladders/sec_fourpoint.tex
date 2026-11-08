@@ -1,0 +1,169 @@
+\section{The four-point function}
+\label{sec:fourpoint}
+
+\subsection{Superconformal reconstruction}
+
+In the chiral--antichiral ordering, with cross ratio $0<z<1$ (the $\chi$ of~\cite{Bulycheva:2018qcp}, related to the component cross ratio of~\cite{Peng:2017spg} by $\chi_{\rm PSV}=z/(z-1)$), the normalized seed is $F_0=z^\delta$, and the normalized fermion covariance in this ordering is $-F$. The superblock is~\cite{Bulycheva:2018qcp}
+\begin{equation}\label{eq:block}
+\varphi_H(z)=\frac{\Gamma(H)^2}{\Gamma(2H)}z^H{}_2F_1(H,H;2H+1;z)=F_H(z)-F_{H+1}(z),
+\end{equation}
+with $F_h$ the $sl(2)$ block, $\cC\varphi_H=H^2\varphi_H$. A fixed transform relates it to the cylinder mode, $\cT_2e^{-Ht}=\varphi_H$, where
+\begin{equation}\label{eq:T2}
+(\cT_2f)(z)=2\sqrt2\int_\eta^\infty\frac{\sinh(t/2)f(t)}{\sqrt{\cosh t-\cosh\eta}}\,dt,\qquad\eta=\operatorname{arcosh}(2/z-1),
+\end{equation}
+and $\cC\cT_2=\cT_2\partial_t^2$ on this span. The four-point function is
+\begin{equation}\label{eq:reconstruction}
+F_g(z)=\int_{\cC}\frac{dH}{2\pi i}\,r_g(H)\varphi_H(z)+\frac{2\cN_\delta}{\pi}\sum_{n\ge1}\frac{k_A(n)}{1-gk_A(n)}\varphi_n(z),
+\end{equation}
+where $\cC$ crosses the real axis in $0<c<\delta$, and
+\begin{equation}\label{eq:rg}
+r_g(H)=\cN_\delta\left[\cot\frac{\pi H}{2}\,\frac{k_A(H)}{1-gk_A(H)}-\tan\frac{\pi H}{2}\,\frac{k_S(H)}{1-gk_S(H)}\right],\qquad\cN_\delta=\frac{\delta}{2\nu\tan(\pi\delta/2)}.
+\end{equation}
+This follows from~\cite[(4.106)]{Bulycheva:2018qcp} after the corrections of \cref{app:conventions}: send $h\to-h$ in the shadow term, and use $(1\pm\sec\pi h)/\tan\pi h=\cot\frac{\pi h}{2},\,-\tan\frac{\pi h}{2}$. Closing the contour, the integer poles cancel against the explicit sum, leaving
+\begin{equation}\label{eq:roots}
+F_g(z)=\sum_{k_A(H)=1/g}\frac{\cN_\delta\cot(\pi H/2)}{g^2k_A'(H)}\varphi_H(z)-\sum_{k_S(H)=1/g}\frac{\cN_\delta\tan(\pi H/2)}{g^2k_S'(H)}\varphi_H(z).
+\end{equation}
+We verified that~\eqref{eq:reconstruction} equals~\eqref{eq:roots} numerically at finite $g$, and that the coefficients in~\eqref{eq:roots}, together with the $F_H-F_{H+1}$ structure, reproduce the residues of~\cite[(4.26)]{Peng:2017spg} with $g$ inserted, at $g=0.7$ and $g=1$, for $q=3,5$. That is an independent derivation of the same data in components.
+
+\subsection{The reduced component covariance}
+\label{subsec:reduced-cov}
+
+Now we can test the central claim directly, by computing the left side of Thong's identity from the literature. Let $F^{(0)}_{g,p}$ be the ordinary centre integral of the neutral correlators, projected onto unit-normalized parity harmonics, $E(\tau)=\operatorname{diag}(e^{a_\psi\tau},e^{a_b\tau})$, with $a_\psi=\delta-\half$, $a_b=\delta+\half$, and $S=\operatorname{diag}(1,1/2\delta)$. The claim, due to the earlier note, is
+\begin{equation}\label{eq:cov-norm}
+S\,E\,F^{(0)}_{g,p}\,E\,S=\sigma_p\ell_\psi\,\sG_{g,p},\qquad\ell_\psi=\frac{2\cdot4^{-\nu}}{Jb_\psi^{q-2}}.
+\end{equation}
+We can evaluate both sides independently. For the left side, we use the four-point functions of~\cite[(4.26), (4.35)]{Peng:2017spg}, with $g$ inserted by the geometric series, and Thong's reduction of a block~\cite[(C.8)]{Thong:2026},
+\begin{equation}\label{eq:P}
+(\mathsf PB_h)(\tau)\equiv\int_{-\infty}^\infty du\,B_h\Big(\frac{1}{u^2-\sinh^2(\tau/2)}\Big)=\cI(h)\,e^{-(h-\frac12)|\tau|},\qquad\cI(h)=\frac{\pi\tan(\pi h/2)}{(2h-1)\cN(h)},
+\end{equation}
+with $\cN(h)=\Gamma(h)^2/2\Gamma(2h)$. In the even sector, which~\cite{Thong:2026} doesn't need, we use $\Phi^a_h$ of~\cite{Peng:2017spg} with the same piecewise prescription. We find by quadrature that
+\begin{equation}\label{eq:Ia}
+\cI_a(h)=\frac{\pi\cot(\pi h/2)}{(2h-1)\cN(h)},
+\end{equation}
+which is what Thong's weights give under $\tan\frac{\pi h}{2}\to\tan\frac{\pi(h-1)}{2}$, as $\cos\pi\omega+\tan\frac{\pi(h-1)}{2}\sin\pi\omega=\cot\frac{\pi h}2$. The tangents cancel against the measure, and for the $\psi\bar\psi\psi\bar\psi$ entry the sum over blocks becomes
+\begin{equation}\label{eq:PF}
+(\mathsf PF_{g,p})(\tau)=\mp2\sum_{h_*}\Res_{h=h_*}\frac{k_0^{\psi}(h)}{D_p(h)}\,e^{-(h_*-\frac12)|\tau|},\qquad D_p(h)=(1-gk_p(h))(1-gk_{1-p}(h-1)),
+\end{equation}
+with upper sign for $p=1$, and $k_0^\psi$ the seed overlaps $k_0^{\psi,s}$ for $p=1$ and $k_0^{\psi,a}$ for $p=0$ of~\cite[(4.10), (4.11)]{Peng:2017spg}. For the right side, we use the residues of $\sG_{g,p}$ from~\eqref{eq:khat}.
+
+The two agree at every root with $\omega<4$, for $q=3,5$, at $g=0.5,0.9,0.99,1$ when $p=1$, and at $g=0.9,0.99,1$ when $p=0$, including the exceptional roots below. The other three entries agree as well, at every root with $\omega<4$ of each parity, for $q=3,5$ and $g=0.9,1$, again including the exceptional roots, subject to one point of normalization. The matrix~\cite[(4.25)]{Peng:2017spg} acts on coefficients of bilocals with no amplitudes extracted, so the normalized correlators of a column must carry the amplitude $b_j^2$ of the $(3,4)$ pair in both rows. If the off-diagonal correlators were normalized literally by $G_i(\tau_{12})G_j(\tau_{34})$, the two off-diagonal entries would differ by a factor $\delta^2$, which violates the symmetry $F_{21}=F_{12}$ of the reduced covariance. With the column normalization that symmetry holds exactly.
+
+As a separate test of the reduction formula, a direct numerical centre integral of the odd part of the seed, $\frac12[\sgn\frac{\chi}{1-\chi}|\frac{\chi}{1-\chi}|^\delta-\sgn\chi|\chi|^\delta]$, agrees with~\eqref{eq:PF} at $g=0$. The even part has no such test, since its centre integral diverges. We haven't tested the reduction of the summed series.
+
+\subsection{The super-centre integral}
+\label{subsec:supercentre}
+
+The ordinary centre integral imposes only $L_1=0$, and so it keeps both the bottom and the top component of each multiplet (\cref{sec:cylinder}). Integrating over the whole supertranslation orbit of a pair imposes all the conditions of \cref{prop:cylinder}. We now show that this turns the four-point function directly into the Dirac propagator, with one exponential per superblock.
+
+\paragraph{The integral.} Write the chiral--antichiral four-point function as $G(\ket{12})G(\ket{34})\,\mathcal F_g(z)$, with $z=\ket{12}\ket{34}/(\ket{14}\ket{32})$, $\mathcal F_g$ given by~\eqref{eq:reconstruction} on $0<z<1$, and $G$ the superfield propagator, whose bottom component is $G_\psi$. This form is general. Chirality leaves $4|4$ coordinates, on which $su(1,1|1)$ acts with rank $3|4$, so $z$ is the only invariant and there is no nilpotent one. Move the pair $(12)$ along its supertranslation orbit, by the flow of $\eta G_{-1/2}+\bar\eta\bar G_{-1/2}$ and a translation $Y$,
+\begin{equation}
+\theta\to\theta+\bar\eta,\qquad\bar\theta\to\bar\theta+\eta,\qquad\tau\to\tau+Y-\eta\theta-\bar\eta\bar\theta,
+\end{equation}
+and keep $(34)$ fixed. Starting from vanishing odd coordinates, $\ket{12}=x$ and $\ket{34}=y$ don't change, while
+\begin{equation}
+\ket{14}=Y+s+\eta\bar\eta,\qquad\ket{32}=s-Y+\eta\bar\eta,\qquad s=\tfrac12(x+y).
+\end{equation}
+So $z=z_0-2s\,z_0^2\,\eta\bar\eta/xy$, where $z_0=xy/(s^2-Y^2)$ is the body. With the invariant measure $dY\,d^2\eta$ and $\int d^2\eta\,\eta\bar\eta=1$,
+\begin{equation}\label{eq:Ps}
+\mathsf P_sF\equiv\int dY\,d^2\eta\,F=-G(x)G(y)\,\frac{x+y}{xy}\int dY\,z_0^2\,\mathcal F'(z_0).
+\end{equation}
+Two things distinguish this from the ordinary centre integral. At large $|Y|$, where $\mathcal F\sim z^H$, it converges for $H>-\half$ rather than $H>\half$. At the collisions $\ket{14}=0$ and $\ket{32}=0$ its integrand is more singular, and we take the finite part, which is the same as continuing in the exponents.
+
+The two integrals are simply related. Put $x=e^\tau n$, $y=e^{\tau'}n'$, $t=\tau-\tau'$, and use the component cross ratio $\chi=z/(z-1)$. Then $z^2\partial_z\mathcal F=-\chi^2\partial_\chi\mathcal F$, and $\partial_t\chi=\pm\frac12\sinh t\,\chi^2$ in the two sectors. Therefore
+\begin{equation}\label{eq:Ps-P}
+\frac{(|x||y|)^\delta}{b_\psi^2}\,\mathsf P_sF=\begin{cases}2n\,\partial_t\mathsf P_+\mathcal F/\sinh\frac t2,&n'=n,\\[0.5ex]-2n\,\partial_t\mathsf P_-\mathcal F/\cosh\frac t2,&n'=-n,\end{cases}
+\end{equation}
+where $\mathsf P_+=\mathsf P$ is the centre integral~\eqref{eq:P}, $\mathsf P_-$ is the same with $\chi=1/(\cosh^2\frac t2-u^2)$, and both act on $\mathcal F$ written as a function of $\chi$. The odd directions of the super-centre act as a first-order operator in cylinder time.
+
+\paragraph{One superblock.} On $0<z<1$ the family of a root $H$ is $\varphi_H=F_H-F_{H+1}$. By~\eqref{eq:spectra}, its bottom component has parity $p$ and its top component parity $1-p$, with $p=1$ on the $A$ branch and $p=0$ on the $S$ branch. Outside $0<z<1$ we continue each component as its own family: the odd one as in~\cite[(C.4)]{Thong:2026}, and the even one with $\Phi^a_h$, as in~\eqref{eq:Ia}. Call the results $\Phi^A_H$ and $\Phi^S_H$. Since $F_h=2\cN(h)B_h$,~\eqref{eq:P} and~\eqref{eq:Ia} give, on the $A$ branch,
+\begin{equation}
+\mathsf P_\pm\Phi^A_H=\pi\tan\frac{\pi H}2\left[\frac{e^{-(H-\frac12)|t|}}{H-\half}\mp\frac{e^{-(H+\frac12)|t|}}{H+\half}\right],
+\end{equation}
+two exponentials, one for each component. Their $t$-derivatives are $-2\pi\tan\frac{\pi H}2\,e^{-H|t|}$ times $\sinh\frac t2$ and $\sgn t\cosh\frac t2$ respectively, so~\eqref{eq:Ps-P} leaves a single exponential. The $S$ branch works the same way, with $\cot$ in place of $\tan$.
+
+\begin{proposition}\label{prop:supercentre}
+For $H>-\half$, with $\theta$ the step function,
+\begin{equation}\label{eq:Ps-family}
+\begin{aligned}
+\frac{(|x||y|)^\delta}{b_\psi^2}\,\mathsf P_s\big[GG\,\Phi^A_H\big]&=-4\pi\tan\frac{\pi H}2\,\big[\theta(t)\,n'+\theta(-t)\,n\big]\,e^{-H|t|},\\
+\frac{(|x||y|)^\delta}{b_\psi^2}\,\mathsf P_s\big[GG\,\Phi^S_H\big]&=4\pi\cot\frac{\pi H}2\,\big[\theta(t)\,n+\theta(-t)\,n'\big]\,e^{-H|t|}.
+\end{aligned}
+\end{equation}
+\end{proposition}
+
+The derivation used the ordinary integrals, which need $H>\half$, but both sides are analytic in $H$ and~\eqref{eq:Ps} converges for $H>-\half$. So the super-centre integral of a superblock is a single exponential $e^{-H|t|}$, a single Dirac mode at $\Omega=H$, where the ordinary centre integral gives two, at $\omega=H\mp\half$. It is one-sided in $t$, as a first-order propagator must be. In the parity blocks $\theta(t)e^{-Ht}$ appears in one and $\theta(-t)e^{Ht}$, the partner pole at $-H$, in the other, as in~\eqref{eq:spectral}. The parity of the pair $(12)$ is exchanged, because the odd directions act on it as a derivative. In components, the collapse needs the bottom and the top of one Dirac pole to carry weights in the ratio $(H+\half):-(H-\half)$ in the $\psi\bar\psi\psi\bar\psi$ entry. That is what the Ward identity~\eqref{eq:ward} gives, since its $11$ entry reads $\sG_{g,p,11}(\omega)=-[G^F_{g,p}(\omega+\half)+G^F_{g,1-p}(\omega-\half)]/2\omega$.
+
+\paragraph{The four-point function.} With the coefficients~\eqref{eq:roots}, the tangents and cotangents cancel. Each root then contributes the residue of $k_\alpha/(1-gk_\alpha)$, which by~\eqref{eq:ladder-dirac} is $\sigma_pL_q$ times a Dirac weight $w_n$. Summing,
+\begin{equation}\label{eq:Ps-dirac}
+\boxed{\ (|x||y|)^\delta\int dY\,d^2\eta\;F_g(1,2,3,4)=8\pi\cN_\delta L_q\,b_\psi^2\,\big(\mathfrak G_{F,g}\Pi\big)(\tau-\tau';n,n'),\ }
+\end{equation}
+with $\mathfrak G_{F,g}$ the Dirac propagator~\eqref{eq:ladder-position} and $(\Pi h)(\tau,n)=h(\tau,-n)$ the parity. In the normalization of~\cite{Peng:2017spg}, $8\pi\cN_\delta L_qb_\psi^2=2\ell_\psi$, the constant of~\eqref{eq:cov-norm}. In terms of the literature's data alone, a root contributes $-4\Res[(2h-1)k_0^{\psi,s}/D_1]$ on the $A$ branch and $4\Res[(2h-1)k_0^{\psi,a}/D_0]$ on the $S$ branch, with $D_p$ as in~\eqref{eq:PF}. These contain no trigonometric factor and are finite at the exceptional roots, so the cancellation of \cref{subsec:exceptional} is automatic here.
+
+We checked~\eqref{eq:Ps-dirac} in three ways. First, at $g=0$ the seed is $\mathcal F_0=\sgn(z)|z|^\delta$, and~\eqref{eq:Ps} can be done in closed form, with $|z|^a$ in place of $|z|^\delta$ and continuing from $-\half<a<0$, where it converges. The result is $-2\delta\,[B(\half,-\delta)+B(\half+\delta,-\delta)]\,n$ times $\cosh^{-2\delta}\frac t2$ for $n'=n$, and $\sgn t\,|\sinh\frac t2|^{-2\delta}$ for $n'=-n$. This is~\eqref{eq:Ps-dirac} at $g=0$, for $q=3,5,7$. It includes the even part of the seed, whose ordinary centre integral diverges. Second,~\eqref{eq:Ps-family} holds by quadrature of the component families, at $H$ from $0.3$ to $2.4$. Third, at every root with $H<3.6$, for $q=3$ at $g=0.15,0.5,0.9,1$ and $q=5$ at $g=0.3,0.7,1$, the weights from~\cite{Peng:2017spg} equal $\mp4\pi\cN_\delta L_qw_n$, with $w_n=1/\cR_{F,p}'(H_n)$. That includes the exceptional roots, and the lowest $S$ roots with $H<\half$ for $g<g_*$.
+
+So~\eqref{eq:Ps-dirac} is the $\cN=2$ analogue of~\cite[(3.11)]{Thong:2026} for the full four-point function. Together with~\eqref{eq:ladder-position}, it says that one Dirac field reproduces both the charged ladders, through an ordinary centre integral, and the neutral superconformal four-point function, through a super-centre integral. Unlike the ordinary reduction of the neutral components, it holds through $g_*$.
+
+The reconstruction~\eqref{eq:reconstruction} is its inverse. Let $\cI_s(H)$ be the prefactor in~\eqref{eq:Ps-family}, $-4\pi\tan\frac{\pi H}2$ or $4\pi\cot\frac{\pi H}2$. By~\eqref{eq:rg}, $r_g(H)\,\cI_s(H)=-4\pi\cN_\delta\,k_\alpha/(1-gk_\alpha)$ on each branch. So the trigonometric factors of $r_g$ are exactly those that $\mathsf P_s$ removes, and $\cT_2$, which maps $e^{-Ht}$ to $\varphi_H$, inverts $\mathsf P_s$ family by family up to $\cI_s(H)$.
+
+Two caveats remain, as in~\cite{Thong:2026}. The continuation of the superfamilies outside $0<z<1$ is inherited from the component families, not characterized in superspace. And we have not shown that the reduction commutes with the infinite sum over families.
+
+\subsection{Exceptional families}
+\label{subsec:exceptional}
+
+At $g=1$ both branches reach $H=1$. For the $S$ multiplet the story is Thong's for $h=2$: the block coefficient diverges as $g\to1$, the centre integral vanishes, and the product is finite. For the $A$ multiplet the coefficient vanishes, since $c_A\propto\cot(\pi H/2)\to0$ in~\eqref{eq:roots}, yet $\sG_{1,p}$ has nonzero residues there. This looks like a contradiction with~\cite[(3.13)]{Thong:2026}, which says that the same coefficient multiplies each family before and after reduction. It isn't, as we now show.
+
+The eigenfunctions $\Phi^s_h$ of~\cite{Peng:2017spg} have poles at odd $h$, and $\Phi^a_h$ at even $h$, with Legendre residues, where $x=(\chi-2)/\chi$:
+\begin{equation}\label{eq:Phi-res}
+\Res_{h=2n+1}\Phi^s_h=-2P_{2n}(x),\qquad\Res_{h=2n+2}\Phi^a_h=+2P_{2n+1}(x).
+\end{equation}
+We checked this for the first two values of each at $\chi>1$, and at $h=1$ also for $0<\chi<1$. These poles are cancelled by zeros of the measure, as noted for $\Psi_h$ in~\cite{Maldacena:2016hyu}. The two regions now differ, because of how the contour is closed. On $\chi>1$, one closes to the right with $\Phi_h$ itself. On $0<\chi<1$, one first uses $h\to1-h$ to replace $\Phi_h$ by the block $\propto\chi^h{}_2F_1(h,h;2h;\chi)$, which has no pole at these $h$~\cite{Maldacena:2016hyu,Peng:2017spg}. So at a root $h_*\to1$ of $D_p$, the zero of the measure removes the term on $0<\chi<1$, while on $\chi>1$ a finite contribution remains:
+\begin{equation}\label{eq:step}
+\frac{2h-1}{\pi\tan(\pi h/2)}\Phi^s_h\xrightarrow{h\to1}1\quad(\chi>1),\qquad\frac{2h-1}{\pi\tan(\pi(h-1)/2)}\Phi^a_h\xrightarrow{h\to2}-3P_1(x)\quad(\chi>1).
+\end{equation}
+In the piecewise representation of~\cite[(C.4)]{Thong:2026}, the family at $g\to1$ is therefore $\theta(\chi>1)$ or $P_1(x)\theta(\chi>1)$, times a constant. Numerically at $q=3$, $p=1$, $g=0.9999$, the family contributes $1.8\times10^{-6}$ at $\chi=0.5$ and $-0.26532$ at $\chi=1.6$, against the predicted $-\Res[k_0^{\psi,s}/D_1]=-0.26532$.
+
+\begin{lemma}\label{lem:step}
+With $\chi=1/(u^2-\sinh^2(\tau/2))$,
+\begin{equation}\label{eq:step-lemma}
+\mathsf P\big[\theta(\chi>1)P_n(x)\big]=\frac{2}{2n+1}e^{-(n+\frac12)|\tau|}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The region $\chi>1$ is $\sinh\frac{|\tau|}{2}<|u|<\cosh\frac\tau2$, on which $x=1-2(u^2-\sinh^2\frac\tau2)$ runs over $[-1,1]$. Changing variables gives $\int_{-1}^1P_n(x)\,dx\,(2\cosh\tau-2x)^{-1/2}$. With $t=e^{-|\tau|}$ we have $2\cosh\tau-2x=(1-2xt+t^2)/t$, so the Legendre generating function gives $(2\cosh\tau-2x)^{-1/2}=\sqrt t\sum_mt^mP_m(x)$, and orthogonality finishes the proof.
+\end{proof}
+
+For $n=0$ this is the statement that the interval has width $2(\cosh\frac\tau2-\sinh\frac{|\tau|}2)=2e^{-|\tau|/2}$, so the step function reduces exactly to the mode at $\omega=\half$. Together with~\eqref{eq:step} this reproduces~\eqref{eq:PF} at both $A$-modes. \Cref{tab:exceptional} summarizes.
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}cccccl@{}}
+\toprule
+Branch & $p$ & $h$ & Block coefficient, $g\to1$ & $\cI$ & Reduced weight\\
+\midrule
+$A$ & 1 & 1 & $\to0$ & pole & finite, nonzero\\
+$A$ & 0 & 2 & $\to0$ & pole & finite, nonzero\\
+$S$ & 1 & 2 & $\to\infty$ & 0 & finite, nonzero\\
+$S$ & 0 & 1 & $\to\infty$ & 0 & finite, nonzero\\
+\bottomrule
+\end{tabular}
+\caption{The $H=1$ modes. The $S$ rows are Thong's $h=2$ mechanism, and the $A$ rows are its mirror image.}
+\label{tab:exceptional}
+\end{table}
+
+So in the decomposition into families, the $A$-modes are present, as a step function that vanishes on $0<\chi<1$. The chiral--antichiral reconstruction lives at $\chi_{\rm PSV}<0$, where the piecewise family also vanishes, so it can't see them. The two statements are compatible, and~\cite[(3.13)]{Thong:2026} holds, provided the family at $g=1$ is understood as this step function or as the limit $g\to1^-$. This fits the expectation of~\cite{Fu:2016vas} that the $A$ multiplet has no divergence and corresponds to operators of the IR theory.
+
+We stress that this describes a term in a decomposition. It doesn't imply that the full correlator jumps at $\chi=1$, where the infinite sum over the other families is itself singular. We haven't examined what such a term means physically, beyond its effect on the centre integral.
+
+\subsection{The $S$ multiplet}
+
+The divergence as $g\to1$ reflects the soft modes, and~\cite{Bulycheva:2018qcp,Peng:2017spg} leave this multiplet aside. A definite conformal subtraction, proposed in the earlier note, is
+\begin{equation}
+F_{\rm sub}(z)=\lim_{g\to1^-}\left[F_g(z)-\frac{D_\delta}{1-g}\varphi_1(z)\right],\qquad D_\delta=\frac{2\cN_\delta}{\pi},
+\end{equation}
+and with $b_1=k_S'(1)$, $b_2=k_S''(1)$ the pole moves as $H(g)=1+(1-g)/b_1+\cdots$, leaving the finite contribution
+\begin{equation}\label{eq:finite-part}
+\frac{D_\delta}{b_1}\partial_H\varphi_H(z)\Big|_{H=1}+D_\delta\Big(1-\frac{b_2}{2b_1^2}\Big)\varphi_1(z),
+\end{equation}
+whose coefficients we checked. This is a conformal finite part, not the finite-coupling answer. A different subtraction changes the coefficient of $\varphi_1$. Its physical value requires the super-Schwarzian~\cite{Fu:2016vas}, which has not been computed in any work we have read. On the reduced side the ambiguity disappears, in the way of~\cite[(C.12)]{Thong:2026}: $\varphi_1=F_1-F_2$, and $\cI_a(1)=\cI(2)=0$. Accordingly the residues of $\sG_{1,p}$ at these modes are finite and unambiguous.

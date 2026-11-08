@@ -1,0 +1,94 @@
+\section{The neutral channels and the boundary superfields}
+\label{sec:neutral}
+
+\subsection{Two scalars and a matrix condition}
+
+An ordinary centre integral of the neutral ladder~\eqref{eq:Kmatrix} leaves a $2\times2$ problem. Its boundary-condition form was proposed in earlier unpublished work. We state it first, and derive its structure below. Take two scalars on the strip, solving $-\Phi''+m^2\sec^2\theta\,\Phi=\omega^2\Phi$, with
+\begin{equation}\label{eq:scalars}
+\begin{aligned}
+m_\psi^2&=\mu(\mu+1),&\Phi_\psi&\to A_\psi\zeta^{-\mu}+B_\psi\zeta^{1+\mu},\\
+m_b^2&=\mu(\mu-1),&\Phi_b&\to A_b\zeta^{\mu}+B_b\zeta^{1-\mu},
+\end{aligned}
+\end{equation}
+and with parities $p$ and $1-p$. These are $\rho^2-\tfrac14$ with $\rho=\nu$ and $\rho=\delta$. With $X=(A_\psi,B_b)^T$ and $j_0=(-2\nu B_\psi,2\delta A_b)^T$, regularity gives $X=\sD_pj_0$, where
+\begin{equation}\label{eq:Dp}
+\sD_p(\omega)=\operatorname{diag}\left(-\frac{1}{2\nu\,\cR_{\nu,p}(\omega)},\ \frac{\cR_{\delta,1-p}(\omega)}{2\delta}\right),\qquad\sM_p=\sigma_pL_q\begin{pmatrix}2\mu&2\delta\\2\delta&0\end{pmatrix}.
+\end{equation}
+Then, with $\hat{\sk}_p$ the neutral kernel in the basis rescaled by $\operatorname{diag}(1,1/2\delta)$,
+\begin{equation}\label{eq:khat}
+\hat{\sk}_p(h)=\sD_p(h-\half)\sM_p,\qquad\sG_{g,p}=\big(\sD_p^{-1}-g\sM_p\big)^{-1},
+\end{equation}
+which we verified entry by entry against~\cite[(2.27)--(2.29), (2.33)--(2.35)]{Peng:2017spg}. The source-free boundary condition is $j_0=g\sM_pX$:
+\begin{equation}\label{eq:bc-matrix}
+-2\nu B_\psi=c\,(2\mu A_\psi+2\delta B_b),\qquad A_b=c\,A_\psi,\qquad c\equiv g\sigma_pL_q.
+\end{equation}
+This condition is self-adjoint for real $g$, as the boundary form $2\nu(A_{\psi1}B_{\psi2}-B_{\psi1}A_{\psi2})+2\delta(A_{b1}B_{b2}-B_{b1}A_{b2})$ vanishes on it, even though the eigenvectors of $\hat{\sk}_p$ depend on frequency. Using $\cR_{\nu,p}\cR_{\delta,1-p}=(\mu^2-\omega^2)/(4\delta\nu)$, these eigenvectors and eigenvalues are
+\begin{equation}\label{eq:upm}
+u_\pm(\omega)=\begin{pmatrix}1\\(\pm\omega-\mu)/2\delta\end{pmatrix},\qquad u_-:\ k_p(\omega+\half),\qquad u_+:\ k_{1-p}(\omega-\half),
+\end{equation}
+with $k_1=k_A$, $k_0=k_S$, in agreement with~\eqref{eq:spectra}. Undoing the rescaling, $u_\pm$ are the eigenvectors~\eqref{eq:eigvec-bottom} and~\eqref{eq:eigvec-top}.
+
+\subsection{The scalars are components of the Dirac problem}
+
+The first-order system~\eqref{eq:first-order} squares to the two scalar equations with $(\Phi_\psi,\Phi_b)=(v,u)$. The rotation with the opposite half-angle, $\psi=e^{(\pi/4+\theta/2)J_2}(u',v')^T$, gives a second such system with $\omega'=\Omega+\half$, now with $(\Phi_\psi,\Phi_b)=(u',v')$ and parities $(1-p,p)$. Expanding near the right endpoint gives the boundary maps
+\begin{equation}\label{eq:maps}
+\begin{array}{lllll}
+\omega=\Omega-\half:&A_\psi=a_F,&A_b=b_F,&B_b=-\dfrac{\omega+\mu}{2\delta}a_F,&B_\psi=\dfrac{\omega-\mu}{2\nu}b_F,\\[2.5ex]
+\omega'=\Omega+\half:&A_\psi=a_F,&A_b=-b_F,&B_b=\dfrac{\omega'-\mu}{2\delta}a_F,&B_\psi=\dfrac{\omega'+\mu}{2\nu}b_F.
+\end{array}
+\end{equation}
+
+\begin{proposition}\label{prop:maps}
+Let $\psi$ solve~\eqref{eq:HD} at frequency $\Omega$ and parity $p$, with $b_F=c\,a_F$. Then its image at $\Omega-\half$ satisfies~\eqref{eq:bc-matrix} with $c$ at parity $p$, and its image at $\Omega+\half$ satisfies~\eqref{eq:bc-matrix} with $-c$ at parity $1-p$. Their lines in the $(A_\psi,B_b)$ plane are $u_-(\Omega-\half)$ and $u_+(\Omega+\half)$.
+\end{proposition}
+
+\begin{proof}
+For the first, $A_b=b_F=cA_\psi$, and $-2\nu B_\psi=-(\omega-\mu)ca_F=c(2\mu-\omega-\mu)a_F=c(2\mu A_\psi+2\delta B_b)$. For the second, with $c'=-c$: $A_b=-ca_F=c'A_\psi$, and $-2\nu B_\psi=-(\omega'+\mu)ca_F=c'(2\mu+\omega'-\mu)a_F=c'(2\mu A_\psi+2\delta B_b)$.
+\end{proof}
+
+So each root of $\cR_{F,p}(\Omega)=g\sigma_pL_q$ with $\Omega=H$ gives bosonic modes at $\omega=H-\half$ and $\omega=H+\half$, of opposite parities. With the partner Dirac mode at $-H$ and parity $1-p$, we get the one-particle energies
+\begin{equation}\label{eq:energies}
+(H-\half,\ H,\ H,\ H+\half),
+\end{equation}
+which is~\eqref{eq:multiplet} under $\omega=h-\half$. This holds for \emph{every} $g$.
+
+The same statement holds off shell. At every complex $\omega$ and real $g$,
+\begin{equation}\label{eq:ward}
+\sG_{g,p}(\omega)\sM_p=\sP_-(\omega)\,\sigma_pL_q\,G^F_{g,p}(\omega+\half)+\sP_+(\omega)\,\sigma_{1-p}L_q\,G^F_{g,1-p}(\omega-\half),
+\end{equation}
+with $\sP_\pm$ the projectors onto $u_\pm$. So the $2\times2$ neutral correlator contains no information beyond the Dirac correlator. The neutral problem doesn't define an independent bulk theory; it is the Dirac response dressed with kinematic projectors. We verified~\eqref{eq:ward} for $q=3,5,7$ at real, complex and imaginary $\omega$.
+
+\subsection{Boundary superfields}
+\label{subsec:superfields}
+
+The data at an endpoint assemble into two multiplets. On the strip the boundary dimensions are $\delta-\half=-\mu$ for $A_\psi$, $\delta$ for $a_F$ and $1-\mu$ for $B_b$, and likewise $\mu$, $\nu$ and $1+\mu$ for $A_b$, $b_F$ and $B_\psi$. These are long $su(1,1|1)$ multiplets $(H,H+\half,H+\half,H+1)$ with $H=\mp\mu$, which are shadows of each other in the sense $H\to-H$. Define the top components with a Weyl shift,
+\begin{equation}\label{eq:tops}
+\cB_-=2\delta B_b+\mu A_\psi,\qquad\cB_+=-2\nu B_\psi-\mu A_b,
+\end{equation}
+and the superfields
+\begin{equation}\label{eq:superfields}
+\Phi_-=A_\psi+\theta\,\tilde a_F+\bar\theta\,\tilde{\bar a}_F+\theta\bar\theta\,\cB_-,\qquad\Phi_+=A_b+\theta\,\tilde b_F+\bar\theta\,\tilde{\bar b}_F+\theta\bar\theta\,\cB_+,
+\end{equation}
+where a tilde removes the factor $e^{\mp\tau/2}$ from a fermion of definite charge, with a sign for the conjugate (\cref{subsec:surviving}). These are the $d=2$ analogue, on the cylinder, of Amsel and Marolf's boundary superfields~\cite[(3.24)]{Amsel:2008iz}, which they construct for $d=3,4,5$: their factors $(1\mp2m)$ become our $2\delta$ and $2\nu$.
+
+The shift in~\eqref{eq:tops} is of the size expected from the superconformal map to the cylinder acting on the top component of a field of dimension $\mp\mu$, namely $-H$ times the bottom component, although we fix it here by the computation below rather than by carrying out that map. With it, a short computation shows that~\eqref{eq:bc-matrix} and~\eqref{eq:bc-dirac} are together the single statement
+\begin{equation}\label{eq:bc-super}
+\boxed{\ \Phi_+=c\,\Phi_-\ }
+\end{equation}
+This has the form of the linear condition of~\cite{Amsel:2008iz}, with constant $q=1/c$. The entry $2\mu$ of $\sM_p$, which might have looked like an accident of the reduction, is just the Weyl shift.
+
+The boundary action is correspondingly simple. Let $S_E$ be the Euclidean free action, with the boundary terms that make its on-shell variation linear in $\delta A_\psi$, $\delta B_b$, $\delta a_F$ and $\delta\bar a_F$. Then, at the right endpoint,
+\begin{equation}\label{eq:flux}
+\delta S_E=\int d\tau\,d^2\theta\,\Phi_+\delta\Phi_-=\int d\tau\,\big[j_0\cdot\delta X+b_F\delta\bar a_F-\bar b_F\delta a_F\big],\qquad\int d^2\theta\,\theta\bar\theta=1.
+\end{equation}
+For the scalars, the Weyl shifts cancel in $A_b\delta\cB_-+\cB_+\delta A_\psi=j_0\cdot\delta X$, and the coefficients $2\nu$, $2\delta$ are those of the conserved Wronskians of the two scalars. For the fermion, $\sqrt{-g}\,\bar\Psi\gamma^\theta\delta\Psi=\bar u\delta v-\bar v\delta u$, which tends to $\bar b_F\delta a_F-\bar a_F\delta b_F$. Adding the boundary term $\int dt\,\bar a_Fb_F$, which removes $\delta b_F$, and continuing with $S_E=-\int d\tau\,\mathcal L$, gives the fermion terms in~\eqref{eq:flux}. They agree with superspace only because of the sign in $\tilde{\bar a}_F$, which was fixed separately by the closure of the supercharges.
+
+Now $X^T\sM_pX=2\sigma_pL_q\,A_\psi(\mu A_\psi+2\delta B_b)=2\sigma_pL_q\,A_\psi\cB_-$, so the quadratic term generating~\eqref{eq:bc-matrix} is one component of a superpotential,
+\begin{equation}\label{eq:superpotential}
+S_{\rm bdy}=-\frac c2\int d\tau\,d^2\theta\,\Phi_-^2=\int d\tau\,\Big[-\frac g2X^T\sM_pX+c\,\bar a_Fa_F\Big].
+\end{equation}
+\emph{The double-trace term is a superpotential}, and its fermion component is a boundary mass. Stationarity is immediate,
+\begin{equation}
+\delta(S_E+S_{\rm bdy})=\int d\tau\,d^2\theta\,\big(\Phi_+-c\,\Phi_-\big)\delta\Phi_-,
+\end{equation}
+which gives~\eqref{eq:bc-super} in all components. This is a real check of the structure: \eqref{eq:bc-matrix} and~\eqref{eq:bc-dirac} were found separately from the ladders, and one superpotential now produces both, with the same $c$ and the same sign. At $c=0$ and $c=\infty$ we recover the two supersymmetric single-trace conditions, $\Phi_+=0$ and $\Phi_-=0$, the analogues of Thong's Neumann and Dirichlet conditions.
