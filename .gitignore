@@ -9,3 +9,6 @@ research/tex/*/main.pdf
 # Python cache
 __pycache__/
 *.pyc
+
+# Virtual environment
+.venv/
